@@ -1,0 +1,147 @@
+# Patient vignette
+Samantha Baker
+female, 54 years old
+Date of Birth: 9/8/1970
+reason for visit: "to check my health"
+
+## Subjective
+### History of Present Illness
+Patient recently immigrated from London to live with her daughter. She reports being generally healthy but has not seen a doctor in several years and does not have her previous medical records. She recalls being told she had "high blood pressure" in the past but was never on medication. She is unsure about any history of high cholesterol or diabetes. She has a fear of needles and has always declined blood work and immunizations, with the exception of tetanus shot that she got after stepping on a rusty nail 3 years ago. 
+
+She denies chest pain, shortness of breath, or significant fatigue but does report occasional headaches. 
+
+She's had a "normal" pap smear 4 years ago. She doesn't remember the date of her last mammogram and reports that it was unremarkable. She admits to smoking cigarettes for over 25 years with an average of 1 pack per day due to her stressful job as a lawyer. She struggles with motivation and reports feeling lonely since moving to the US as she left behind friends and colleagues.
+
+### Past Medical History
+none recorded
+
+### Surgical History
+none recorded
+
+### Family History
+none recorded
+
+### Medications
+None recorded
+
+### Social History
+None recorded.
+
+### Allergies
+None recorded
+
+### Immunizations
+None recorded
+
+### Prventative
+Breast Cancer Screening
+
+    Measure: CMS125v6 (CQM)
+    Status: No relevant exams found.
+    Current Screening Interval: 2 years, 3 months.
+    Recommendation: Discuss breast cancer screening and order imaging as appropriate.
+
+Colorectal Cancer Screening
+
+    Measure: CMS130v6 (CQM)
+    Status: Samantha is due for a colorectal cancer screening.
+    No relevant exams found.
+    Current Screening Interval: 10 years.
+
+## Objective
+
+### Physical Exam
+Physical Exam: General Female
+
+Pulmonary: Clear to auscultation bilaterally.
+Constitutional:
+
+    Alert, no acute distress.
+    Well developed and nourished.
+
+Skin:
+
+    Warm and dry, no suspicious lesions.
+
+Head:
+
+    Atraumatic, normocephalic.
+
+Eyes:
+
+    PERRL/EOM intact.
+    Conjunctiva and sclera normal.
+
+ENT:
+
+    Ears: Normal
+    Throat: Clear, mucus membranes moist.
+
+Mouth:
+
+    Normal oral mucosa without erythema, lesions, or exudates.
+    Good dentition.
+
+Neck:
+
+    Supple, full range of motion.
+    No cervical lymphadenopathy.
+
+Breast:
+
+    No skin retraction, no nipple discharge, no masses.
+
+Pulmonary:
+
+    Clear to auscultation bilaterally.
+
+Cardiovascular:
+
+    Regular rate and rhythm.
+    S1, S2 normal, no murmurs.
+
+Abdomen:
+
+    Soft, nontender, nondistended.
+    Bowel sounds present.
+
+Genitourinary:
+
+    Cervix: Normal, without palpable lesions or masses.
+    Uterus: Normal by palpation.
+    Adnexa: Normal bimanual exam, without masses or fullness.
+
+Rectal:
+
+    Normal anal/rectal exam.
+
+Extremities:
+
+    No clubbing, cyanosis, or edema.
+
+Musculoskeletal:
+
+    Normal bulk and tone.
+    Full ROM.
+
+Neurological:
+
+    Nonfocal.
+    Motor strength normal in upper and lower extremities.
+    Sensory exam intact.
+
+Hematologic/Lymphatic:
+
+    No lymphadenopathy.
+
+Psychiatric:
+
+    Normal attention, mood, and affect.
+
+## Plan
+Refer Patient to Gastroenterology (TBD)
+
+    Created on: Friday, 2/21/25 at 7:50 PM EST by Alexa Ekchian
+    Assignment: Not assigned
+    Team: Care Coordination
+    Follow-up Due Date: Saturday, 2/22/25

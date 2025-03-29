@@ -1,0 +1,162 @@
+# Patient Vignette
+Name: Phil Wiser
+Birth Date:
+03/25/1962
+Age:
+62 years
+Sex: M
+Reason for visit: Refill for metformin
+## HPI
+Patient comes in to establish care because he needs a refill for metformin for diabetes. He's been out of the medication for more than 6 months and was tolerating the maximum dose. Diabetes was diagnosed 2 years ago. He admits that taking care of his health has not been a priority as he's going through a divorce. He does not check his blood sugar at home.  He's never had an eye exam or foot exam done and doesn't remember his last set of labs. He reports no history of cardiovascular or kidney disease.
+He reports no vision changes, frequent urination, increased thirst, fatigue, abnormal sensation in extremities, foot ulcers or sores .
+His diet is not balanced. He eats a lot of junk food, including candy bars and drinks 3 soft drinks per day as a way to cope with stress at home.
+His does not exercise.
+He takes no other medications. He doesn't remember immunization history.
+
+## Past medical history
+Type 2 diabetes mellitus without complications E11.9 Active 2023
+
+Medications
+metformin ER 500 mg tablet,extended release 24 hr. take 2 tabs twice a day. Quantity: 120 tablet (2 refills) Start Date: 2/21/2025
+
+Immunizations
+
+    No immunizations on record
+
+Surgical History
+
+    No surgical history on record
+
+Family History
+
+    No family history on record
+
+## Objective
+### Vitals:
+
+    Height: 62 in
+    Weight: 208 lbs 0 oz
+    Waist Circumference: (cm not provided)
+    Temperature: 98 °F
+    Site: Temporal
+    Blood Pressure: 130/79
+    Position and Site: Sitting, Right Upper Extremity
+    Pulse Rate: 82 bpm
+    Pulse Rhythm: Regular
+    Respiration Rate: 20 bpm
+    Oxygen Saturation: 99%
+
+Measurement	Latest	2/21/25	2/18/25
+Weight (lbs)	207 lbs 0 oz	207 lbs 0 oz	208 lbs 0 oz
+Body Temperature (°F)	98	98	98
+Blood Pressure (mmHg)	132/84	132/84	130/79
+Pulse Rhythm	Regular	Regular	Regular
+Oxygen Saturation (%)	99	99	99
+Height (in)	62	62	62
+Waist Circumference (cm)	-	-	-
+Pulse (bpm)	77	77	82
+Respiration Rate (bpm)	18	18	20
+BMI	37.9	37.9	38
+
+### Physical exam
+Constitutional: Alert, no acute distress. 
+Pulmonary: Clear to auscultation bilaterally.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Extremities: No lower extremity edema, ulcers, or deformities bilaterally. Microfilament test normal in great toes and metatarsal heads bilaterally. DP and PT pulses 2+ bilaterally.
+
+### lab results
+Value	2/21/25
+Cholesterol, Total ( - mg/dL)	218
+Triglycerides ( - mg/dL)	84
+HDL Cholesterol ( - mg/dL)	66
+VLDL Cholesterol Cal ( - mg/dL)	15
+LDL Cholesterol Calc ( - mg/dL)	137
+
+Date: 2/21/25
+Hemoglobin A1c: 9.8%
+
+Lab Results (2/21/25):
+
+    Creatinine, Urine: 80 mg/dL
+    Albumin, Urine: 40 µg/mL
+    Albumin/Creatinine Ratio: 50 mg/g creat
+
+Lab Results (2/21/25):
+
+    Glucose: 88 mg/dL
+    BUN: 14 mg/dL
+    Creatinine: 1.6 mg/dL
+    eGFR (Non-African American): 55 mL/min/1.73
+    BUN/Creatinine Ratio: 8.75
+    Sodium: 140 mmol/L
+    Potassium: 4.1 mmol/L
+    Chloride: 102 mmol/L
+    Carbon Dioxide (Total): 27 mmol/L
+    Calcium: 9.5 mg/dL
+    Protein (Total): 7.1 g/dL
+    Albumin: 4.7 g/dL
+    Globulin (Total): 2.4 g/dL
+    A/G Ratio: 2
+    Bilirubin (Total): 0.7 mg/dL
+    Alkaline Phosphatase: 67 IU/L
+    AST (SGOT): 18 IU/L
+    ALT (SGPT): 19 IU/L
+
+CBC Results (2/21/25):
+
+    WBC (White Blood Cell Count): 4.9 x10³/uL
+    RBC (Red Blood Cell Count): 5.03 x10⁶/uL
+    Hemoglobin: 15.7 g/dL
+    Hematocrit: 45.8%
+    MCV (Mean Corpuscular Volume): 91 fL
+    MCH (Mean Corpuscular Hemoglobin): 31.2 pg
+    MCHC (Mean Corpuscular Hemoglobin Concentration): 34.3 g/dL
+    RDW (Red Cell Distribution Width): 12.5%
+    Platelets: 157 x10³/uL
+    Neutrophils: 52%
+    Lymphocytes: 35%
+    Monocytes: 9%
+    Eosinophils (Eos): 2%
+    Basophils (Basos): 1%
+    
+Absolute Differential Blood Count:
+
+    Immature Cells: None
+    Neutrophils (Absolute): 2.5 x10³/uL
+    Lymphocytes (Absolute): 1.7 x10³/uL
+    Monocytes (Absolute): 0.4 x10³/uL
+    Eosinophils (Absolute): 0.1 x10³/uL
+    Basophils (Absolute): 0.1 x10³/uL
+    Immature Granulocytes: 0%
+    Immature Granulocytes (Absolute): 0 x10³/uL
+    NRBC (Nucleated RBCs): 0%
+
+## Plan
+Today's Assessment: Need baseline labs, refill metformin (titrate gradually to max dose), diabetic retinopathy screening referral placed.
+
+Lab Order: XPC Lab
+
+Tests Ordered:
+
+    CBC (Includes Diff/PLT) (REFL)
+    Comprehensive Metabolic Panel (REFL)
+    Hemoglobin A1c
+    Lipid Panel (REFL)
+    Albumin, Random Urine w/Creatinine
+
+Ordering Provider: Paulius Mui, MD
+Indications: Type 2 diabetes mellitus without complications
+Fasting Required?: No
+Diagnosis: Type 2 Diabetes Mellitus Without Complications (E119)
+
+    Today's Assessment: Need baseline labs, refill metformin (titrate gradually to max dose), diabetic retinopathy screening referral placed.
+
+Prescription:
+
+Medication: Metformin ER 500 mg tablet, extended release 24 hr
+Sig: Take 2 tablets twice a day
+Days Supply: 30
+Quantity to Dispense: 120 tablets
+Refills: 2
+Substitutions Allowed: Allowed
+Prescriber: Paulius Mui

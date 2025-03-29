@@ -1,0 +1,42 @@
+# Patient Vignette
+71 year old female
+
+Reason for Visit
+
+    Recently diagnosed with atrial fibrillation.
+    Would like to find out what medications to take for this condition.
+
+## Subjective
+
+### History of Present Illness
+
+    Patient learned about atrial fibrillation from her Apple Watch notification 2 weeks ago.
+    She has never had any symptoms.
+    Was told she has high blood pressure but doesn’t take any medications for it.
+    No history of HF (heart failure), diabetes, stroke, clots, sleep apnea, kidney, liver, thyroid, or vascular disease.
+    No history of bleeding.
+    No alcohol, tobacco, or drug use.
+    Occasionally takes naproxen as needed for headaches but no other medications.
+    Does not know her family’s medical history.
+    Hasn’t seen a doctor for years and hasn’t had any workup.
+
+## Objective
+Vitals
+
+    Height: 66 in
+    Weight: 155 lbs 0 oz
+    Waist Circumference: Not recorded
+    Temperature: 98°F
+    Site: Temporal
+    Blood Pressure: 146/82 mmHg
+    Position and Site: Sitting, Right Upper Extremity
+    Pulse Rate: 88 bpm
+    Pulse Rhythm: Irregularly Irregular
+    Respiration Rate: 20 bpm
+    Oxygen Saturation: 99%
+
+Physical Exam: Brief Exam
+
+    Constitutional: Alert, no acute distress.
+    Pulmonary: Clear to auscultation bilaterally.
+    Cardiovascular: Irregularly irregular, no murmurs.

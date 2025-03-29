@@ -1,0 +1,183 @@
+{
+    "type": "json_schema",
+    "name": "chart_review",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "Assessment": {
+          "type": "string",
+          "description": "The assessment statement constructed from the patient chart goes here."
+        },
+        "Plan": {
+          "type": "object",
+          "description": "The treatment plan along with various problems and preventative care items.",
+          "properties": {
+            "Problem 1": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Status": {
+                  "type": "string",
+                  "description": "State the status and clinical response of the problem."
+                },
+                "Decision Making and Diagnositic Plan": {
+                  "type": "string",
+                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
+                },
+                "Treatment Plan": {
+                  "type": "string",
+                  "description": "Treatment plan constructed from the patient chart goes here."
+                },
+                "Contingency Planning": {
+                  "type": "string",
+                  "description": "Contingency plan constructed from the patient chart goes here."
+                }
+              },
+              "required": [
+                "Status",
+                "Decision Making and Diagnositic Plan",
+                "Treatment Plan",
+                "Contingency Planning"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 2": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Status": {
+                  "type": "string",
+                  "description": "State the status and clinical response of the problem."
+                },
+                "Decision Making and Diagnositic Plan": {
+                  "type": "string",
+                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
+                },
+                "Treatment Plan": {
+                  "type": "string",
+                  "description": "Treatment plan constructed from the patient chart goes here."
+                },
+                "Contingency Planning": {
+                  "type": "string",
+                  "description": "Contingency plan constructed from the patient chart goes here."
+                }
+              },
+              "required": [
+                "Status",
+                "Decision Making and Diagnositic Plan",
+                "Treatment Plan",
+                "Contingency Planning"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 3": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Status": {
+                  "type": "string",
+                  "description": "State the status and clinical response of the problem."
+                },
+                "Decision Making and Diagnositic Plan": {
+                  "type": "string",
+                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
+                },
+                "Treatment Plan": {
+                  "type": "string",
+                  "description": "Treatment plan constructed from the patient chart goes here."
+                },
+                "Contingency Planning": {
+                  "type": "string",
+                  "description": "Contingency plan constructed from the patient chart goes here."
+                }
+              },
+              "required": [
+                "Status",
+                "Decision Making and Diagnositic Plan",
+                "Treatment Plan",
+                "Contingency Planning"
+              ],
+              "additionalProperties": false
+            },
+            "Problem N": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Status": {
+                  "type": "string",
+                  "description": "State the status and clinical response of the Nth problem."
+                },
+                "Decision Making and Diagnositic Plan": {
+                  "type": "string",
+                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
+                },
+                "Treatment Plan": {
+                  "type": "string",
+                  "description": "Treatment plan constructed from the patient chart goes here."
+                },
+                "Contingency Planning": {
+                  "type": "string",
+                  "description": "Contingency plan constructed from the patient chart goes here."
+                }
+              },
+              "required": [
+                "Status",
+                "Decision Making and Diagnositic Plan",
+                "Treatment Plan",
+                "Contingency Planning"
+              ],
+              "additionalProperties": false
+            },
+            "Anticipatory Preventative Care": {
+              "type": "object",
+              "properties": {
+                "Item 1": {
+                  "type": "string",
+                  "description": "Preventative Care Item 1 constructed from the patient chart goes here."
+                },
+                "Item 2": {
+                  "type": "string",
+                  "description": "Preventative Care Item 2 constructed from the patient chart goes here."
+                },
+                "Item 3": {
+                  "type": "string",
+                  "description": "Preventative Care the Nth constructed from the patient chart goes here."
+                },
+                "Item N": {
+                  "type": "string",
+                  "description": "Preventative Care Item 2 constructed from the patient chart goes here."
+                }
+              },
+              "required": [
+                "Item 1"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "Problem 1",
+            "Anticipatory Preventative Care"
+          ]
+        }
+      },
+      "required": [
+        "Assessment",
+        "Plan"
+      ],
+      "additionalProperties": false
+    },
+    "strict": false
+  }

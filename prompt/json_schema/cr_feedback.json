@@ -1,0 +1,124 @@
+{
+    "type": "json_schema",
+    "name": "cr_feedback",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "Feedback Summary": {
+          "type": "string",
+          "description": "A concise summary of the overall evaluation of the chart review output."
+        },
+        "Feedback Details": {
+          "type": "object",
+          "properties": {
+            "Assessment Section": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the assessment section, noting strengths and any areas for improvement regarding problem representation, synthesis of clinical issues, and inclusion of differential diagnoses."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the assessment section, noting strengths and any areas for improvement regarding problem representation, synthesis of clinical issues, and inclusion of differential diagnoses."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 1": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 2": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 2, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 3": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the Nth plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 4": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the Nth plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Overall Recommendations": {
+              "type": "string",
+              "description": "General suggestions and actionable recommendations to improve the quality and clarity of the chart review report."
+            }
+          },
+          "required": [
+            "Assessment Section",
+            "Problem 1",
+            "Overall Recommendations"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "Feedback Summary",
+        "Feedback Details"
+      ],
+      "additionalProperties": false
+    },
+    "strict": false
+}

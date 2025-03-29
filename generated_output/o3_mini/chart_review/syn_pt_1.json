@@ -1,0 +1,26 @@
+{
+    "Assessment": "71‑year‑old female with newly diagnosed, asymptomatic atrial fibrillation discovered incidentally via Apple Watch notification. Exam confirms an irregularly irregular rhythm without murmurs. She has untreated stage I hypertension. Likely diagnosis is nonvalvular atrial fibrillation (AF). Differential diagnoses include atrial flutter (would demonstrate sawtooth waves on ECG; absent here), frequent premature atrial contractions (would show isolated early beats rather than sustained irregularity), and sinus arrhythmia (unlikely given age and persistent irregular rhythm). CHA₂DS₂‑VASc score is 3 (female, age 65–74, hypertension), indicating elevated thromboembolic risk; HAS‑BLED risk is low.",
+    "Plan": {
+        "Atrial Fibrillation": {
+            "Status": "New diagnosis; asymptomatic; nonvalvular AF confirmed on exam.",
+            "Decision Making and Diagnositic Plan": "Obtain 12‑lead ECG to confirm AF. Order transthoracic echocardiogram to assess cardiac structure/function and rule out valvular disease. Check TSH, CBC, CMP (including renal and hepatic function) to guide anticoagulant selection and exclude reversible causes.",
+            "Treatment Plan": "Initiate apixaban 5 mg PO twice daily for stroke prophylaxis. No rate-control medication needed at this time given resting HR <110 bpm and absence of symptoms.",
+            "Contingency Planning": "If bleeding develops or renal function declines (CrCl <25 mL/min), reassess anticoagulation choice/dose. If HR rises >110 bpm or patient becomes symptomatic (palpitations, dyspnea), start low‑dose beta blocker (e.g., metoprolol tartrate 25 mg BID) and consider cardiology referral for rhythm control discussion. Follow-up in 4 weeks with labs and echo results."
+        },
+        "Hypertension": {
+            "Status": "Untreated, stage I hypertension (BP 146/82 mmHg).",
+            "Decision Making and Diagnositic Plan": "Obtain home blood pressure logs for one week to confirm diagnosis. Order basic metabolic panel to monitor electrolytes once therapy is initiated.",
+            "Treatment Plan": "Start lisinopril 10 mg PO daily. Advise DASH diet, sodium <2,300 mg/day, weight loss, and regular aerobic exercise.",
+            "Contingency Planning": "If BP remains ≥130/80 mmHg after 4 weeks, increase lisinopril to 20 mg daily or add thiazide diuretic. If cough develops, switch to losartan 50 mg daily."
+        },
+        "Anticipatory Preventative Care": {
+            "Influenza vaccination": "Administer annual inactivated influenza vaccine today if not yet received this season.",
+            "Pneumococcal vaccination": "Administer PCV20 now (or PCV15 followed by PPSV23 in 6–12 months) per age ≥65 guidelines; confirm prior vaccination status.",
+            "Herpes zoster vaccination": "Administer recombinant zoster vaccine (RZV) series (2 doses) if not previously completed.",
+            "Colorectal cancer screening": "Confirm date of last colonoscopy; if none within 10 years, schedule screening colonoscopy.",
+            "Breast cancer screening": "Schedule mammogram if none within past 2 years (recommended until age 74).",
+            "Bone density screening": "Obtain DEXA scan (first at age ≥65) to assess osteoporosis risk.",
+            "Lipid screening and statin therapy": "Obtain fasting lipid panel; initiate moderate‑intensity statin for primary prevention given age >65 and hypertension if LDL ≥70 mg/dL."
+        }
+    }
+}

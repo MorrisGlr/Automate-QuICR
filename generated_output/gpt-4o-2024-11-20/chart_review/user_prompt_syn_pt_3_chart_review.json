@@ -1,0 +1,31 @@
+{
+  "Assessment": "Samantha Baker is a 54-year-old female presenting for a general health evaluation. She has a history of untreated hypertension, a significant smoking history, and a lack of recent medical care, including preventative screenings. She reports occasional headaches and feelings of loneliness since relocating to the US.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Hypertension",
+      "Status": "Suspected, untreated",
+      "Decision Making and Diagnositic Plan": "Order blood pressure monitoring and consider ambulatory blood pressure monitoring for confirmation.",
+      "Treatment Plan": "Initiate lifestyle modifications, including dietary changes and smoking cessation.",
+      "Contingency Planning": "If blood pressure remains elevated, consider initiating antihypertensive medication."
+    },
+    "Problem 2": {
+      "Problem Name": "Smoking history",
+      "Status": "Chronic, ongoing",
+      "Decision Making and Diagnositic Plan": "Assess readiness to quit and provide resources for smoking cessation.",
+      "Treatment Plan": "Offer nicotine replacement therapy and counseling.",
+      "Contingency Planning": "If patient is not ready to quit, provide harm reduction strategies."
+    },
+    "Problem 3": {
+      "Problem Name": "Preventative care",
+      "Status": "Due for multiple screenings",
+      "Decision Making and Diagnositic Plan": "Order mammogram and colorectal cancer screening.",
+      "Treatment Plan": "Schedule screenings and follow up on results.",
+      "Contingency Planning": "If abnormalities are found, refer to appropriate specialists."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Encourage regular physical activity and a balanced diet.",
+      "Item 2": "Discuss mental health support options to address feelings of loneliness.",
+      "Item 3": "Update immunizations as per CDC guidelines."
+    }
+  }
+}

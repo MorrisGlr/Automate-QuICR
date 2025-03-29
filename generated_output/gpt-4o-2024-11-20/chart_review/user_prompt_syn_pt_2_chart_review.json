@@ -1,0 +1,32 @@
+{
+  "Assessment": "Phil Wiser, a 62-year-old male with a history of type 2 diabetes mellitus diagnosed two years ago, presents for re-establishing care and medication refill. He has been off metformin for over six months and reports suboptimal dietary habits and lack of exercise. His last recorded HbA1c was 9.8%, indicating poor glycemic control. He denies symptoms of hyperglycemia or complications such as neuropathy or retinopathy. Physical examination reveals no acute distress or diabetic complications.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus",
+      "Status": "Poorly controlled, with HbA1c of 9.8% from the last available lab.",
+      "Decision Making and Diagnositic Plan": "Order baseline labs including HbA1c, lipid panel, and urine albumin-to-creatinine ratio to assess current status and complications.",
+      "Treatment Plan": "Restart metformin ER at 500 mg twice daily, titrating to maximum tolerated dose. Provide dietary counseling and recommend a structured exercise program.",
+      "Contingency Planning": "If HbA1c remains elevated despite adherence to therapy, consider adding a second-line antidiabetic agent."
+    },
+    "Problem 2": {
+      "Problem Name": "Obesity",
+      "Status": "BMI of 37.9, indicating class II obesity.",
+      "Decision Making and Diagnositic Plan": "Discuss weight management strategies and assess for barriers to lifestyle changes.",
+      "Treatment Plan": "Refer to a dietitian for personalized meal planning and consider a structured weight loss program.",
+      "Contingency Planning": "Evaluate for potential pharmacologic or surgical interventions if lifestyle modifications are insufficient."
+    },
+    "Problem 3": {
+      "Problem Name": "Preventative Care Needs",
+      "Status": "No record of diabetic retinopathy screening or immunizations.",
+      "Decision Making and Diagnositic Plan": "Refer for an ophthalmologic evaluation for diabetic retinopathy.",
+      "Treatment Plan": "Administer age-appropriate vaccinations, including influenza, pneumococcal, and shingles vaccines.",
+      "Contingency Planning": "Ensure follow-up to confirm completion of preventative care measures."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Encourage regular follow-up visits every three months to monitor diabetes management.",
+      "Item 2": "Discuss smoking cessation if applicable.",
+      "Item 3": "Promote mental health support to address stress related to personal circumstances.",
+      "Item N": "Provide educational resources on diabetes self-management."
+    }
+  }
+}

@@ -108,7 +108,7 @@
               ],
               "additionalProperties": false
             },
-            "Problem N": {
+            "Problem 4": {
               "type": "object",
               "properties": {
                 "Problem Name": {

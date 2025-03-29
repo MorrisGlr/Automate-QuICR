@@ -74,7 +74,7 @@
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the Nth plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 }
               },
               "required": [
@@ -92,7 +92,25 @@
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the Nth plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Anticipatory Preventative Care Section Feedback": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 }
               },
               "required": [
@@ -109,6 +127,7 @@
           "required": [
             "Assessment Section",
             "Problem 1",
+            "Anticipatory Preventative Care Section Feedback",
             "Overall Recommendations"
           ],
           "additionalProperties": false

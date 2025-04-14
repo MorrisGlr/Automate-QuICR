@@ -4,6 +4,14 @@
     "schema": {
       "type": "object",
       "properties": {
+        "Patient Name": {
+          "type": "string",
+          "description": "The name of the patient."
+        },
+        "Key Highlights for Medical Decision-Making (MDM) Improvement": {
+          "type": "string",
+          "description": "A bulleted list of the main areas for improvement in the medical decision-making process."
+        },
         "Assessment": {
           "type": "string",
           "description": "The assessment statement constructed from the patient chart goes here."
@@ -153,11 +161,11 @@
                 },
                 "Item 3": {
                   "type": "string",
-                  "description": "Preventative Care the Nth constructed from the patient chart goes here."
+                  "description": "Preventative Care Item 3 constructed from the patient chart goes here."
                 },
-                "Item N": {
+                "Item 4": {
                   "type": "string",
-                  "description": "Preventative Care Item 2 constructed from the patient chart goes here."
+                  "description": "Preventative Care Item 4 constructed from the patient chart goes here."
                 }
               },
               "required": [
@@ -174,6 +182,7 @@
         }
       },
       "required": [
+        "Key Highlights for Medical Decision-Making (MDM) Improvement",
         "Assessment",
         "Plan"
       ],

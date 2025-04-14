@@ -1,24 +1,41 @@
 {
-  "Assessment": "The patient is a 71-year-old female presenting for evaluation and management of newly diagnosed atrial fibrillation, identified via wearable technology notification. She is asymptomatic, with a history of untreated hypertension and no significant comorbidities or bleeding risks.",
+  "Patient Name": "Not provided",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Confirm the diagnosis of atrial fibrillation with appropriate diagnostic tests, such as an ECG or Holter monitor.\n- Evaluate the patient's risk factors for stroke using the CHA2DS2-VASc score to guide anticoagulation therapy.\n- Assess and manage the patient's hypertension to reduce cardiovascular risks.",
+  "Assessment": "This is a 71-year-old female presenting for evaluation and management of newly diagnosed atrial fibrillation, identified via wearable technology. She is asymptomatic and has a history of untreated hypertension. Her physical examination reveals an irregularly irregular pulse consistent with atrial fibrillation.",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Atrial Fibrillation",
       "Status": "Newly diagnosed, asymptomatic.",
-      "Decision Making and Diagnositic Plan": "Order an ECG to confirm the diagnosis and assess for any underlying structural heart disease. Consider echocardiography and thyroid function tests.",
-      "Treatment Plan": "Initiate anticoagulation therapy to reduce stroke risk, considering CHA2DS2-VASc score. Discuss rate versus rhythm control strategies and initiate beta-blocker therapy for rate control.",
-      "Contingency Planning": "If symptoms develop or persist, consider referral to cardiology for further evaluation and potential advanced therapies."
+      "Decision Making and Diagnositic Plan": "Order an ECG to confirm the diagnosis and consider a Holter monitor for further rhythm evaluation.",
+      "Treatment Plan": "Initiate anticoagulation therapy based on CHA2DS2-VASc score assessment. Discuss rate versus rhythm control strategies and consider starting a beta-blocker for rate control.",
+      "Contingency Planning": "Advise the patient to seek immediate care if symptoms such as chest pain, shortness of breath, or neurological deficits occur."
     },
     "Problem 2": {
       "Problem Name": "Hypertension",
       "Status": "Previously diagnosed, untreated.",
-      "Decision Making and Diagnositic Plan": "Confirm diagnosis with serial blood pressure measurements.",
-      "Treatment Plan": "Initiate antihypertensive therapy, such as an ACE inhibitor or calcium channel blocker, and provide lifestyle modification counseling.",
-      "Contingency Planning": "Monitor blood pressure response and adjust therapy as needed."
+      "Decision Making and Diagnositic Plan": "Measure blood pressure over multiple visits or consider ambulatory blood pressure monitoring to confirm the diagnosis.",
+      "Treatment Plan": "Initiate antihypertensive therapy, such as a thiazide diuretic or ACE inhibitor, and provide lifestyle modification counseling.",
+      "Contingency Planning": "Monitor blood pressure response to therapy and adjust medications as needed."
+    },
+    "Problem 3": {
+      "Problem Name": "Preventative Care",
+      "Status": "Due for comprehensive evaluation.",
+      "Decision Making and Diagnositic Plan": "Order baseline laboratory tests including CBC, CMP, lipid panel, and TSH. Schedule age-appropriate cancer screenings.",
+      "Treatment Plan": "Administer influenza and pneumococcal vaccines if not up-to-date.",
+      "Contingency Planning": "Follow up on test results and address any abnormalities."
+    },
+    "Problem 4": {
+      "Problem Name": "Health Maintenance",
+      "Status": "Requires update.",
+      "Decision Making and Diagnositic Plan": "Review and update immunization status.",
+      "Treatment Plan": "Provide counseling on diet, exercise, and smoking cessation (if applicable).",
+      "Contingency Planning": "Reassess during follow-up visits."
     },
     "Anticipatory Preventative Care": {
-      "Item 1": "Recommend age-appropriate cancer screenings, including mammography and colonoscopy.",
-      "Item 2": "Administer influenza and pneumococcal vaccinations.",
-      "Item 3": "Encourage regular physical activity and a heart-healthy diet."
+      "Item 1": "Encourage regular physical activity tailored to the patient's abilities.",
+      "Item 2": "Discuss dietary modifications to support cardiovascular health.",
+      "Item 3": "Provide education on recognizing symptoms of stroke and when to seek emergency care.",
+      "Item 4": "Schedule follow-up in 4 weeks to assess treatment response and adherence."
     }
   }
 }

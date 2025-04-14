@@ -1,32 +1,41 @@
 {
-  "Assessment": "Phil Wiser, a 62-year-old male with a history of type 2 diabetes mellitus diagnosed two years ago, presents for re-establishing care and medication refill. He has been off metformin for over six months and reports suboptimal dietary habits and lack of exercise. His last recorded HbA1c was 9.8%, indicating poor glycemic control. He denies symptoms of hyperglycemia or complications such as neuropathy or retinopathy. Physical examination reveals no acute distress or diabetic complications.",
+  "Patient Name": "Phil Wiser",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure regular follow-up visits to monitor diabetes management and address any emerging complications.\n- Encourage patient adherence to prescribed medications and lifestyle modifications.\n- Establish a comprehensive care plan including regular screenings and preventive measures.",
+  "Assessment": "Phil Wiser, a 62-year-old male with a history of type 2 diabetes mellitus diagnosed two years ago, presents for re-establishment of care and medication refill. He reports suboptimal diabetes management due to personal stressors, with no recent monitoring or preventive screenings. Physical examination and laboratory findings indicate poorly controlled diabetes (HbA1c 9.8%) and early signs of nephropathy (eGFR 55 mL/min/1.73 m\u00b2, albumin/creatinine ratio 50 mg/g creat).",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Type 2 Diabetes Mellitus",
-      "Status": "Poorly controlled, with HbA1c of 9.8% from the last available lab.",
-      "Decision Making and Diagnositic Plan": "Order baseline labs including HbA1c, lipid panel, and urine albumin-to-creatinine ratio to assess current status and complications.",
-      "Treatment Plan": "Restart metformin ER at 500 mg twice daily, titrating to maximum tolerated dose. Provide dietary counseling and recommend a structured exercise program.",
-      "Contingency Planning": "If HbA1c remains elevated despite adherence to therapy, consider adding a second-line antidiabetic agent."
+      "Status": "Poorly controlled, with elevated HbA1c and early nephropathy.",
+      "Decision Making and Diagnositic Plan": "Order baseline labs including HbA1c, lipid panel, and urine albumin/creatinine ratio to assess current status.",
+      "Treatment Plan": "Refill metformin ER 500 mg, titrate to maximum tolerated dose, and initiate lifestyle counseling focusing on diet and exercise.",
+      "Contingency Planning": "If HbA1c remains elevated, consider adding a second-line agent such as an SGLT2 inhibitor or GLP-1 receptor agonist."
     },
     "Problem 2": {
-      "Problem Name": "Obesity",
-      "Status": "BMI of 37.9, indicating class II obesity.",
-      "Decision Making and Diagnositic Plan": "Discuss weight management strategies and assess for barriers to lifestyle changes.",
-      "Treatment Plan": "Refer to a dietitian for personalized meal planning and consider a structured weight loss program.",
-      "Contingency Planning": "Evaluate for potential pharmacologic or surgical interventions if lifestyle modifications are insufficient."
+      "Problem Name": "Diabetic Retinopathy Screening",
+      "Status": "Not previously performed.",
+      "Decision Making and Diagnositic Plan": "Refer to ophthalmology for a comprehensive eye exam.",
+      "Treatment Plan": "Ensure patient schedules and attends the appointment.",
+      "Contingency Planning": "If retinopathy is detected, collaborate with ophthalmology for management."
     },
     "Problem 3": {
-      "Problem Name": "Preventative Care Needs",
-      "Status": "No record of diabetic retinopathy screening or immunizations.",
-      "Decision Making and Diagnositic Plan": "Refer for an ophthalmologic evaluation for diabetic retinopathy.",
-      "Treatment Plan": "Administer age-appropriate vaccinations, including influenza, pneumococcal, and shingles vaccines.",
-      "Contingency Planning": "Ensure follow-up to confirm completion of preventative care measures."
+      "Problem Name": "Diabetic Nephropathy",
+      "Status": "Early signs present.",
+      "Decision Making and Diagnositic Plan": "Monitor renal function and albuminuria regularly.",
+      "Treatment Plan": "Optimize blood pressure and glycemic control to slow progression.",
+      "Contingency Planning": "If renal function declines, consider nephrology referral."
+    },
+    "Problem 4": {
+      "Problem Name": "Preventive Care",
+      "Status": "Immunizations and screenings not up-to-date.",
+      "Decision Making and Diagnositic Plan": "Review immunization history and administer indicated vaccines.",
+      "Treatment Plan": "Provide influenza, pneumococcal, and hepatitis B vaccines as appropriate.",
+      "Contingency Planning": "Ensure follow-up to complete vaccine series."
     },
     "Anticipatory Preventative Care": {
-      "Item 1": "Encourage regular follow-up visits every three months to monitor diabetes management.",
-      "Item 2": "Discuss smoking cessation if applicable.",
-      "Item 3": "Promote mental health support to address stress related to personal circumstances.",
-      "Item N": "Provide educational resources on diabetes self-management."
+      "Item 1": "Encourage smoking cessation if applicable.",
+      "Item 2": "Promote regular physical activity tailored to patient's abilities.",
+      "Item 3": "Discuss stress management techniques to improve overall health.",
+      "Item 4": "Schedule regular follow-up visits to monitor progress and address concerns."
     }
   }
 }

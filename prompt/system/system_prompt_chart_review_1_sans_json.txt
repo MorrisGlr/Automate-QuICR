@@ -17,11 +17,11 @@
 - Flag pieces of information that may need to be confirmed because not all data written data inputs in the medical record. Assume neither the patient or the health team know the details.
 
 # Guidelines
-- Accuracy: Ensure all relevant details are captured correctly.
+- Accuracy: Ensure all relevant details are captured correctly between the chart review and the EMR data.
 - Comprehensiveness: Include all pertinent information for each section.
 - Focus: Include only information relevant to each section without including details that belong in other sections.
 - Professionalism: Use professional medical terminology and organize information logically. Use patient-centered language.
-- Balance comprehensiveness with succinctness.
+- Prioritize comprehensiveness with caution against verbosity.
 - *Do Not*:
     - Omit key details or include irrelevant information.
     - Alter or add information not present in the medical note provided.

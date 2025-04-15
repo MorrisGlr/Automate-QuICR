@@ -1,41 +1,41 @@
 {
   "Patient Name": "Samantha Baker",
-  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Address the patient's fear of needles to facilitate necessary diagnostic testing.\n- Discuss the importance of preventive screenings and vaccinations.",
-  "Assessment": "Samantha Baker is a 54-year-old female presenting for a general health evaluation. She has a history of untreated hypertension and a significant smoking history. She reports occasional headaches and has not undergone routine preventive care in recent years.",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Address the patient's fear of needles to facilitate necessary diagnostic testing.\n- Discuss the importance of preventive screenings and vaccinations.\n- Provide support for smoking cessation and mental health.",
+  "Assessment": "Samantha Baker is a 54-year-old female presenting for a general health evaluation. She has a history of untreated hypertension and a significant smoking history. She reports occasional headaches and feelings of loneliness since relocating. Her physical examination is unremarkable.",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Hypertension",
       "Status": "Suspected, untreated.",
-      "Decision Making and Diagnositic Plan": "Order blood pressure monitoring and consider ambulatory blood pressure monitoring.",
+      "Decision Making and Diagnositic Plan": "Order blood pressure monitoring and basic metabolic panel to confirm diagnosis and assess organ function.",
       "Treatment Plan": "Initiate lifestyle modifications and consider antihypertensive therapy based on diagnostic results.",
       "Contingency Planning": "If blood pressure readings are consistently elevated, initiate pharmacological treatment."
     },
     "Problem 2": {
       "Problem Name": "Smoking cessation",
-      "Status": "Active smoker with a 25-year history.",
+      "Status": "Active smoker, 25-year history.",
       "Decision Making and Diagnositic Plan": "Discuss smoking cessation strategies and assess readiness to quit.",
       "Treatment Plan": "Provide resources for smoking cessation, including counseling and pharmacotherapy options.",
-      "Contingency Planning": "If patient is not ready to quit, provide harm reduction strategies and revisit cessation discussion at follow-up."
+      "Contingency Planning": "If patient expresses readiness, initiate nicotine replacement therapy or prescribe varenicline."
     },
     "Problem 3": {
-      "Problem Name": "Preventive care",
-      "Status": "Due for multiple screenings.",
-      "Decision Making and Diagnositic Plan": "Order mammogram, colorectal cancer screening, and routine blood work.",
-      "Treatment Plan": "Schedule screenings and address any findings appropriately.",
-      "Contingency Planning": "If screenings reveal abnormalities, refer to specialists as needed."
+      "Problem Name": "Preventive screenings",
+      "Status": "Overdue for breast and colorectal cancer screenings.",
+      "Decision Making and Diagnositic Plan": "Order mammogram and colonoscopy as per guidelines.",
+      "Treatment Plan": "Schedule screenings and provide patient education on their importance.",
+      "Contingency Planning": "If screenings reveal abnormalities, refer to appropriate specialists."
     },
     "Problem 4": {
       "Problem Name": "Mental health",
-      "Status": "Reports loneliness and lack of motivation.",
+      "Status": "Feelings of loneliness and low motivation.",
       "Decision Making and Diagnositic Plan": "Screen for depression and anxiety using validated tools.",
-      "Treatment Plan": "Provide resources for mental health support and consider referral to counseling.",
-      "Contingency Planning": "If symptoms worsen, consider initiating pharmacological treatment or urgent referral."
+      "Treatment Plan": "Offer counseling services and consider referral to mental health professional.",
+      "Contingency Planning": "If symptoms worsen, initiate pharmacological treatment for mood disorders."
     },
     "Anticipatory Preventative Care": {
       "Item 1": "Administer influenza vaccine.",
       "Item 2": "Administer pneumococcal vaccine if indicated.",
-      "Item 3": "Discuss and administer Tdap booster if due.",
-      "Item 4": "Provide education on healthy lifestyle choices, including diet and exercise."
+      "Item 3": "Administer Tdap booster if due.",
+      "Item 4": "Provide counseling on diet, exercise, and stress management."
     }
   }
 }

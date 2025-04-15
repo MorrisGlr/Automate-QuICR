@@ -1,0 +1,41 @@
+{
+  "Patient Name": "Phil Wiser",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure regular follow-up visits to monitor diabetes management and medication adherence.\n- Encourage lifestyle modifications including dietary changes and physical activity.\n- Address barriers to healthcare access and adherence, such as stress management.",
+  "Assessment": "Phil Wiser is a 62-year-old male with a history of type 2 diabetes mellitus without complications, presenting for re-establishment of care and medication refill. His diabetes management has been suboptimal due to personal stressors, and he has not been monitoring his blood glucose or attending regular health check-ups. His recent lab results indicate suboptimal glycemic control (HbA1c 9.8%) and early signs of nephropathy (eGFR 55 mL/min/1.73 m\u00b2, albumin/creatinine ratio 50 mg/g creat).",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus",
+      "Status": "Suboptimally controlled, with HbA1c of 9.8%.",
+      "Decision Making and Diagnositic Plan": "Order baseline labs including HbA1c, lipid panel, and urine albumin/creatinine ratio to reassess current status.",
+      "Treatment Plan": "Restart metformin ER at 500 mg twice daily, titrating to maximum tolerated dose.",
+      "Contingency Planning": "If HbA1c remains elevated despite adherence, consider adding a second-line agent such as a GLP-1 receptor agonist."
+    },
+    "Problem 2": {
+      "Problem Name": "Diabetic Nephropathy",
+      "Status": "Early stage, indicated by eGFR of 55 mL/min/1.73 m\u00b2.",
+      "Decision Making and Diagnositic Plan": "Monitor renal function and albuminuria regularly.",
+      "Treatment Plan": "Optimize glycemic and blood pressure control to slow progression.",
+      "Contingency Planning": "Refer to nephrology if eGFR declines further or albuminuria worsens."
+    },
+    "Problem 3": {
+      "Problem Name": "Lifestyle and Dietary Habits",
+      "Status": "Suboptimal, with high intake of sugary foods and beverages.",
+      "Decision Making and Diagnositic Plan": "Provide dietary counseling and recommend a structured meal plan.",
+      "Treatment Plan": "Encourage gradual reduction of sugary drinks and incorporation of balanced meals.",
+      "Contingency Planning": "Consider referral to a dietitian if dietary changes are not achieved."
+    },
+    "Problem 4": {
+      "Problem Name": "Preventative Care",
+      "Status": "Overdue for diabetic retinopathy screening and immunizations.",
+      "Decision Making and Diagnositic Plan": "Refer for diabetic retinopathy screening and update immunizations.",
+      "Treatment Plan": "Administer influenza and pneumococcal vaccines as indicated.",
+      "Contingency Planning": "Ensure follow-up to confirm completion of preventative measures."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Schedule diabetic retinopathy screening.",
+      "Item 2": "Administer influenza vaccine.",
+      "Item 3": "Administer pneumococcal vaccine.",
+      "Item 4": "Provide smoking cessation resources if applicable."
+    }
+  }
+}

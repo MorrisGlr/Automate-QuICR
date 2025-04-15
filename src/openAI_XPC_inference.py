@@ -48,7 +48,7 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
                 "format": json_schema
             },
             temperature=0.1,
-            max_output_tokens= 7096
+            max_output_tokens= 8000
             )
         timer_stop = time.time()
         timer_duration = timer_stop - timer_start

@@ -1,0 +1,4 @@
+input_filename,output_filename,model_name,json_schema,input_tokens,cached_input_tokens,output_tokens,total_tokens,time_to_generate
+user_prompt_syn_pt_3.txt,user_prompt_syn_pt_3_cr_feedback.json,gpt-4o-2024-11-20,cr_feedback,1863,0,370,2233,12.636
+user_prompt_syn_pt_2.txt,user_prompt_syn_pt_2_cr_feedback.json,gpt-4o-2024-11-20,cr_feedback,2639,0,416,3055,7.017
+user_prompt_syn_pt_1.txt,user_prompt_syn_pt_1_cr_feedback.json,gpt-4o-2024-11-20,cr_feedback,1363,1006,352,1715,4.874

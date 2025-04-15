@@ -1,41 +1,41 @@
 {
-  "Patient Name": "Not provided",
-  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Confirm the diagnosis of atrial fibrillation with appropriate diagnostic tests, such as an ECG or Holter monitor.\n- Evaluate the patient's risk factors for stroke using the CHA2DS2-VASc score to guide anticoagulation therapy.\n- Assess and manage the patient's hypertension to reduce cardiovascular risks.",
-  "Assessment": "This is a 71-year-old female presenting for evaluation and management of newly diagnosed atrial fibrillation, identified via wearable technology. She is asymptomatic and has a history of untreated hypertension. Her physical examination reveals an irregularly irregular pulse consistent with atrial fibrillation.",
+  "Patient Name": "Sol Lopez",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure comprehensive diagnostic workup for atrial fibrillation to identify underlying causes and risk factors.- Initiate appropriate anticoagulation therapy based on CHA2DS2-VASc score.- Address hypertension management to reduce cardiovascular risk.",
+  "Assessment": "Sol Lopez is a 71-year-old female presenting with a recent diagnosis of atrial fibrillation detected via wearable technology. She is asymptomatic and has no significant past medical history or risk factors for thromboembolism. Her blood pressure is elevated, and her pulse is irregularly irregular, consistent with atrial fibrillation.",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Atrial Fibrillation",
       "Status": "Newly diagnosed, asymptomatic.",
-      "Decision Making and Diagnositic Plan": "Order an ECG to confirm the diagnosis and consider a Holter monitor for further rhythm evaluation.",
-      "Treatment Plan": "Initiate anticoagulation therapy based on CHA2DS2-VASc score assessment. Discuss rate versus rhythm control strategies and consider starting a beta-blocker for rate control.",
-      "Contingency Planning": "Advise the patient to seek immediate care if symptoms such as chest pain, shortness of breath, or neurological deficits occur."
+      "Decision Making and Diagnositic Plan": "Order an ECG to confirm atrial fibrillation and assess for any structural heart abnormalities. Consider echocardiography for further evaluation.",
+      "Treatment Plan": "Initiate anticoagulation therapy based on CHA2DS2-VASc score to reduce stroke risk. Discuss options including direct oral anticoagulants (DOACs).",
+      "Contingency Planning": "If symptoms develop or persist, consider referral to cardiology for rhythm management."
     },
     "Problem 2": {
       "Problem Name": "Hypertension",
-      "Status": "Previously diagnosed, untreated.",
-      "Decision Making and Diagnositic Plan": "Measure blood pressure over multiple visits or consider ambulatory blood pressure monitoring to confirm the diagnosis.",
-      "Treatment Plan": "Initiate antihypertensive therapy, such as a thiazide diuretic or ACE inhibitor, and provide lifestyle modification counseling.",
-      "Contingency Planning": "Monitor blood pressure response to therapy and adjust medications as needed."
+      "Status": "Elevated blood pressure noted during visit.",
+      "Decision Making and Diagnositic Plan": "Confirm diagnosis with home blood pressure monitoring or ambulatory blood pressure monitoring.",
+      "Treatment Plan": "Initiate lifestyle modifications including dietary changes, physical activity, and sodium restriction. Consider starting antihypertensive medication.",
+      "Contingency Planning": "Reassess blood pressure control in follow-up; adjust treatment as needed."
     },
     "Problem 3": {
       "Problem Name": "Preventative Care",
-      "Status": "Due for comprehensive evaluation.",
-      "Decision Making and Diagnositic Plan": "Order baseline laboratory tests including CBC, CMP, lipid panel, and TSH. Schedule age-appropriate cancer screenings.",
-      "Treatment Plan": "Administer influenza and pneumococcal vaccines if not up-to-date.",
-      "Contingency Planning": "Follow up on test results and address any abnormalities."
+      "Status": "Patient has not had recent medical evaluations.",
+      "Decision Making and Diagnositic Plan": "Order baseline laboratory tests including CBC, CMP, lipid panel, and TSH.",
+      "Treatment Plan": "Schedule age-appropriate cancer screenings and vaccinations.",
+      "Contingency Planning": "Address any abnormal findings in follow-up visits."
     },
     "Problem 4": {
       "Problem Name": "Health Maintenance",
-      "Status": "Requires update.",
+      "Status": "No recent medical history available.",
       "Decision Making and Diagnositic Plan": "Review and update immunization status.",
-      "Treatment Plan": "Provide counseling on diet, exercise, and smoking cessation (if applicable).",
-      "Contingency Planning": "Reassess during follow-up visits."
+      "Treatment Plan": "Provide education on healthy lifestyle choices and regular medical follow-ups.",
+      "Contingency Planning": "Monitor adherence to health maintenance recommendations."
     },
     "Anticipatory Preventative Care": {
-      "Item 1": "Encourage regular physical activity tailored to the patient's abilities.",
-      "Item 2": "Discuss dietary modifications to support cardiovascular health.",
-      "Item 3": "Provide education on recognizing symptoms of stroke and when to seek emergency care.",
-      "Item 4": "Schedule follow-up in 4 weeks to assess treatment response and adherence."
+      "Item 1": "Schedule mammogram and colonoscopy as per guidelines.",
+      "Item 2": "Administer influenza and pneumococcal vaccines.",
+      "Item 3": "Discuss bone density testing for osteoporosis screening.",
+      "Item 4": "Provide counseling on fall prevention and home safety."
     }
   }
 }

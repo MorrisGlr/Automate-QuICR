@@ -1,0 +1,41 @@
+{
+  "Patient Name": "Not provided",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Consider initiating anticoagulation therapy to reduce stroke risk associated with atrial fibrillation.",
+  "Assessment": "The patient is a 71-year-old female presenting with a recent diagnosis of atrial fibrillation, identified via wearable technology, and currently asymptomatic. She has a history of untreated hypertension and no significant comorbidities or risk factors for bleeding.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Atrial Fibrillation",
+      "Status": "Newly diagnosed, asymptomatic.",
+      "Decision Making and Diagnositic Plan": "Order an ECG to confirm the diagnosis and assess for any structural heart abnormalities.",
+      "Treatment Plan": "Initiate anticoagulation therapy with a direct oral anticoagulant (DOAC) to reduce stroke risk, considering the patient's CHA2DS2-VASc score.",
+      "Contingency Planning": "If the patient experiences symptoms such as palpitations or dizziness, consider rate or rhythm control strategies."
+    },
+    "Problem 2": {
+      "Problem Name": "Hypertension",
+      "Status": "Previously diagnosed, untreated.",
+      "Decision Making and Diagnositic Plan": "Measure blood pressure over multiple visits to confirm persistent hypertension.",
+      "Treatment Plan": "Initiate antihypertensive therapy, such as a calcium channel blocker or ACE inhibitor, and recommend lifestyle modifications.",
+      "Contingency Planning": "If blood pressure remains uncontrolled, consider adding a second antihypertensive agent."
+    },
+    "Problem 3": {
+      "Problem Name": "Preventative Care",
+      "Status": "Due for age-appropriate screenings.",
+      "Decision Making and Diagnositic Plan": "Review the patient's immunization history and recommend vaccinations as needed.",
+      "Treatment Plan": "Schedule screenings for colorectal cancer, osteoporosis, and lipid profile.",
+      "Contingency Planning": "Address any abnormal findings from screenings promptly."
+    },
+    "Problem 4": {
+      "Problem Name": "General Health Maintenance",
+      "Status": "Lacks recent medical evaluations.",
+      "Decision Making and Diagnositic Plan": "Establish baseline laboratory tests, including CBC, CMP, and TSH.",
+      "Treatment Plan": "Encourage regular follow-up visits to monitor health status.",
+      "Contingency Planning": "Adjust care plan based on laboratory results and clinical findings."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Encourage a heart-healthy diet and regular physical activity.",
+      "Item 2": "Discuss fall prevention strategies given the patient's age and anticoagulation therapy.",
+      "Item 3": "Provide education on recognizing symptoms of stroke and when to seek emergency care.",
+      "Item 4": "Ensure the patient has access to resources for medication adherence and follow-up care."
+    }
+  }
+}

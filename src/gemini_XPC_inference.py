@@ -1,11 +1,11 @@
-from openai import OpenAI
+from google import genai
 import time
 import os
 import json
 import pandas as pd
 import glob, os
 
-def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inputs_dir, json_schema, output_dir, overwrite_outputs=False):
+def gemini_XPC_inference(client, model_name_str, system_prompt, user_prompt_inputs_dir, json_schema, output_dir, overwrite_outputs=False):
     stats_list = []
 
     output_subdir = os.path.join(output_dir, model_name_str, json_schema["name"])
@@ -21,46 +21,34 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
         if not overwrite_outputs and os.path.exists(output_filepath):
             print(f"Generated text for {filename} already exists. Skipping...")
             continue
-        with open(os.path.join(user_prompt_inputs_dir, filename), 'r') as file:
+        with open(os.path.join(user_prompt_inputs_dir, filename), 'r', encoding='utf-8', errors='ignore') as file:
             user_prompt = file.read()
         if json_schema["name"] == "cr_feedback":
-            print(f"JSON schema name: {json_schema['name']}")
             # Using the base filename, search for the generated chart review JSON file
-            output_subdir_cr = output_subdir.replace("/cr_feedback", "")
             chart_review_filename = f"{base_filename}_chart_review.json"
-            chart_review_filepath = os.path.join(output_subdir_cr, "chart_review", chart_review_filename)
+            chart_review_filepath = os.path.join(output_subdir, "chart_review", chart_review_filename)
             if os.path.exists(chart_review_filepath):
                 with open(chart_review_filepath, 'r') as file:
                     chart_review_json = json.load(file)
                 # Add the chart review JSON to the user prompt
                 user_prompt = f"{user_prompt}\n# Chart Review for Feedback\n{json.dumps(chart_review_json)}"
-                print(f"Using chart review JSON for {filename} from {chart_review_filename}")
+        user_prompt = f"{user_prompt}\n\nFollow JSON schema.<JSONSchema>{json.dumps(json_schema)}</JSONSchema>"
         timer_start = time.time()
-        print(f"Generating text via OpenAI for {filename} using the {model_name_str} model with {json_schema['name']} JSON structured output...")
-        response = client.responses.create(
+        print(f"Generating text via Gemini for {filename} using the {model_name_str} model with {json_schema['name']} JSON structured output...")
+        response = client.models.generate_content(
             model=model_name_str,
-            input=[
-                {
-                    "role": "system",
-                    "content": system_prompt
-                },
-                {
-                    "role": "user",
-                    "content": user_prompt
-                }
-            ],
-            text={
-                "format": json_schema
+            contents= user_prompt,
+            config={
+                "system_instruction": system_prompt,
+                'response_mime_type': 'application/json'
             },
-            #temperature=0.1,
-            max_output_tokens= 16384
-            )
+        )
         timer_stop = time.time()
         timer_duration = timer_stop - timer_start
         timer_duration_seconds = "{:.3f}".format(timer_duration)
         print(f"Text generation complete for {filename} in {timer_duration_seconds} seconds.\n\n")
         try:
-            response_json = json.loads(response.output_text)
+            response_json = json.loads(response.text)
         except Exception as e:
             print(f"Error parsing JSON from response for {filename}: {e}")
             continue
@@ -70,17 +58,16 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
         
         # Build stats using the assumed structure of response_json usage data
         try:
-            usage_data = response.usage
+            usage_data = response.usage_metadata
             print(f"Response dict: {response.usage}")
             stats = {
                 "input_filename": filename,
                 "output_filename": output_filename,
                 "model_name": model_name_str,
                 "json_schema": json_schema["name"],
-                "input_tokens": usage_data.input_tokens,
-                "cached_input_tokens": usage_data.input_tokens_details.cached_tokens,
-                "output_tokens": usage_data.output_tokens,
-                "total_tokens": usage_data.total_tokens,
+                "input_tokens": usage_data.prompt_token_count,
+                "output_tokens": usage_data.candidates_token_count,
+                "total_tokens": usage_data.total_token_count,
                 "time_to_generate": timer_duration_seconds
             }
         except Exception as e:

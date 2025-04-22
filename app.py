@@ -2,8 +2,12 @@ import pandas as pd
 import os
 import json
 from openai import OpenAI
+from google import genai
 from dotenv import load_dotenv
 from src.openAI_XPC_inference import openAI_XPC_inference
+from src.gemini_XPC_inference import gemini_XPC_inference
+from src.chart_review_json_to_pdf import chart_review_json_to_pdf
+from src.cr_feedback_json_to_pdf import cr_feedback_json_to_pdf
 
 # set working directory
 wk_dir = "/Users/morris/github_projects/XPC_chart_review"
@@ -13,13 +17,14 @@ os.chdir(wk_dir)
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 umls_api_key = os.getenv("UMLS_API_KEY")
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 # Defining paths
 user_prompt_inputs_dir = "data"
 output_dir = os.path.join(wk_dir, "generated_output")
 
 # Prompts (Chart Review and Feedback)
-with open("prompt/system/system_prompt_chart_review_1_sans_json.txt", "r", encoding='utf-8') as f:
+with open("prompt/system/system_prompt_chart_review_2.txt", "r", encoding='utf-8') as f:
     system_prompt_cr = f.read()
 
 with open("prompt/system/system_prompt_feedback_1_sans_json.txt", "r", encoding='utf-8') as f:
@@ -31,10 +36,24 @@ json_schema_fb = json.load(open("prompt/json_schema/cr_feedback.json", "r", enco
 
 # Initialize OpenAI client
 client = OpenAI(api_key=openai_api_key)
-model_name_str = "gpt-4o-2024-11-20"
+model_name_str = "o4-mini-2025-04-16"
+
+# Initialize the Gemini client
+#client = genai.Client(api_key=gemini_api_key)
+gemini_model_str = "gemini-2.5-pro-exp-03-25"
 
 # Run OpenAI_XPC_inference for Chart Review
-openAI_XPC_inference(client, model_name_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
+#openAI_XPC_inference(client, model_name_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
 
 # Run OpenAI_XPC_inference for Feedback
-openAI_XPC_inference(client, model_name_str, system_prompt_fb, user_prompt_inputs_dir, json_schema_fb, output_dir, overwrite_outputs=True)
+#openAI_XPC_inference(client, model_name_str, system_prompt_fb, user_prompt_inputs_dir, json_schema_fb, output_dir, overwrite_outputs=True)
+
+# Run Gemini_XPC_inference for Chart Review
+#gemini_XPC_inference(client, gemini_model_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
+
+# Convert the chart review JSON files to a formatted PDF.
+chart_review_json_to_pdf(model_name_str, output_dir)
+chart_review_json_to_pdf(gemini_model_str, output_dir)
+
+# Convert the feedback JSON files to a formatted PDF.
+# cr_feedback_json_to_pdf(model_name_str, output_dir)

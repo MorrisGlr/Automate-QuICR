@@ -1,0 +1,54 @@
+{
+  "Feedback Summary": "The chart review provides a largely comprehensive assessment and a structured, multi\u2011problem plan that integrates decision making, treatment strategies, and contingency planning.  The assessment succinctly summarizes Bill Moore\u2019s diabetes, CKD, obesity, hyperlipidemia, and psychosocial stressors, and the plan outlines appropriate pharmacologic and non\u2011pharmacologic interventions.  Opportunities exist to strengthen the assessment by explicitly defining goals, staging CKD, and quantifying cardiovascular risk, and to refine each problem plan with SMART targets, clearer timelines, assignment of responsibilities, and more granular preventive and follow\u2011up details.",
+  "Feedback Details": {
+    "Assessment Section": {
+      "Strengths": "\u2022 Concise synthesis of comorbidities (uncontrolled type\u00a02\u00a0DM, CKD\u00a03a, obesity, hyperlipidemia) and psychosocial stressors.  \n\u2022 Inclusion of a brief differential reinforcing non\u2011adherence and early kidney involvement.  \n\u2022 Connection of exam findings (normal foot exam) with pending ophthalmology.",
+      "Areas for Improvement": "\u2022 CKD stage is implied but not labeled; explicitly state CKD\u00a03a and link to metformin dosing thresholds.  \n\u2022 No stated targets for A1c, blood pressure, or LDL in the assessment; consider listing individualized goals (e.g., A1c\u00a0<7%, BP\u00a0<130/80\u00a0mmHg, LDL\u00a0<70\u00a0mg/dL).  \n\u2022 ASCVD risk estimate is referenced later but missing from assessment\u2014calculate and document to guide statin therapy.  \n\u2022 Blood pressure control and hypertension screening are not discussed despite BP\u00a0132/84\u00a0mmHg."
+    },
+    "Problem 1": {
+      "Problem Name": "Type\u00a02 diabetes mellitus, uncontrolled",
+      "Strengths": "\u2022 Thorough diagnostic review (A1c, eGFR) and clear justification for GLP\u20111 agonist intensification.  \n\u2022 Detailed pharmacologic plan with titration schedule, alternative options, and cost\u2011savings considerations.  \n\u2022 Contingency pathways for side effects, glycemic response, and renal adjustments.",
+      "Areas for Improvement": "\u2022 Define a specific A1c target and timeline (e.g., reduce A1c to <7% within 3\u00a0months).  \n\u2022 Outline SMBG schedule (fasting, pre\u2011meal, post\u2011prandial) and hypoglycemia management steps.  \n\u2022 Specify who will teach injection technique, and set follow\u2011up to review glucose logs.  \n\u2022 Integrate lifestyle goals (diet, exercise) directly into the diabetes plan with measurable targets.",
+      "Skill Assessment": "Excellent"
+    },
+    "Problem 2": {
+      "Problem Name": "Chronic kidney disease, stage\u00a03a",
+      "Strengths": "\u2022 Recognition of eGFR\u00a055\u00a0mL/min/1.73\u00a0m2 and appropriate avoidance of nephrotoxins.  \n\u2022 Built\u2011in plan for periodic renal monitoring and metformin dose adjustments.",
+      "Areas for Improvement": "\u2022 Explicitly label CKD stage\u00a03a per KDIGO guidelines and include albuminuria staging.  \n\u2022 Consider ACE inhibitor initiation if UACR >30\u00a0mg/g and set a blood pressure goal for renal protection.  \n\u2022 Schedule repeat UACR in 3\u20136\u00a0months and add monitoring of electrolytes and blood pressure trends.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 3": {
+      "Problem Name": "Hyperlipidemia",
+      "Strengths": "\u2022 Identification of LDL\u00a0137\u00a0mg/dL as above goal for a diabetic patient and recommendation for high\u2011intensity statin.  \n\u2022 Lifestyle counseling referral for diet modification.",
+      "Areas for Improvement": "\u2022 Calculate and document 10\u2011year ASCVD risk to support statin intensity choice.  \n\u2022 Specify baseline and follow\u2011up liver function tests, and set a follow\u2011up lipid panel timeline (e.g., 6\u00a0weeks post\u2011initiation).  \n\u2022 Add patient education on statin adherence and possible side effects.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 4": {
+      "Problem Name": "Obesity",
+      "Strengths": "\u2022 Links semaglutide choice to both glycemic control and weight loss.  \n\u2022 Referrals for medical nutrition therapy and exercise prescription.",
+      "Areas for Improvement": "\u2022 Set SMART weight\u2011loss targets (e.g., \u22655% weight reduction in 3\u00a0months).  \n\u2022 Detail the dietary changes (e.g., reduced simple sugars, caloric goals) and schedule regular weight checks.  \n\u2022 Incorporate behavioral support (e.g., group sessions) and track progress quantitatively.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 5": {
+      "Problem Name": "Preventive care gaps",
+      "Strengths": "\u2022 Comprehensive list of vaccine recommendations and diabetic screening referrals.  \n\u2022 Acknowledges colon cancer and osteoporosis screening needs.",
+      "Areas for Improvement": "\u2022 Review and document prior immunization dates to avoid duplication.  \n\u2022 Specify timing and responsible team member for each vaccine (e.g., RZV series at 0\u00a0and 2\u00a0months).  \n\u2022 Include screening for diabetic neuropathy annually and dental exam scheduling.",
+      "Skill Assessment": "Needs Improvement"
+    },
+    "Problem 6": {
+      "Problem Name": "Psychosocial stress",
+      "Strengths": "\u2022 Recognition of divorce\u2011related stress and its impact on adherence.  \n\u2022 Plan to screen for depression and refer to behavioral health resources.",
+      "Areas for Improvement": "\u2022 Administer PHQ\u20119 today rather than delaying to next visit.  \n\u2022 Identify a specific counselor or social work contact and set an appointment date.  \n\u2022 Monitor engagement with support resources and reassess stress levels quantitatively (e.g., stress scale).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Anticipatory Preventative Care Section Feedback": {
+      "Strengths": "\u2022 Covers age\u2011appropriate vaccines (influenza, pneumococcal, zoster, COVID\u201119) and cancer screenings (colonoscopy, DEXA).  \n\u2022 Aligns with CDC and USPSTF recommendations.",
+      "Areas for Improvement": "\u2022 Lacks a consolidated health maintenance flow sheet with dates and intervals.  \n\u2022 Does not assign team roles for administering vaccines or tracking referrals.  \n\u2022 Missing timing details for DEXA (e.g., baseline at age\u00a075) and dental/ophthalmology results tracking."
+    },
+    "Follow Up Care Feedback": {
+      "Strengths": "\u2022 Provides clear lab timelines and follow\u2011up visit intervals.  \n\u2022 Identifies specialist appointment and behavioral health screening cadence.  \n\u2022 Emphasizes medication adherence checks and SMBG log reviews.",
+      "Areas for Improvement": "\u2022 Follow\u2011up dates should be calendar\u2011specific rather than relative (e.g., \u201c3\u00a0months on 5/14/25\u201d).  \n\u2022 Assign responsibility for result retrieval (e.g., medical assistant to track ophthalmology report).  \n\u2022 Include backup plans if labs are delayed or patient misses appointments."
+    },
+    "Overall Recommendations": "1. Incorporate SMART goals (quantitative targets and deadlines) for each problem to measure progress.  \n2. Explicitly state CKD stage, cardiovascular risk score, and guideline\u2011based targets in the assessment.  \n3. Use structured templates or health maintenance flow sheets to capture immunizations, screenings, and referral tracking.  \n4. Delegate tasks and assign team roles with specified deadlines (e.g., schedule UACR recheck, administer vaccines).  \n5. Enhance patient education plans by detailing who delivers instruction, when, and how progress will be documented.  \n6. Leverage EMR tools (tickler systems, reminders) to ensure timely follow\u2011up on labs, referrals, and behavioral health visits."
+  }
+}

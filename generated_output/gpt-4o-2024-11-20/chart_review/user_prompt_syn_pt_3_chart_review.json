@@ -1,41 +1,44 @@
 {
   "Patient Name": "Samantha Baker",
-  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Address the patient's fear of needles to facilitate necessary diagnostic testing.\n- Discuss the importance of preventive screenings and vaccinations.\n- Provide support for smoking cessation and mental health.",
-  "Assessment": "Samantha Baker is a 54-year-old female presenting for a general health evaluation. She has a history of untreated hypertension and a significant smoking history. She reports occasional headaches and feelings of loneliness since relocating. Her physical examination is unremarkable.",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure comprehensive documentation of the patient's medical history, including family and social history, to provide a complete clinical picture.\n- Address the patient's fear of needles by discussing alternative methods for necessary screenings and vaccinations.\n- Prioritize preventative care measures, such as breast and colorectal cancer screenings, and provide clear instructions for follow-up.",
+  "Chief Concern": "General health check-up.",
+  "Assessment": "Samantha Baker is a 54-year-old female presenting for a general health evaluation. She has a history of untreated hypertension and a significant smoking history. She reports occasional headaches and has not undergone recent preventative screenings. Her physical examination is unremarkable, and she denies acute symptoms.",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Hypertension",
       "Status": "Suspected, untreated.",
-      "Decision Making and Diagnositic Plan": "Order blood pressure monitoring and basic metabolic panel to confirm diagnosis and assess organ function.",
-      "Treatment Plan": "Initiate lifestyle modifications and consider antihypertensive therapy based on diagnostic results.",
-      "Contingency Planning": "If blood pressure readings are consistently elevated, initiate pharmacological treatment."
+      "Decision Making and Diagnositic Plan": "Order blood pressure monitoring and consider ambulatory blood pressure monitoring to confirm diagnosis.",
+      "Treatment/Medication Plan": "Discuss lifestyle modifications and consider initiating antihypertensive therapy if diagnosis is confirmed.",
+      "Contingency Planning": "If blood pressure remains elevated, initiate pharmacological treatment and refer to a specialist if needed.",
+      "Considerations for Documentation Improvement": "Document specific blood pressure readings and trends.",
+      "Considerations for Cost Effective Care Improvement": "Utilize generic medications and community resources for lifestyle changes."
     },
     "Problem 2": {
       "Problem Name": "Smoking cessation",
-      "Status": "Active smoker, 25-year history.",
-      "Decision Making and Diagnositic Plan": "Discuss smoking cessation strategies and assess readiness to quit.",
-      "Treatment Plan": "Provide resources for smoking cessation, including counseling and pharmacotherapy options.",
-      "Contingency Planning": "If patient expresses readiness, initiate nicotine replacement therapy or prescribe varenicline."
-    },
-    "Problem 3": {
-      "Problem Name": "Preventive screenings",
-      "Status": "Overdue for breast and colorectal cancer screenings.",
-      "Decision Making and Diagnositic Plan": "Order mammogram and colonoscopy as per guidelines.",
-      "Treatment Plan": "Schedule screenings and provide patient education on their importance.",
-      "Contingency Planning": "If screenings reveal abnormalities, refer to appropriate specialists."
-    },
-    "Problem 4": {
-      "Problem Name": "Mental health",
-      "Status": "Feelings of loneliness and low motivation.",
-      "Decision Making and Diagnositic Plan": "Screen for depression and anxiety using validated tools.",
-      "Treatment Plan": "Offer counseling services and consider referral to mental health professional.",
-      "Contingency Planning": "If symptoms worsen, initiate pharmacological treatment for mood disorders."
+      "Status": "Active smoker.",
+      "Decision Making and Diagnositic Plan": "Assess readiness to quit and discuss cessation options.",
+      "Treatment/Medication Plan": "Provide resources for smoking cessation programs and consider pharmacotherapy.",
+      "Contingency Planning": "If initial cessation attempts fail, explore alternative therapies.",
+      "Considerations for Documentation Improvement": "Document smoking history in pack-years.",
+      "Considerations for Cost Effective Care Improvement": "Recommend cost-effective cessation aids and community programs."
     },
     "Anticipatory Preventative Care": {
-      "Item 1": "Administer influenza vaccine.",
-      "Item 2": "Administer pneumococcal vaccine if indicated.",
-      "Item 3": "Administer Tdap booster if due.",
-      "Item 4": "Provide counseling on diet, exercise, and stress management."
+      "Item 1": "Breast cancer screening: Recommend mammogram.",
+      "Item 2": "Colorectal cancer screening: Recommend colonoscopy.",
+      "Item 3": "Vaccinations: Update immunizations as per guidelines.",
+      "Item 4": "Smoking cessation: Provide resources and support.",
+      "Item 5": "Hypertension monitoring: Initiate home monitoring.",
+      "Item 6": "Mental health: Screen for depression and anxiety.",
+      "Considerations for Documentation Improvement": "Ensure detailed documentation of preventative care discussions and patient preferences."
+    },
+    "Follow Up Care": {
+      "Item 1": "Review blood pressure readings.",
+      "Item 2": "Assess smoking cessation progress.",
+      "Item 3": "Follow up on completed screenings.",
+      "Item 4": "Monitor for new symptoms or concerns.",
+      "Item 5": "Evaluate mental health status.",
+      "Item 6": "Update immunization records.",
+      "Considerations for Documentation Improvement": "Document follow-up plans and patient adherence to recommendations."
     }
   }
 }

@@ -1,0 +1,91 @@
+{
+  "Patient Name": "Phil Wiser",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": [
+    "Acknowledge and address significant medication non-adherence (>6 months off metformin) due to psychosocial stress.",
+    "Re-evaluate metformin dose: Prescribed max dose (2000mg) contradicts gradual titration plan and may be too high given new CKD G3a (eGFR 55, UACR 50). ADA guidelines suggest max 1000mg/day for eGFR 30-60. Recommend starting low (500mg) and titrating cautiously to max 1000mg/day with close eGFR monitoring.",
+    "Address markedly uncontrolled T2DM (A1c 9.8%): Metformin alone is unlikely sufficient. Strongly consider adding a second agent with proven cardiovascular and renal benefits, such as an SGLT2 inhibitor (e.g., empagliflozin, dapagliflozin) given CKD G3a A2 and high ASCVD risk, or a GLP-1 RA.",
+    "Initiate guideline-directed medical therapy for newly identified CKD G3a A2: Start ACE inhibitor or ARB (e.g., lisinopril, losartan) for renoprotection (albuminuria) and hypertension management. Consider SGLT2 inhibitor for added renal benefit.",
+    "Address dyslipidemia (LDL 137): Initiate high-intensity statin therapy (e.g., atorvastatin 40mg) for primary ASCVD prevention, given age >40, T2DM, and other risk factors (CKD, HTN, Obesity).",
+    "Manage elevated BP (132/84): Confirm hypertension diagnosis and initiate treatment (ACEi/ARB first line due to CKD/albuminuria) to achieve goal <130/80 mmHg.",
+    "Develop a comprehensive plan for lifestyle modification: Address Class II obesity, poor diet, lack of exercise, and stress eating. Include referrals to Nutrition/RD, DSMES, and potentially Behavioral Health.",
+    "Ensure completion of all necessary diabetic preventative care: Follow up on retinal screening referral, continue annual foot exams, provide patient education on self-care.",
+    "Update and administer all indicated preventative care: Address missing immunizations (Influenza, Pneumococcal, Hep B, Tdap, Shingrix) and cancer screenings (Colon).",
+    "Improve documentation: Clearly list all active problems (T2DM, CKD G3a A2, HTN, Dyslipidemia, Obesity, Stress). Document rationale for medication choices/doses, specific treatment goals (A1c, BP, LDL), titration plans, monitoring schedule, patient education provided, and shared decision-making."
+  ],
+  "Chief Concern": "Refill for metformin, establish primary care.",
+  "Assessment": "This is a 62-year-old male establishing primary care primarily for a metformin refill for his Type 2 Diabetes Mellitus (T2DM), diagnosed 2 years ago. He reports being off metformin for over 6 months due to significant psychosocial stress from an ongoing divorce, which has also negatively impacted his diet and exercise habits. He denies diabetic symptoms but has not monitored his glucose at home and lacks prior diabetic eye or comprehensive foot exams. Today's evaluation reveals markedly uncontrolled T2DM (HbA1c 9.8%), newly diagnosed Chronic Kidney Disease Stage G3a A2 (eGFR 55 mL/min/1.73, Urine Albumin/Creatinine Ratio 50 mg/g), dyslipidemia (LDL 137 mg/dL), Class II obesity (BMI 37.9 kg/m\u00b2), and elevated blood pressure (132/84 mmHg). Physical exam findings include a normal microfilament test and palpable pedal pulses. The patient presents with multiple interacting chronic conditions requiring comprehensive management, including medication adjustments, addition of new therapies per guideline recommendations (statin, ACEi/ARB, likely second-line diabetes agent like SGLT2i), intensive lifestyle counseling, and initiation/updating of preventative screenings and immunizations. His high cardiovascular risk profile necessitates aggressive management of modifiable risk factors.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus (T2DM), Poorly Controlled",
+      "Status": "Active, uncontrolled (HbA1c 9.8%)",
+      "Decision Making and Diagnositic Plan": "Patient requires management of hyperglycemia after prolonged non-adherence. HbA1c 9.8% confirms poor control. Baseline labs including CMP, A1c, lipids, UACR were appropriately ordered and reviewed. Restarting metformin is reasonable given prior tolerance, but dose needs careful consideration due to new CKD G3a. ADA guidelines recommend metformin as first-line but suggest dose limitation (max 1000mg/day) for eGFR 30-60. Given high A1c and presence of CKD/high ASCVD risk, addition of a second agent with CV/renal benefits (SGLT2 inhibitor preferred, or GLP-1 RA) is strongly indicated now. Plan includes monitoring A1c q3 months initially.",
+      "Treatment/Medication Plan": "Medication Reconciliation: Patient reports taking no medications for >6 months. New/Restarted Medications: Metformin ER 500mg tablet. Sig: Start 1 tablet (500mg) daily with dinner for 1 week, then increase to 1 tablet twice daily (1000mg total daily). Hold dose increases beyond 1000mg/day pending eGFR stability and reassessment. (Note: Prescribed SIG 'Take 2 tablets twice a day' needs correction to reflect titration plan and eGFR precaution). Consider adding: SGLT2 inhibitor (e.g., Empagliflozin 10mg daily or Dapagliflozin 10mg daily) after discussion of risks/benefits/cost. Counsel on glucose monitoring (if agreeable), diet, exercise, sick day management (especially if starting SGLT2i), hypoglycemia awareness.",
+      "Contingency Planning": "If A1c goal (e.g., <7.0% or <7.5% based on shared decision) is not met in 3 months on metformin 1000mg + SGLT2i, consider adding GLP-1 RA or other agent. If eGFR falls <45 mL/min, ensure metformin dose does not exceed 1000mg/day. If eGFR falls <30 mL/min, discontinue metformin. If SGLT2i is contraindicated or not tolerated, consider GLP-1 RA or DPP-4 inhibitor.",
+      "Considerations for Documentation Improvement": "Document specific A1c target. Document rationale for metformin dose limitation (eGFR 55) and corrected titration plan. Document discussion/shared decision-making regarding adding SGLT2i (or GLP-1 RA), including CV/renal benefits. Document patient education thoroughly.",
+      "Considerations for Cost Effective Care Improvement": "Use generic Metformin ER. Discuss cost and check formulary coverage if adding SGLT2i or GLP-1 RA; explore patient assistance programs if needed. Provide resources for affordable glucose monitoring supplies if patient agrees to test."
+    },
+    "Problem 2": {
+      "Problem Name": "Chronic Kidney Disease (CKD) Stage G3a A2",
+      "Status": "Active, newly diagnosed (eGFR 55, UACR 50)",
+      "Decision Making and Diagnositic Plan": "CKD diagnosed based on eGFR <60 mL/min/1.73 and UACR >30 mg/g on recent labs. Likely due to diabetic nephropathy +/- hypertensive nephrosclerosis. Plan is to slow progression via BP control, ACEi/ARB therapy, SGLT2i consideration, optimal glycemic control, and avoidance of nephrotoxins. Monitor CMP (Cr, K+, eGFR) and UACR q3-6 months and 1-2 weeks after initiating/titrating ACEi/ARB.",
+      "Treatment/Medication Plan": "Initiate ACE inhibitor (e.g., Lisinopril 10mg daily) or ARB (e.g., Losartan 50mg daily) for albuminuria reduction and BP control. Counsel patient to avoid NSAIDs (ibuprofen, naproxen). Consider SGLT2 inhibitor (as above) for additional renoprotection. Ensure appropriate dosing of renally-cleared medications (Metformin adjusted as above).",
+      "Contingency Planning": "If eGFR declines significantly (>30% from baseline) or UACR worsens despite therapy, consider Nephrology referral. If hyperkalemia develops with ACEi/ARB, reduce dose, review potassium intake, consider potassium binder, or switch agent cautiously.",
+      "Considerations for Documentation Improvement": "Add 'CKD G3a A2 (Diabetic Kidney Disease)' to problem list. Document rationale for ACEi/ARB initiation (albuminuria/HTN). Specify monitoring plan for renal function and potassium. Document NSAID avoidance counseling.",
+      "Considerations for Cost Effective Care Improvement": "Generic ACE inhibitors and ARBs are inexpensive. Focus on preventative measures (BP/glucose control) to slow progression and avoid costly complications like dialysis."
+    },
+    "Problem 3": {
+      "Problem Name": "Dyslipidemia",
+      "Status": "Active, untreated (LDL 137 mg/dL)",
+      "Decision Making and Diagnositic Plan": "Patient meets criteria for statin therapy for primary ASCVD prevention (Age >40 + T2DM). LDL 137 mg/dL warrants high-intensity statin therapy aiming for >50% reduction or LDL <70 mg/dL, given multiple risk factors (T2DM, CKD, HTN, Obesity). Lipid panel ordered and reviewed. Recheck lipid panel 4-12 weeks after initiating statin, then periodically.",
+      "Treatment/Medication Plan": "Initiate high-intensity statin: Atorvastatin 40mg daily. Counsel on medication rationale, potential side effects (myalgia), and importance of adherence. Reinforce lifestyle modifications (diet, exercise) for lipid management.",
+      "Contingency Planning": "If patient experiences intolerable myalgias, check CK level. Consider lowering dose, switching to another statin (e.g., rosuvastatin 20mg, pravastatin, fluvastatin), or trying non-daily dosing. If LDL goal not met on maximum tolerated statin, consider adding ezetimibe.",
+      "Considerations for Documentation Improvement": "Add 'Dyslipidemia' or 'Hyperlipidemia' to problem list. Document ASCVD risk status (high risk) and rationale for high-intensity statin. Specify LDL target (<70 mg/dL). Document patient counseling.",
+      "Considerations for Cost Effective Care Improvement": "Generic atorvastatin 40mg is generally affordable. Lifestyle changes are low cost but require sustained effort."
+    },
+    "Problem 4": {
+      "Problem Name": "Elevated Blood Pressure / Hypertension",
+      "Status": "Active, needs confirmation and management (BP 132/84 mmHg)",
+      "Decision Making and Diagnositic Plan": "Single elevated BP reading in a patient with T2DM, CKD, and albuminuria warrants treatment initiation to a goal of <130/80 mmHg (per ADA/KDIGO). ACEi/ARB is first-line due to compelling indication (CKD/albuminuria). Plan includes initiating ACEi/ARB, counseling on lifestyle, and monitoring BP response (clinic and home).",
+      "Treatment/Medication Plan": "Initiate ACE inhibitor (Lisinopril 10mg daily) or ARB (Losartan 50mg daily) - same medication addressing CKD/albuminuria. Counsel on lifestyle modifications: low sodium diet (<1500mg/day), DASH diet principles, weight loss, regular exercise. Encourage home BP monitoring.",
+      "Contingency Planning": "If BP remains >130/80 mmHg after 1 month on initial dose, titrate ACEi/ARB dose up. If goal still not met, add a second agent, typically a dihydropyridine calcium channel blocker (e.g., amlodipine 5mg daily) or thiazide diuretic (e.g., chlorthalidone 12.5-25mg daily; monitor renal function).",
+      "Considerations for Documentation Improvement": "Add 'Hypertension' to problem list. Document target BP goal (<130/80 mmHg). Document plan for monitoring (home BP log, clinic checks). Detail lifestyle counseling provided.",
+      "Considerations for Cost Effective Care Improvement": "Generic ACEi/ARBs, CCBs, and thiazides are low cost. Home BP monitors have a one-time cost but improve management; check insurance coverage or provide resources for affordable options."
+    },
+    "Problem 5": {
+      "Problem Name": "Obesity, Class II / Unhealthy Lifestyle",
+      "Status": "Active (BMI 37.9 kg/m\u00b2)",
+      "Decision Making and Diagnositic Plan": "Obesity is a major contributor to T2DM, HTN, dyslipidemia. Patient acknowledges poor diet (junk food, soda), stress eating, and lack of exercise. Comprehensive lifestyle intervention is crucial. Plan includes counseling and referrals.",
+      "Treatment/Medication Plan": "Provide intensive counseling on dietary changes (reduce sugar-sweetened beverages and processed foods, increase fruits/vegetables/whole grains, portion control) and physical activity (aim for 150 min/week moderate-intensity). Refer to Registered Dietitian/Nutritionist. Refer to Diabetes Self-Management Education and Support (DSMES). Discuss stress management techniques related to diet. Consider GLP-1 RA (like semaglutide, liraglutide) which aids both weight loss and glycemic control if appropriate and affordable/covered.",
+      "Contingency Planning": "If lifestyle interventions and initial pharmacotherapy (metformin +/- SGLT2i) do not lead to meaningful weight loss (e.g., >5%) and improvement in comorbidities, discuss adding/switching to GLP-1 RA specifically for weight management or consider referral for bariatric surgery evaluation (BMI >35 with comorbidities).",
+      "Considerations for Documentation Improvement": "Add 'Obesity Class II' to problem list. Document specific lifestyle recommendations discussed. Document referrals made (RD, DSMES) and patient's stated readiness for change. Set collaborative weight loss goals.",
+      "Considerations for Cost Effective Care Improvement": "Focus on sustainable, low-cost lifestyle changes. RD/DSMES may have co-pays; check benefits. Weight loss medications (GLP-1 RAs) can be very expensive; explore coverage."
+    },
+    "Problem 6": {
+      "Problem Name": "Psychosocial Stress (Divorce)",
+      "Status": "Active",
+      "Decision Making and Diagnositic Plan": "Patient identified divorce as a major stressor impacting self-care, adherence, and diet. Addressing this is key to improving health outcomes. Plan involves screening for mood disorders, supportive counseling, and referral.",
+      "Treatment/Medication Plan": "Acknowledge impact of stress. Screen for depression/anxiety (e.g., PHQ-2/9, GAD-7 recommended). Discuss healthy coping strategies. Offer referral to Behavioral Health/Counseling. Provide information on community support resources if available.",
+      "Contingency Planning": "If patient screens positive for depression/anxiety, initiate appropriate treatment (counseling, possibly medication). If patient declines referral but stress remains high and impacts health, continue supportive counseling at visits and revisit referral option.",
+      "Considerations for Documentation Improvement": "Document identified stressor and its link to health behaviors. Document screening results. Document discussion of coping skills and referrals offered/accepted/declined.",
+      "Considerations for Cost Effective Care Improvement": "Explore insurance coverage for mental health services, employee assistance programs, or community mental health centers with sliding scale fees. Support groups are often low-cost/free."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Diabetic Retinopathy Screening: Referral placed for dilated eye exam. Recommend annually.",
+      "Item 2": "Diabetic Foot Care: Comprehensive foot exam including monofilament test performed today (normal). Recommend annual comprehensive exam and patient education on daily self-foot checks.",
+      "Item 3": "Immunizations: Assess status and administer needed vaccines: Influenza (annually), Pneumococcal (PCV20 recommended now due to age/diabetes/CKD), Hepatitis B series (recommended for adults <60 with diabetes; discuss risk/benefit for age 62), Tdap (if no record, then Td q10 yrs), Shingrix (2-dose series).",
+      "Item 4": "Colon Cancer Screening: Patient is due (age 62). Discuss options (colonoscopy, FIT, Cologuard) and order/refer based on patient preference and availability.",
+      "Item 5": "Aspirin for Primary Prevention: Discuss risks/benefits of low-dose aspirin (81mg) given high ASCVD risk profile. Shared decision-making required.",
+      "Item 6": "Depression/Anxiety Screening: Recommend screening (e.g., PHQ-9, GAD-7) due to significant psychosocial stress impacting self-care.",
+      "Considerations for Documentation Improvement": "Maintain an up-to-date Health Maintenance flowsheet/section. Document dates of last screenings/vaccines. Document discussions, patient decisions, and orders/referrals for all relevant items."
+    },
+    "Follow Up Care": {
+      "Item 1": "Return to clinic in 1-2 weeks: To assess metformin tolerance, check BP, review baseline CMP for potassium and creatinine after initiating ACEi/ARB.",
+      "Item 2": "Return to clinic in 1 month: Review home BP logs, assess response to statin (if labs done), reinforce lifestyle changes, follow up on referrals (eye exam, RD), assess stress/coping.",
+      "Item 3": "Return to clinic in 3 months: Recheck HbA1c, Lipid Panel, CMP (eGFR, K+), UACR. Adjust medications (diabetes, BP, lipids) based on results and goals. Assess adherence.",
+      "Item 4": "Ongoing Monitoring: Schedule regular follow-up visits (q3-6 months depending on stability) to monitor A1c, BP, lipids, renal function, weight, adherence, and psychosocial factors.",
+      "Item 5": "Annual Care: Ensure annual diabetic eye exam, annual comprehensive foot exam, review/update immunizations and other age-appropriate screenings.",
+      "Item 6": "Patient Education Reinforcement: Ensure patient understands medication titration schedule, monitoring plan (labs, home BP), sick day rules, symptoms requiring urgent contact, and importance of follow-up.",
+      "Considerations for Documentation Improvement": "Clearly document the recommended follow-up interval and the specific reason/goals for the next visit. Provide patient with written summary of plan and appointment schedule. Document patient understanding of the plan."
+    }
+  }
+}

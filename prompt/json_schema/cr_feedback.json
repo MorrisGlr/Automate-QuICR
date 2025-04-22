@@ -16,11 +16,11 @@
               "properties": {
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the assessment section, noting strengths and any areas for improvement regarding problem representation, synthesis of clinical issues, and inclusion of differential diagnoses."
+                  "description": "Detailed identification of the strengths in the synthesis of clinical issues, and inclusion of differential diagnoses."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the assessment section, noting strengths and any areas for improvement regarding problem representation, synthesis of clinical issues, and inclusion of differential diagnoses."
+                  "description": "Detailed identification of the areas of improvement in the synthesis of clinical issues, and inclusion of differential diagnoses."
                 }
               },
               "required": [
@@ -32,72 +32,238 @@
             "Problem 1": {
               "type": "object",
               "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed identification on the strengths of the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 1, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
                 }
               },
               "required": [
+                "Problem Name",
                 "Strengths",
-                "Areas for Improvement"
+                "Areas for Improvement",
+                "Skill Assessment"
               ],
               "additionalProperties": false
             },
             "Problem 2": {
               "type": "object",
               "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 2, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed identification on the strengths of the plan section forproblem 2, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 2, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
                 }
               },
               "required": [
+                "Problem Name",
                 "Strengths",
-                "Areas for Improvement"
+                "Areas for Improvement",
+                "Skill Assessment"
               ],
               "additionalProperties": false
             },
             "Problem 3": {
               "type": "object",
               "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
                 }
               },
               "required": [
+                "Problem Name",
                 "Strengths",
-                "Areas for Improvement"
+                "Areas for Improvement",
+                "Skill Assessment"
               ],
               "additionalProperties": false
             },
             "Problem 4": {
               "type": "object",
               "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed improvement suggestions on the plan section for problem 4, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
                 }
               },
               "required": [
+                "Problem Name",
                 "Strengths",
-                "Areas for Improvement"
+                "Areas for Improvement",
+                "Skill Assessment"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 5": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 5, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 5, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
+                }
+              },
+              "required": [
+                "Problem Name",
+                "Strengths",
+                "Areas for Improvement",
+                "Skill Assessment"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 6": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 6, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 6, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
+                }
+              },
+              "required": [
+                "Problem Name",
+                "Strengths",
+                "Areas for Improvement",
+                "Skill Assessment"
+              ],
+              "additionalProperties": false
+            },
+            "Problem 7": {
+              "type": "object",
+              "properties": {
+                "Problem Name": {
+                  "type": "string",
+                  "description": "State the name of the problem."
+                },
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 7, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed improvement suggestions on the plan section for problem 7, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                },
+                "Skill Assessment": {
+                  "type": "string",
+                  "description": "A skill assessment rating.",
+                  "enum": [
+                    "Critical Gap",
+                    "Needs Improvement",
+                    "Meets Expectations",
+                    "Excellent"
+                  ]
+                }
+              },
+              "required": [
+                "Problem Name",
+                "Strengths",
+                "Areas for Improvement",
+                "Skill Assessment"
               ],
               "additionalProperties": false
             },
@@ -106,11 +272,29 @@
               "properties": {
                 "Strengths": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section for problem 3, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed identification of the strengths of the preventative care items."
                 },
                 "Areas for Improvement": {
                   "type": "string",
-                  "description": "Detailed feedback on the plan section, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                  "description": "Detailed feedback on the preventative care items."
+                }
+              },
+              "required": [
+                "Strengths",
+                "Areas for Improvement"
+              ],
+              "additionalProperties": false
+            },
+            "Follow Up Care Feedback": {
+              "type": "object",
+              "properties": {
+                "Strengths": {
+                  "type": "string",
+                  "description": "Detailed identification of the strengths of the follow up care items."
+                },
+                "Areas for Improvement": {
+                  "type": "string",
+                  "description": "Detailed feedback on the follow up care items."
                 }
               },
               "required": [

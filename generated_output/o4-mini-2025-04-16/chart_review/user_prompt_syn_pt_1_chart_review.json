@@ -1,0 +1,44 @@
+{
+  "Patient": "Sol Lopez, 71-year\u2011old female",
+  "Key Highlights for Medical Decision\u2011Making (MDM) Improvement": "- Incomplete risk stratification for atrial fibrillation: no CHADS\u2011VASc score documented, no TSH or echocardiogram ordered to assess for reversible causes or structural heart disease.\n- No formal hypertension workup: diet, exercise, end\u2011organ assessment and repeat BP readings not documented; missing baseline labs (electrolytes, renal function).\n- Medication plan absent despite clear indications for anticoagulation and antihypertensive therapy; no reconciliation of over\u2011the\u2011counter NSAID use and its hypertensive/bleeding implications.\n- Lack of shared decision\u2011making documentation: patient preference, cost considerations, bleeding risk versus stroke prevention not explored.\n- Preventive care gaps: no cancer screening history (colon, breast), no immunization status (influenza, pneumococcal, zoster), no bone density or lipid profile.\n- Follow\u2011up plan missing: timing for lab checks, blood pressure follow\u2011up, anticoagulation monitoring or side\u2011effect review not specified.",
+  "Chief Concern": "Newly diagnosed atrial fibrillation and desire for management recommendations.",
+  "Assessment": "Sol Lopez is a 71\u2011year\u2011old woman with asymptomatic, irregularly irregular rhythm discovered incidentally on her Apple Watch and confirmed by exam (pulse 88 bpm, irregular) and BP 146/82 mmHg. She has untreated hypertension and no prior workup or cardiovascular risk stratification. Differential for new AF includes primary (hypertension\u2011mediated) atrial remodeling; hyperthyroidism (TSH unknown); and occasional NSAID use potentially contributing to elevated blood pressure. Her CHADS\u2011VASc score is at least 1 (age 65\u201174 = 1 point), indicating benefit from anticoagulation. No history of bleeding disorders. She is a candidate for rate control and stroke prevention.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Atrial Fibrillation",
+      "Status": "Newly diagnosed, asymptomatic, rate ~88 bpm, stroke risk moderate",
+      "Decision Making and Diagnositic Plan": "\u2022 Calculate CHADS\u2011VASc and HAS\u2011BLED scores; document shared decision\u2011making. \u2022 Order labs: TSH (to rule out thyrotoxicosis), CBC (baseline hemoglobin/platelets), CMP (renal/hepatic function), PT/INR (if warfarin considered). \u2022 Obtain transthoracic echocardiogram to assess chamber size, LV function, valvular disease. \u2022 12\u2011lead ECG to confirm AF and assess conduction intervals.",
+      "Treatment/Medication Plan": "\u2022 Anticoagulation: initiate apixaban 5 mg PO BID (unless CrCl <30 mL/min, then adjust to 2.5 mg BID). Alternative: warfarin with INR goal 2-3 if cost barrier. \u2022 Rate control: start metoprolol tartrate 25 mg PO BID, titrate to resting HR <80 bpm; alternative diltiazem XR 120 mg daily if beta-blockers contraindicated. \u2022 Advise against routine NSAID use; switch to acetaminophen 500 mg q6h PRN for headache.",
+      "Contingency Planning": "\u2022 If HR remains >100 bpm at rest after 2 weeks, increase metoprolol to 50 mg BID or add diltiazem. \u2022 If signs of bleeding (hematuria, melena, bruising), hold anticoagulant and arrange urgent CBC/INR and clinical evaluation. \u2022 If echocardiogram reveals significant structural disease (e.g., LV dysfunction), consider referral to cardiology for rhythm control options.",
+      "Considerations for Documentation Improvement": "Document CHADS\u2011VASc/HAS\u2011BLED scores, patient\u2019s values and preferences, shared decision\u2011making discussion, and rationale for chosen anticoagulant.",
+      "Considerations for Cost Effective Care Improvement": "Consider warfarin in patients with financial constraints; use generic metoprolol; batch lab draws to reduce phlebotomy costs."
+    },
+    "Problem 2": {
+      "Problem Name": "Hypertension",
+      "Status": "Elevated (146/82), previously known but untreated, not at goal (<130/80)",
+      "Decision Making and Diagnositic Plan": "\u2022 Confirm diagnosis with repeat measurements on two separate days; consider home BP monitoring. \u2022 Order labs: BMP (electrolytes, creatinine), fasting glucose or A1c, lipid panel, urinalysis for end\u2011organ damage. \u2022 Assess diet, exercise, sodium intake, alcohol history (currently none reported).",
+      "Treatment/Medication Plan": "\u2022 Initiate hydrochlorothiazide 12.5 mg PO daily in the morning. \u2022 Counsel on DASH diet, sodium restriction (<2.3 g daily), weight loss (BMI ~25.0), and 150 minutes/week moderate exercise. Alternatives: lisinopril 10 mg daily if thiazide not tolerated or if diabetes/CKD develops.",
+      "Contingency Planning": "\u2022 Reassess BP in 2 weeks; if BP remains >140/90, increase HCTZ to 25 mg or add ACE inhibitor/CCB. \u2022 If side effects (e.g., leg cramps, electrolyte disturbance), check BMP and consider switching to ACE inhibitor.",
+      "Considerations for Documentation Improvement": "Record baseline lifestyle assessment, specific diet/exercise goals, and planned home BP log. Document the two\u2011visit hypertension diagnostic criteria.",
+      "Considerations for Cost Effective Care Improvement": "Hydrochlorothiazide is low cost and generic; coordinate lab tests with anticoagulation monitoring to minimize visits."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Colorectal cancer screening: schedule colonoscopy (patient age 71, no prior screening) per USPSTF guidelines; if patient declines colonoscopy, offer FIT annually.",
+      "Item 2": "Breast cancer screening: order annual mammogram (age 71, continue until at least 75 per guidelines).",
+      "Item 3": "Osteoporosis screening: obtain DEXA scan (age \u226565 female) to assess bone density and fracture risk.",
+      "Item 4": "Immunizations: administer influenza vaccine annually; pneumococcal PCV13 followed by PPSV23; recombinant zoster vaccine two doses 2\u20136 months apart.",
+      "Item 5": "Lipid screening: fasting lipid profile every 5 years; consider statin therapy if ASCVD risk \u22657.5%.",
+      "Item 6": "Diabetes screening: fasting glucose or A1c every 3 years; baseline test now given new hypertension and age.",
+      "Considerations for Documentation Improvement": "Record family history of cancer and osteoporosis, prior screening history, and immunization status to support preventive recommendations."
+    },
+    "Follow Up Care": {
+      "Item 1": "Recheck BP in 2 weeks with home monitoring log to assess hypertension control.",
+      "Item 2": "Evaluate rate control and side effects in 2\u20134 weeks; review metoprolol tolerance and HR target.",
+      "Item 3": "Assess anticoagulation adherence, bleeding signs, and obtain follow\u2011up labs (CBC, renal function) at 4 weeks.",
+      "Item 4": "Review TSH and echocardiogram results once available; adjust AF management accordingly.",
+      "Item 5": "Confirm scheduling and results of colonoscopy, mammogram, DEXA, and vaccines at next annual visit.",
+      "Item 6": "Repeat lipid panel and A1c in 3 months to guide statin initiation if indicated.",
+      "Considerations for Documentation Improvement": "Include a structured follow\u2011up timeline in the note, with assigned responsibilities (nurse calls, patient portal reminders) and clear parameters for urgent outreach (e.g., SBP >180 mmHg, HR >120)."
+    }
+  }
+}

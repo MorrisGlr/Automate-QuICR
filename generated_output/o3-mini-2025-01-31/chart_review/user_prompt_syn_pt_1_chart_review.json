@@ -1,0 +1,80 @@
+{
+  "Patient Name": "Sol Lopez",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Prioritize evaluation of newly diagnosed atrial fibrillation and its stroke risk assessment using the CHA2DS2-VASc scoring system\n- Consider additional workup with echocardiogram and lab evaluations (thyroid function, renal function, electrolytes) to guide management decisions\n- Initiate discussion regarding anticoagulation therapy versus rate control strategies with evidence based on patient\u2019s risk factors\n- Address the lack of current antihypertensive therapy for documented elevated blood pressure with guideline-based interventions\n- Emphasize medication reconciliation and documentation of decision points, laboratory orders, and imaging studies for comprehensive care\n- Integrate anticipatory preventive care and follow-up plans to ensure longitudinal monitoring of heart rate, blood pressure, and overall cardiovascular status",
+  "Chief Concern": "Evaluation and management of newly diagnosed atrial fibrillation along with appropriate medication recommendations for stroke prevention and blood pressure control.",
+  "Assessment": "Sol Lopez is a 71-year-old female newly diagnosed with atrial fibrillation following an Apple Watch notification. She remains asymptomatic and has no history of heart failure, diabetes, stroke, or other cardiovascular conditions besides known high blood pressure which is currently untreated. Her physical exam demonstrates an irregularly irregular pulse with a blood pressure of 146/82 mmHg. The differential diagnosis primarily revolves around atrial fibrillation likely due to age-related changes and untreated hypertension; other differentials include secondary causes such as thyroid dysfunction and underlying structural heart disease which warrant further evaluation.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Atrial Fibrillation",
+      "Status": "Newly diagnosed, asymptomatic with potential stroke risk based on age",
+      "Decision Making and Diagnositic Plan": "Assess stroke risk using the CHA2DS2-VASc score and consider further diagnostic studies such as an echocardiogram and thyroid function tests. Current evidence supports early risk stratification in newly diagnosed atrial fibrillation to guide decisions between anticoagulation and rate control therapy.",
+      "Treatment/Medication Plan": "Initiate discussion regarding anticoagulation options. Consider starting a direct oral anticoagulant (e.g., apixaban 5 mg twice daily) after assessing renal function and contraindications, with documentation of risk-benefit analysis. Evaluate the need for rate control agents (e.g., beta-blockers or calcium channel blockers) if the patient becomes symptomatic.",
+      "Contingency Planning": "If the patient becomes symptomatic or if there is evidence of rate instability, monitor heart rate trends and consider intensifying rate control therapy or transitioning to a rhythm control strategy. If lab results indicate thyroid dysfunction or structural abnormalities, adjust management accordingly.",
+      "Considerations for Documentation Improvement": "Ensure that the CHA2DS2-VASc score, rationale for ordering diagnostic tests, and documentation of patient discussions about risks and benefits of anticoagulation are clearly recorded.",
+      "Considerations for Cost Effective Care Improvement": "Utilize generic formulations when available, and consider the cost-benefit ratio of newer anticoagulants versus warfarin based on the patient\u2019s insurance coverage and adherence potential."
+    },
+    "Problem 2": {
+      "Problem Name": "Hypertension",
+      "Status": "Elevated blood pressure recorded (146/82 mmHg); history of high blood pressure without current medical therapy",
+      "Decision Making and Diagnositic Plan": "Review the patient\u2019s blood pressure readings and consider initiating laboratory evaluations such as renal function tests and electrolyte panels to rule out secondary causes. Follow current guidelines (e.g., JNC-8) to decide on the initiation of antihypertensive therapy.",
+      "Treatment/Medication Plan": "Discuss starting an ACE inhibitor, for example, Lisinopril 10 mg once daily, while emphasizing lifestyle modifications including dietary adjustments and regular exercise. Provide patient education regarding the importance of blood pressure control in reducing cardiovascular risks.",
+      "Contingency Planning": "If blood pressure remains elevated on follow-up or if side effects occur, consider dose adjustment or switching to alternative agents (e.g., ARBs). Monitor renal function and electrolytes periodically, and if abnormal values emerge, re-evaluate the treatment regimen.",
+      "Considerations for Documentation Improvement": "Document baseline and subsequent blood pressure measurements as well as the rationale for initiating pharmacotherapy. Include lab orders and follow-up plans to ensure a comprehensive record of hypertension management.",
+      "Considerations for Cost Effective Care Improvement": "Recommend generic ACE inhibitors and stress the importance of lifestyle modifications which may reduce the need for high-cost medications. Ensure follow-up labs are scheduled appropriately to avoid unnecessary repeat testing."
+    },
+    "Problem 3": {
+      "Problem Name": "Medication Use (Naproxen for Headaches)",
+      "Status": "Occasional use without documented adverse effects",
+      "Decision Making and Diagnositic Plan": "Assess frequency and dosage of naproxen use to review any potential contributory role in cardiovascular risk or renal issues. Current documentation indicates minimal use, but further details are warranted.",
+      "Treatment/Medication Plan": "Advise maintaining minimal and as-needed use. Educate on potential risks of NSAIDs, especially in the context of atrial fibrillation and hypertension, and consider alternative pain management strategies if usage increases.",
+      "Contingency Planning": "If the patient experiences increased headache frequency or any adverse renal/cardiovascular events, plan to evaluate the need for alternative pain relief medications and further workup.",
+      "Considerations for Documentation Improvement": "Record detailed medication history including frequency, dosage, and duration for over-the-counter medications like naproxen.",
+      "Considerations for Cost Effective Care Improvement": "Encourage the use of generic brands and verify the necessity of persistent NSAID use to mitigate risk of expensive complications."
+    },
+    "Problem 4": {
+      "Problem Name": "Not available",
+      "Status": "Not available",
+      "Decision Making and Diagnositic Plan": "Not available",
+      "Treatment/Medication Plan": "Not available",
+      "Contingency Planning": "Not available",
+      "Considerations for Documentation Improvement": "Not available",
+      "Considerations for Cost Effective Care Improvement": "Not available"
+    },
+    "Problem 5": {
+      "Problem Name": "Not available",
+      "Status": "Not available",
+      "Decision Making and Diagnositic Plan": "Not available",
+      "Treatment/Medication Plan": "Not available",
+      "Contingency Planning": "Not available",
+      "Considerations for Documentation Improvement": "Not available",
+      "Considerations for Cost Effective Care Improvement": "Not available"
+    },
+    "Problem 6": {
+      "Problem Name": "Not available",
+      "Status": "Not available",
+      "Decision Making and Diagnositic Plan": "Not available",
+      "Treatment/Medication Plan": "Not available",
+      "Contingency Planning": "Not available",
+      "Considerations for Documentation Improvement": "Not available",
+      "Considerations for Cost Effective Care Improvement": "Not available"
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Influenza vaccine annually to reduce seasonal infection risks, supported by current preventive care guidelines.",
+      "Item 2": "Pneumococcal vaccine if not up to date, given age-related vulnerability to respiratory infections.",
+      "Item 3": "Colon cancer screening according to USPSTF recommendations, considering the patient\u2019s age and screening history.",
+      "Item 4": "Bone density screening to assess for osteoporosis, especially given the postmenopausal status typical of her age group.",
+      "Item 5": "Review and update tetanus-diphtheria-pertussis (Tdap) immunization status as indicated.",
+      "Item 6": "Comprehensive metabolic panel and lipid profile to monitor cardiovascular risk factors in the context of atrial fibrillation and hypertension.",
+      "Considerations for Documentation Improvement": "Record dates of previous immunizations and screenings, and note the patient\u2019s eligibility based on age and risk factors for each recommended intervention."
+    },
+    "Follow Up Care": {
+      "Item 1": "Reassess heart rate and rhythm with an EKG in 1 month to monitor atrial fibrillation progression and treatment response.",
+      "Item 2": "Recheck blood pressure in 2-4 weeks after initiating antihypertensive therapy to evaluate effectiveness.",
+      "Item 3": "Monitor for any signs of bleeding or adverse reactions if anticoagulation is started, with instructions to report symptoms immediately.",
+      "Item 4": "Schedule follow-up lab evaluations (renal function, electrolytes, thyroid function) in 4-6 weeks to assess for side effects of medications.",
+      "Item 5": "Assess medication adherence and effectiveness, documenting any side effects or need for dosage adjustments.",
+      "Item 6": "Plan a comprehensive follow-up visit in 3 months to review overall cardiovascular status and update the care plan as needed.",
+      "Considerations for Documentation Improvement": "Ensure that all follow-up recommendations include specific time frames and objective measures for evaluating patient progress."
+    }
+  }
+}

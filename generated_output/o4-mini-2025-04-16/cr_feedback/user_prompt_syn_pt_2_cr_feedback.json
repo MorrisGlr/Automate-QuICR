@@ -1,0 +1,48 @@
+{
+  "Feedback Summary": "Overall, the chart review delivers a thorough assessment of poorly controlled diabetes and related comorbidities, with a well\u2011structured multi\u2011problem plan. The assessment accurately synthesizes the EMR data, and the plan incorporates evidence\u2011based treatments, contingency planning, and preventive care. However, there are opportunities to tighten the differential diagnosis, better document psychosocial factors, clarify monitoring intervals, and ensure all health maintenance items are explicitly linked to documented patient history.",
+  "Feedback Details": {
+    "Assessment Section": {
+      "Strengths": "\u2022 Concise summary of HPI, exam, and labs (A1c, eGFR, ACR, lipids) aligns with the EMR.\n\u2022 Risk stratification acknowledges CKD stage and albuminuria.\n\u2022 Differential includes uncontrolled diabetes, obesity\u2011driven insulin resistance, and early diabetic nephropathy.",
+      "Areas for Improvement": "\u2022 Consider adding dyslipidemia and cardiovascular risk as part of your differential framework to guide lipid\u2011management urgency.\n\u2022 Explicitly note the absence of depression screening and immunization history in the assessment to drive health\u2011maintenance tasks.\n\u2022 Cite the patient\u2019s psychosocial stress (divorce) in the assessment to reinforce need for behavioral health evaluation."
+    },
+    "Problem 1": {
+      "Problem Name": "Type\u00a02 diabetes mellitus, poorly controlled",
+      "Strengths": "\u2022 Clearly states A1c goal failure and metformin status.\n\u2022 Incorporates SGLT2\u2011inhibitor for renal/cardio protection given eGFR 55.\n\u2022 Sets up baseline and 3\u2011month labs, retinopathy referral, SMBG teaching.\n\u2022 Well\u2011defined contingency (add GLP\u20111 RA) and drug\u2011tolerance plan.",
+      "Areas for Improvement": "\u2022 Specify SMBG targets (e.g., pre\u2011meal 80\u2013130\u00a0mg/dL) and frequency beyond \u201cPRN.\u201d\n\u2022 Document patient\u2019s willingness and anticipated barriers to add empagliflozin.\n\u2022 Ensure liver function baseline before statin initiation overlaps with diabetes monitoring.",
+      "Skill Assessment": "Excellent"
+    },
+    "Problem 2": {
+      "Problem Name": "Obesity (BMI\u00a038\u00a0kg/m\u00b2)",
+      "Strengths": "\u2022 Identifies obesity as contributing to insulin resistance.\n\u2022 Refers to dietician and structured exercise (150 min/week).\n\u2022 Sets criterion (5% weight loss) for pharmacotherapy consideration.",
+      "Areas for Improvement": "\u2022 Define specific dietary goals (e.g., daily caloric targets, macronutrient balance).\n\u2022 Establish a measurable exercise progression (e.g., add 5\u00a0minutes/week).\n\u2022 Incorporate behavioral therapy strategies (e.g., SMART goal setting, motivational interviewing).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 3": {
+      "Problem Name": "Dyslipidemia",
+      "Strengths": "\u2022 Recognizes LDL\u00a0137\u00a0mg/dL and ASCVD risk >20%.\n\u2022 Initiates high\u2011intensity atorvastatin with liver\u2011function monitoring.\n\u2022 Counsels dietary fat reduction.",
+      "Areas for Improvement": "\u2022 Document baseline transaminases and CPK before statin start.\n\u2022 Specify timing of repeat lipid panel (e.g., 6\u201312\u00a0weeks) and criteria for dose adjustment.\n\u2022 Record patient discussion on statin risks/benefits and preference.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 4": {
+      "Problem Name": "Chronic kidney disease stage\u00a03a with microalbuminuria",
+      "Strengths": "\u2022 Correctly stages CKD and ACR category.\n\u2022 Starts ACE inhibitor despite normotension to slow progression.\n\u2022 Plans short\u2011interval monitoring of creatinine and potassium.",
+      "Areas for Improvement": "\u2022 Reinforce dietary sodium restriction to augment ACEi benefit.\n\u2022 Clarify BP goal (e.g., <130/80\u00a0mmHg) to guide titration.\n\u2022 Plan review of trend in albuminuria at 6\u00a0months to assess response.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 5": {
+      "Problem Name": "Psychosocial stressors and potential depression",
+      "Strengths": "\u2022 Recognizes the impact of divorce stress on self\u2011care.\n\u2022 Plans formal PHQ\u20119 screening and referral to behavioral health.\n\u2022 Offers pharmacotherapy threshold and support resources.",
+      "Areas for Improvement": "\u2022 Document baseline PHQ\u20119 score and suicide risk assessment.\n\u2022 Define timeframe for counseling follow\u2011up (e.g., 2\u20134\u00a0weeks post\u2011referral).\n\u2022 Explore social supports and coping strategies in more detail.",
+      "Skill Assessment": "Needs Improvement"
+    },
+    "Anticipatory Preventative Care Section Feedback": {
+      "Strengths": "\u2022 Comprehensive list: annual eye and foot exams, full immunization schedule, colonoscopy by age 62, lifestyle counseling.",
+      "Areas for Improvement": "\u2022 Verify past immunization history rather than assume none\u2014obtain records or patient recall.\n\u2022 Provide exact pneumococcal sequence (PCV13\u2192PPSV23) and timing of COVID\u201119 boosters.\n\u2022 Incorporate reminder system or health\u2011maintenance table in the chart.",
+      "Follow Up Care Feedback": {
+        "Strengths": "\u2022 Specifies intervals for A1c, lipid panel, BMP/ACR, BP checks, weight, and PHQ\u20119.\n\u2022 Assigns clear goals (e.g., 5% weight loss, BP monitoring).",
+        "Areas for Improvement": "\u2022 Assign owners (patient vs. staff) and modes (telehealth vs. in\u2011office) for each follow\u2011up.\n\u2022 Include follow\u2011up on retinopathy and dietician appointments.\n\u2022 Embed self\u2011monitoring logs into the EHR template for review at each visit."
+      },
+      "Overall Recommendations": "\u2022 Tighten documentation by linking each preventive item and follow\u2011up to patient\u2011specific data.  \n\u2022 Use SMART language for lifestyle goals and monitoring targets.  \n\u2022 Embed structured templates in the EHR to capture screening tools (PHQ\u20119), immunizations, and health\u2011maintenance dates.  \n\u2022 Continue to reinforce shared decision\u2011making and explicitly document patient preferences and barriers."
+    }
+  }
+}

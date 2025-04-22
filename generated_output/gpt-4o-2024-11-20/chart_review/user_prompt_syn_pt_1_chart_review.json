@@ -1,41 +1,44 @@
 {
   "Patient Name": "Sol Lopez",
-  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure comprehensive diagnostic workup for atrial fibrillation to identify underlying causes and risk factors.- Initiate appropriate anticoagulation therapy based on CHA2DS2-VASc score.- Address hypertension management to reduce cardiovascular risk.",
-  "Assessment": "Sol Lopez is a 71-year-old female presenting with a recent diagnosis of atrial fibrillation detected via wearable technology. She is asymptomatic and has no significant past medical history or risk factors for thromboembolism. Her blood pressure is elevated, and her pulse is irregularly irregular, consistent with atrial fibrillation.",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure thorough documentation of the patient's atrial fibrillation diagnosis, including the method of detection and any subsequent evaluations.\n- Address the patient's hypertension with a detailed plan for management and follow-up.\n- Discuss anticoagulation therapy options for stroke prevention in atrial fibrillation, considering the patient's risk factors and preferences.\n- Recommend lifestyle modifications and provide educational resources for atrial fibrillation and hypertension management.",
+  "Chief Concern": "Recently diagnosed with atrial fibrillation, seeking guidance on appropriate medications.",
+  "Assessment": "Ms. Sol Lopez is a 71-year-old female presenting for evaluation and management of newly diagnosed atrial fibrillation, identified via an Apple Watch notification. She is asymptomatic and has no significant past medical history or risk factors for thromboembolism. Her blood pressure is elevated, suggesting untreated hypertension. The irregularly irregular pulse confirms the diagnosis of atrial fibrillation. The CHA2DS2-VASc score calculation is essential to guide anticoagulation therapy.",
   "Plan": {
     "Problem 1": {
       "Problem Name": "Atrial Fibrillation",
       "Status": "Newly diagnosed, asymptomatic.",
-      "Decision Making and Diagnositic Plan": "Order an ECG to confirm atrial fibrillation and assess for any structural heart abnormalities. Consider echocardiography for further evaluation.",
-      "Treatment Plan": "Initiate anticoagulation therapy based on CHA2DS2-VASc score to reduce stroke risk. Discuss options including direct oral anticoagulants (DOACs).",
-      "Contingency Planning": "If symptoms develop or persist, consider referral to cardiology for rhythm management."
+      "Decision Making and Diagnositic Plan": "Confirm diagnosis with an ECG and consider echocardiography to evaluate for structural heart disease.",
+      "Treatment/Medication Plan": "Initiate anticoagulation therapy based on CHA2DS2-VASc score. Options include direct oral anticoagulants (DOACs) or warfarin. Discuss rate versus rhythm control strategies.",
+      "Contingency Planning": "If symptoms develop or persist, consider referral to a cardiologist for advanced management.",
+      "Considerations for Documentation Improvement": "Document the patient's CHA2DS2-VASc and HAS-BLED scores to support anticoagulation decisions.",
+      "Considerations for Cost Effective Care Improvement": "Evaluate the cost and accessibility of prescribed anticoagulants to ensure adherence."
     },
     "Problem 2": {
       "Problem Name": "Hypertension",
       "Status": "Elevated blood pressure noted during visit.",
       "Decision Making and Diagnositic Plan": "Confirm diagnosis with home blood pressure monitoring or ambulatory blood pressure monitoring.",
-      "Treatment Plan": "Initiate lifestyle modifications including dietary changes, physical activity, and sodium restriction. Consider starting antihypertensive medication.",
-      "Contingency Planning": "Reassess blood pressure control in follow-up; adjust treatment as needed."
-    },
-    "Problem 3": {
-      "Problem Name": "Preventative Care",
-      "Status": "Patient has not had recent medical evaluations.",
-      "Decision Making and Diagnositic Plan": "Order baseline laboratory tests including CBC, CMP, lipid panel, and TSH.",
-      "Treatment Plan": "Schedule age-appropriate cancer screenings and vaccinations.",
-      "Contingency Planning": "Address any abnormal findings in follow-up visits."
-    },
-    "Problem 4": {
-      "Problem Name": "Health Maintenance",
-      "Status": "No recent medical history available.",
-      "Decision Making and Diagnositic Plan": "Review and update immunization status.",
-      "Treatment Plan": "Provide education on healthy lifestyle choices and regular medical follow-ups.",
-      "Contingency Planning": "Monitor adherence to health maintenance recommendations."
+      "Treatment/Medication Plan": "Initiate antihypertensive therapy, such as a thiazide diuretic or ACE inhibitor, and recommend lifestyle modifications.",
+      "Contingency Planning": "Monitor blood pressure response and adjust therapy as needed.",
+      "Considerations for Documentation Improvement": "Record baseline blood pressure readings and treatment goals.",
+      "Considerations for Cost Effective Care Improvement": "Consider generic antihypertensive medications to minimize costs."
     },
     "Anticipatory Preventative Care": {
-      "Item 1": "Schedule mammogram and colonoscopy as per guidelines.",
-      "Item 2": "Administer influenza and pneumococcal vaccines.",
-      "Item 3": "Discuss bone density testing for osteoporosis screening.",
-      "Item 4": "Provide counseling on fall prevention and home safety."
+      "Item 1": "Recommend influenza and pneumococcal vaccinations.",
+      "Item 2": "Screen for osteoporosis with a DEXA scan.",
+      "Item 3": "Discuss colorectal cancer screening options.",
+      "Item 4": "Evaluate lipid profile for cardiovascular risk assessment.",
+      "Item 5": "Provide counseling on diet, exercise, and smoking cessation.",
+      "Item 6": "Screen for cognitive impairment and depression.",
+      "Considerations for Documentation Improvement": "Ensure all preventative care recommendations are documented with rationale and follow-up plans."
+    },
+    "Follow Up Care": {
+      "Item 1": "Reassess blood pressure and medication adherence in 2 weeks.",
+      "Item 2": "Monitor for any symptoms of atrial fibrillation or anticoagulation side effects.",
+      "Item 3": "Evaluate the effectiveness of lifestyle modifications.",
+      "Item 4": "Schedule follow-up for echocardiography results.",
+      "Item 5": "Review and update the patient's medication list.",
+      "Item 6": "Provide ongoing education on atrial fibrillation and hypertension.",
+      "Considerations for Documentation Improvement": "Document patient responses and adherence to follow-up recommendations."
     }
   }
 }

@@ -1,0 +1,80 @@
+{
+  "Patient": "Samantha Baker, 54-year-old female",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- No baseline vitals or laboratory data documented despite reported history of hypertension; vital signs and labs are essential for risk stratification.\n- Sparse past medical, surgical, family, social history; full history should be elicited and documented.\n- Overdue preventive screenings: mammogram, colorectal cancer screening, Pap smear.\n- No immunization record except remote tetanus; immunization status needs complete review and catch\u2011up.\n- Chronic 25 pack\u2011year tobacco use without cessation plan documented.\n- No depression/anxiety screening despite reported loneliness and low motivation after recent immigration.\n- Fear of needles hindering labs and vaccines; strategies to address needle phobia should be documented.\n- Referral to gastroenterology created without specifying indication or timeline; need clear rationale and patient engagement.",
+  "Chief Concern": "\"To check my health\"",
+  "Assessment": "54\u2011year\u2011old female immigrant from London presenting for comprehensive health evaluation with remote self\u2011reported history of untreated hypertension and chronic 25 pack\u2011year tobacco use. She denies cardiopulmonary symptoms but reports occasional headaches and feelings of loneliness after relocation. Physical exam is unremarkable. No vital signs or labs are available to confirm blood pressure or cardiovascular risk factors. She is overdue for age\u2011appropriate cancer screenings (breast, colorectal, cervical) and needs immunization catch\u2011up. Differential diagnosis: 1) Primary hypertension, 2) tension headaches, 3) adjustment disorder with depressed mood.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Suspected hypertension",
+      "Status": "Not established; risk factors present",
+      "Decision Making and Diagnositic Plan": "Obtain seated and standing blood pressures today and twice more on two separate occasions; consider home BP monitoring and ambulatory BP cuff if clinic readings elevated. Order basic labs (CBC, CMP), lipid panel, fasting glucose or HbA1c to assess cardiovascular risk once needle\u2011phobia strategies in place.",
+      "Treatment/Medication Plan": "Initiate lifestyle modifications: DASH diet, sodium <2.3\u00a0g/day, increase aerobic exercise (30\u00a0min most days), weight management. If average BP \u2265130/80\u00a0mmHg on follow\u2011up, start low\u2011dose thiazide diuretic (e.g., hydrochlorothiazide 12.5\u00a0mg daily) or ACE inhibitor (e.g., lisinopril 10\u00a0mg daily) based on comorbidities.",
+      "Contingency Planning": "If BP remains \u2265140/90\u00a0after 3 months of lifestyle changes, intensify therapy by adding second agent (e.g., ACE inhibitor + thiazide). If adverse effects (e.g., cough with ACEi), switch to ARB. If hypertensive urgency (>180/120), urgent evaluation.",
+      "Considerations for Documentation Improvement": "Record actual BP values, home readings, and method of measurement. Document prior history source, previous readings, and patient\u2019s understanding of hypertension.",
+      "Considerations for Cost Effective Care Improvement": "Prioritize lifestyle modification before pharmacotherapy. Use generic antihypertensives and home BP monitoring devices rather than frequent clinic visits."
+    },
+    "Problem 2": {
+      "Problem Name": "Tobacco dependence",
+      "Status": "Active, 25 pack\u2011year history",
+      "Decision Making and Diagnositic Plan": "Assess readiness to quit and nicotine dependence (e.g., Fagerstr\u00f6m test). Provide brief counseling using the 5 A\u2019s (Ask, Advise, Assess, Assist, Arrange).",
+      "Treatment/Medication Plan": "Offer nicotine replacement therapy (generic nicotine patch 21\u00a0mg daily) plus short\u2011acting NRT as needed; consider varenicline (0.5\u00a0mg daily \u00d73\u00a0days, then 0.5\u00a0mg BID \u00d74\u00a0days, then 1\u00a0mg BID) if no contraindications. Discuss behavioral support and referral to quitline (1\u2011800\u2011QUIT\u2011NOW).",
+      "Contingency Planning": "If patient is not ready, re\u2011visit at next visit; offer motivational interviewing. If NRT not tolerated, switch to bupropion SR 150\u00a0mg daily \u00d73\u00a0days then 150\u00a0mg BID.",
+      "Considerations for Documentation Improvement": "Document pack\u2011years, willingness to quit, chosen pharmacotherapy, and referral details.",
+      "Considerations for Cost Effective Care Improvement": "Prescribe generic NRT and utilize free quitline services; consider covering varenicline under patient\u2019s plan if eligible."
+    },
+    "Problem 3": {
+      "Problem Name": "Adjustment disorder/depressive symptoms",
+      "Status": "Suspected, not formally assessed",
+      "Decision Making and Diagnositic Plan": "Administer PHQ\u20119 and GAD\u20117 screening today. Evaluate for suicidal ideation and functional impairment.",
+      "Treatment/Medication Plan": "Refer to individual or group counseling (e.g., cognitive behavioral therapy). If PHQ\u20119 \u226510, consider starting sertraline 50\u00a0mg daily after discussing benefits and side effects.",
+      "Contingency Planning": "If PHQ\u20119 >15 or emergent suicidal ideation, arrange urgent mental health evaluation. If no improvement in 4\u20136 weeks on SSRI, adjust dose or switch class.",
+      "Considerations for Documentation Improvement": "Include screening results, patient\u2019s reported symptoms, and safety plan if needed.",
+      "Considerations for Cost Effective Care Improvement": "Utilize sliding\u2011scale community mental health services; generic SSRIs."
+    },
+    "Problem 4": {
+      "Problem Name": "Breast cancer screening overdue",
+      "Status": "Not at goal; no recent mammogram",
+      "Decision Making and Diagnositic Plan": "Discuss benefits/risks of screening; refer for bilateral mammogram with tomosynthesis within the next 4\u20136 weeks.",
+      "Treatment/Medication Plan": "No pharmacologic therapy required; provide patient education on breast self\u2011awareness.",
+      "Contingency Planning": "If abnormal finding (BI\u2011RADS 0/4/5), expedite diagnostic imaging and surgical referral. If patient declines, document and revisit rationale.",
+      "Considerations for Documentation Improvement": "Record discussion details, patient\u2019s decisions, and scheduled appointment date.",
+      "Considerations for Cost Effective Care Improvement": "Order standard mammography without adjunct ultrasound unless indicated by clinical findings."
+    },
+    "Problem 5": {
+      "Problem Name": "Colorectal cancer screening overdue",
+      "Status": "Not at goal; no prior colonoscopy",
+      "Decision Making and Diagnositic Plan": "Offer screening options: colonoscopy every 10\u00a0years vs. annual FIT. Given patient\u2019s fear of invasive tests, propose FIT.",
+      "Treatment/Medication Plan": "Provide FIT kit with instructions; schedule colonoscopy only if FIT positive.",
+      "Contingency Planning": "If FIT positive, refer for colonoscopy. If patient does not return FIT within 4\u00a0weeks, send reminder letter or call.",
+      "Considerations for Documentation Improvement": "Document discussion of options and patient\u2019s choice; track kit distribution and return.",
+      "Considerations for Cost Effective Care Improvement": "FIT is lower cost and non\u2011invasive, improving uptake."
+    },
+    "Problem 6": {
+      "Problem Name": "Immunization catch\u2011up and needle phobia",
+      "Status": "Incomplete immunizations; needle phobia present",
+      "Decision Making and Diagnositic Plan": "Review immunization schedule. Address needle phobia by offering topical anesthetic and distraction techniques. Consider intranasal influenza vaccine.",
+      "Treatment/Medication Plan": "Administer or schedule: influenza vaccine (inactivated), Tdap booster if >10\u00a0years since last, Shingrix two\u2011dose series, pneumococcal PCV13 then PPSV23, COVID\u201119 booster per guidelines.",
+      "Contingency Planning": "If severe phobia persists, refer to behavioral therapy for phobia desensitization. Offer alternative formulations (e.g., intranasal influenza).",
+      "Considerations for Documentation Improvement": "Record vaccine dates, lot numbers, patient\u2019s consent/refusal, and needle\u2011phobia interventions.",
+      "Considerations for Cost Effective Care Improvement": "Bundle vaccines in one visit, use combination vaccines when available, and leverage public health vaccine programs."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Schedule bilateral screening mammography in 4\u20136 weeks for early breast cancer detection (USPSTF B recommendation).",
+      "Item 2": "Initiate or continue annual colorectal cancer screening with FIT, consistent with USPSTF A recommendation.",
+      "Item 3": "Repeat Pap smear every 3 years until age 65 (USPSTF A recommendation), with reflex HPV co\u2011testing if available.",
+      "Item 4": "Order fasting lipid panel and HbA1c to screen for dyslipidemia and diabetes every 5 years in patients age \u226540.",
+      "Item 5": "Implement bone health counseling: adequate calcium (1,200\u00a0mg daily), vitamin D (800\u00a0IU daily), weight\u2011bearing exercise; consider DEXA scanning at age \u226565 or earlier if risk factors.",
+      "Item 6": "Annual influenza vaccination and age\u2011appropriate immunizations (Shingrix, Tdap, pneumococcal, COVID\u201119) per CDC schedule.",
+      "Considerations for Documentation Improvement": "Use health maintenance templates to auto\u2011populate due dates and track completed items; document patient education and decisions."
+    },
+    "Follow Up Care": {
+      "Item 1": "Re\u2011evaluate blood pressure trends and medication adherence in 4\u20136 weeks with home BP log.",
+      "Item 2": "Assess tobacco cessation progress and tolerance of NRT/varenicline at next visit.",
+      "Item 3": "Review PHQ\u20119/GAD\u20117 results and adjust mental health interventions in 4 weeks.",
+      "Item 4": "Confirm completion and results of mammography; discuss findings.",
+      "Item 5": "Track return of FIT kit and refer for colonoscopy if positive; follow up in 8 weeks.",
+      "Item 6": "Review laboratory results (lipid panel, HbA1c) once obtained and adjust risk\u2011reduction plan.",
+      "Considerations for Documentation Improvement": "Include a structured follow\u2011up checklist in the note to ensure each item is revisited and avoid omissions."
+    }
+  }
+}

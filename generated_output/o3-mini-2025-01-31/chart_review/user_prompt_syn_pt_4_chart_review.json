@@ -1,0 +1,53 @@
+{
+  "Patient Name": "Bill Moore",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "\u2022 Consolidate data from two visit encounters to clearly distinguish between chronic diabetes management and preventative care deficiencies. \n\u2022 Emphasize the rationale for adding semaglutide due to suboptimal glycemic control (A1c 9.8%) and early renal impairment (creatinine 1.6 mg/dL, eGFR 55 mL/min/1.73 m\u00b2) despite being on metformin. \n\u2022 Integrate documentation of medication adherence issues and lifestyle factors (poor diet, lack of exercise, stress from divorce) impacting diabetes management. \n\u2022 Ensure lab orders (CBC, CMP, Hemoglobin A1c, Lipid Panel, Urine Albumin/Creatinine) and screening tests (diabetic retinopathy, foot exam) are clearly noted and their follow-up time frames are defined. \n\u2022 Highlight the need for complete immunization history review and referral coordination (ophthalmology, diabetes educator) for comprehensive care.",
+  "Chief Concern": "Lab follow-up for diabetes management and medication refill (metformin) in a patient with type 2 diabetes mellitus showing poor glycemic control and early signs of renal dysfunction.",
+  "Assessment": "Bill Moore is a 75-year-old male with type 2 diabetes mellitus without complications, now presenting for lab follow-up and medication refill. Subjective data reveals medication non-adherence over the past six months, high stress due to personal circumstances (divorce), poor dietary habits, and no recent blood sugar self-monitoring. Objective findings indicate an elevated A1c (9.8%), mild renal impairment (creatinine 1.6 mg/dL, eGFR 55), and a lipid panel with borderline elevated LDL. The patient has not had recent diabetic retinopathy or foot exams. Differential diagnoses include poorly controlled type 2 diabetes with chronic kidney disease implications, potential diabetic dyslipidemia, and lifestyle-related metabolic syndrome components.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus (E11.9)",
+      "Status": "Poor glycemic control with suboptimal medication adherence and early renal impairment; currently symptomatic with no acute distress.",
+      "Decision Making and Diagnositic Plan": "Laboratory data (A1c at 9.8%, elevated creatinine at 1.6 mg/dL, eGFR 55) support a diagnosis of poorly controlled diabetes with beginning renal compromise. The decision to add semaglutide is based on its renal-friendly profile and potential for improved glycemic control. Baseline labs have been ordered to monitor metabolic status and kidney function. Further diagnostic evaluation with periodic retesting of renal indices and glycemic markers is planned.",
+      "Treatment/Medication Plan": "\u2022 Continue metformin ER 500 mg, 2 tablets twice daily with gradual titration to maximum dose. \n\u2022 Initiate semaglutide with a starting dose of 0.25 mg subcutaneously once weekly for 4 weeks (to be adjusted to 0.5 mg after initial period). \n\u2022 Monitor for side effects and adjust dose based on clinical response. \n\u2022 Medication alternatives: If semaglutide is not tolerated, consider GLP-1 analog alternatives that are more renal-friendly, or insulin therapy as rescue therapy if control remains suboptimal.",
+      "Contingency Planning": "If glycemic control does not improve or renal function deteriorates, re-assess the treatment regimen by considering an earlier dose escalation of semaglutide or a transition to insulin therapy. Additionally, if adverse effects arise, consider alternative GLP-1 receptor agonists or lower the dose further.",
+      "Considerations for Documentation Improvement": "Ensure clear notation of baseline A1c, renal function tests, medication adherence issues, and patient's social history (stress, dietary habits). Document detailed rationale for adding semaglutide and future titration plans to provide continuity of care.",
+      "Considerations for Cost Effective Care Improvement": "Utilize cost-effective generic formulations where possible (e.g., metformin ER) while avoiding redundancy in lab orders by coordinating tests during the same visit. Encourage lifestyle modifications that may reduce medication burden over time."
+    },
+    "Problem 2": {
+      "Problem Name": "Diabetic Preventative Screening and Lifestyle Counseling",
+      "Status": "Preventative care measures are lacking; patient has not had recent diabetic eye or foot exams, and immunization history is unclear.",
+      "Decision Making and Diagnositic Plan": "The absence of recent diabetic retinopathy screening and foot exam, combined with the patient\u2019s report of no prior exams, necessitates baseline assessments. Ordered labs and referrals are based on current standards for diabetes care. Reviewing prior records for immunizations is important to update his health maintenance status.",
+      "Treatment/Medication Plan": "\u2022 Schedule a diabetic retinopathy screening with ophthalmology (visit noted for Feb 20). \n\u2022 Perform a thorough diabetic foot exam; repeat microfilament test if necessary. \n\u2022 Strongly advise a dietician consultation and counseling on balanced nutrition to counter unhealthy eating habits. \n\u2022 Evaluate and update immunizations (influenza, pneumococcal, shingles) as appropriate for his age group.",
+      "Contingency Planning": "If the patient is non-adherent to screening recommendations, arrange for in-clinic screening or coordinate with community-based programs. If nutritional counseling is declined, provide written materials and consider referral to a diabetes educator.",
+      "Considerations for Documentation Improvement": "Improve documentation by specifically noting dates of last eye and foot exams, detailed immunization history, and screening outcomes. Include patient education discussions and confirmation of understanding.",
+      "Considerations for Cost Effective Care Improvement": "Leverage existing community resources for diabetic screening and education to minimize costs. Document shared decision-making in counselling sessions to ensure patient commitment, potentially reducing long-term complications and associated expenses."
+    },
+    "Problem 3": {
+      "Problem Name": "Medication Non-Adherence and Lifestyle Challenges",
+      "Status": "Patient admitted to non-adherence with metformin for more than 6 months and unhealthy lifestyle choices contributing to poor diabetes control.",
+      "Decision Making and Diagnositic Plan": "Assessment based on patient report reveals gaps in medication use and significant lifestyle challenges (poor diet, stress, lack of exercise). Labs indicate poor glycemic control, suggesting that non-adherence is impacting overall diabetes management. The plan includes obtaining prior records and re-establishing medication adherence.",
+      "Treatment/Medication Plan": "\u2022 Refill metformin ER as per prescription (500 mg, 2 tablets twice daily) with a plan to titrate gradually to optimal dosing. \n\u2022 Reinforce adherence through patient education and schedule frequent follow-up visits. \n\u2022 Provide counseling resources regarding diet modification, stress management, and exercise.",
+      "Contingency Planning": "If the patient continues to miss doses or demonstrates worsening glycemic control, consider incorporating a diabetes educator and possibly a telehealth check-in program. In case of further deterioration, reassess the regimen and consider additional or alternative pharmacotherapy.",
+      "Considerations for Documentation Improvement": "Document detailed discussions about adherence, barriers faced by the patient, and specific action plans to overcome them. Record patient\u2019s verbal commitment and understanding of the importance of regular medication intake.",
+      "Considerations for Cost Effective Care Improvement": "Optimize cost by prescribing generic medications and scheduling bundled appointments (lab reviews, education sessions, follow-up visits) to reduce expenses and improve adherence."
+    }
+  },
+  "Anticipatory Preventative Care": {
+    "Item 1": "Schedule diabetic retinopathy screening with an ophthalmologist (already set for Feb 20) to monitor for early signs of retinopathy.",
+    "Item 2": "Arrange for a complete diabetic foot exam during the visit; re-assess microfilament testing periodically.",
+    "Item 3": "Review and update immunization status, focusing on age-appropriate vaccines such as influenza, pneumococcal, and shingles.",
+    "Item 4": "Initiate dietary counseling to address high intake of junk food and soft drinks; provide referrals to nutrition support services.",
+    "Item 5": "Advise on an exercise regimen tailored for his age and health status to improve glycemic control and cardiovascular health.",
+    "Item 6": "Consider scheduling a consultation with a diabetes educator to reinforce lifestyle modifications and proper medication use.",
+    "Considerations for Documentation Improvement": "Ensure that all anticipatory guidance and referrals are clearly documented with specific follow-up dates and outcomes for each preventative care item."
+  },
+  "Follow Up Care": {
+    "Item 1": "Follow up in 1 week to review baseline lab results (CBC, CMP, Hemoglobin A1c, Lipid Panel, Urine Albumin/Creatinine) and assess medication adherence.",
+    "Item 2": "Re-evaluate glycemic control and renal function in 3 months after initiation of semaglutide therapy and metformin dose titration.",
+    "Item 3": "Confirm the diabetic retinopathy screening outcome after the ophthalmology visit on Feb 20.",
+    "Item 4": "Monitor metformin adherence and adjust dosing as needed with each follow-up visit.",
+    "Item 5": "Schedule follow-up with a diabetes educator to assess the patient\u2019s understanding of lifestyle changes and medication management.",
+    "Item 6": "Re-assess overall diabetes management, including weight, blood pressure, and other metabolic parameters during subsequent visits.",
+    "Considerations for Documentation Improvement": "Document all follow-up plans with precise timelines and ensure that each test or referral result is captured in the EMR for ongoing quality improvement and continuity of care."
+  }
+}

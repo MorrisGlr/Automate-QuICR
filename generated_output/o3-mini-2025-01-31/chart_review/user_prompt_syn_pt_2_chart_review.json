@@ -1,0 +1,80 @@
+{
+  "Patient Name": "Phil Wiser",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Reinforce the need to re-establish consistent diabetes care by refilling and re-titrating metformin, with a plan to reach the maximum tolerated dose.\n- Emphasize ordering baseline labs (CBC, CMP, Hemoglobin A1c, Lipid Panel, Urine Albumin/Creatinine) and incorporating trends to guide therapy modification.\n- Address potential diabetic kidney involvement given the elevated creatinine (1.6 mg/dL) and reduced eGFR (55 mL/min/1.73) by planning serial monitoring and evaluating albuminuria trends.\n- Initiate diabetic retinopathy screening referral and counsel on the importance of routine eye and foot exams to detect early microvascular complications.\n- Encourage lifestyle modifications including improved diet and exercise to help manage diabetes, obesity (BMI ~38), and associated cardiovascular risk factors.\n- Address and document the patient\u2019s psychosocial stressors (divorce, poor self-care practices) impacting diabetes self-management.",
+  "Chief Concern": "Refill of metformin for type 2 diabetes management and re-establishment of routine diabetes care.",
+  "Assessment": "Phil Wiser is a 62-year-old male with established type 2 diabetes mellitus diagnosed 2 years ago who presents primarily for a refill of his metformin. He has been off medication for over 6 months and exhibits poor self-care with no recent home blood sugar monitoring. His A1c is significantly elevated at 9.8%, indicating poor glycemic control. Additionally, laboratory findings reveal a slightly elevated serum creatinine (1.6 mg/dL) with a corresponding decreased eGFR (55 mL/min/1.73 m\u00b2), raising concern for early diabetic kidney involvement. His lipid profile shows an LDL of 137 mg/dL. The physical exam is unremarkable with no signs of diabetic neuropathy or foot complications. Differential diagnoses include uncontrolled type 2 diabetes, early diabetic nephropathy, and associated metabolic syndrome.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Poorly Controlled Type 2 Diabetes Mellitus",
+      "Status": "Active \u2013 Uncontrolled, as evidenced by an elevated A1c (9.8%) and medication non-adherence.",
+      "Decision Making and Diagnositic Plan": "Decision-making is driven by the need to re-establish stable glycemic control. Baseline labs (HbA1c, CMP, CBC, Lipid Panel, Urine Albumin/Creatinine) have been reordered to assess current metabolic control and renal function. The high A1c and clinical history indicate that a gradual metformin titration to the maximum dose is appropriate, with plans to re-evaluate glycemic response and consider additional agents if necessary.",
+      "Treatment/Medication Plan": "Refill metformin ER 500 mg tablet with instructions to take 2 tablets twice daily, while planning gradual titration to the maximum tolerated dose. Medication reconciliation confirms no additional medications. Consider alternatives such as adding an SGLT2 inhibitor or GLP-1 receptor agonist if glycemic control does not improve in subsequent evaluations.",
+      "Contingency Planning": "If repeat A1c remains elevated after appropriate titration, then consider introducing a second-line agent (e.g., SGLT2 inhibitor) and refer for diabetes education. If hypoglycemia or intolerance occurs, then reassess dosage and consider alternative regimens.",
+      "Considerations for Documentation Improvement": "Ensure thorough documentation of the patient\u2019s medication history, reasons for non-adherence, and detailed explanation on how dose titration will be managed. Emphasize documentation of counseling regarding self-monitoring of blood glucose.",
+      "Considerations for Cost Effective Care Improvement": "Monitor the patient\u2019s response to metformin prior to adding additional agents. Consider cost-effective educational resources and community programs for dietary management and diabetes self-care."
+    },
+    "Problem 2": {
+      "Problem Name": "Risk of Diabetic Kidney Disease",
+      "Status": "Active \u2013 Laboratory evidence of impaired renal function (Creatinine 1.6 mg/dL, eGFR 55 mL/min/1.73 m\u00b2)",
+      "Decision Making and Diagnositic Plan": "Based on laboratory findings and long-standing uncontrolled hyperglycemia, there is a concern for diabetic kidney involvement. The decision includes monitoring albumin/creatinine ratio and renal function over time. Additional diagnostic work-up may be required if the renal function trend worsens.",
+      "Treatment/Medication Plan": "Continue metformin while monitoring renal function closely. Although no ACE inhibitor or ARB is currently initiated, consider these agents if albuminuria increases or if blood pressure becomes uncontrolled.",
+      "Contingency Planning": "If renal function declines further or albuminuria worsens, then consider referral to a nephrologist and initiation of renal protective medications (such as ACE inhibitors), adjusting diabetic medications as necessary.",
+      "Considerations for Documentation Improvement": "Document baseline renal parameters, trends over time, and specific thresholds that would trigger a change in management. Include patient education regarding the importance of regular kidney function monitoring.",
+      "Considerations for Cost Effective Care Improvement": "Leverage routine lab orders to monitor renal function and avoid unnecessary duplicative testing. Optimize use of generic medications with proven renal protective effects when indicated."
+    },
+    "Problem 3": {
+      "Problem Name": "Lack of Health Maintenance and Lifestyle Modification",
+      "Status": "Active \u2013 Patient reports poor dietary habits, absence of regular exercise, and missed screenings (eye and foot exams).",
+      "Decision Making and Diagnositic Plan": "Assessment is based on patient history of an unbalanced diet, high intake of junk food and sugary drinks, and absence of routine screening exams. Although no acute complications are evident, this deficit significantly contributes to uncontrolled diabetes and associated cardiovascular risk.",
+      "Treatment/Medication Plan": "Counsel the patient on the importance of nutritional improvement and regular physical activity. Provide referrals for dietary counseling and possibly a weight management program. Reinforce the need for scheduled diabetic retinopathy screening and foot examinations.",
+      "Contingency Planning": "If the patient is unable to make lifestyle changes, then consider involving a multidisciplinary team, including a dietitian and diabetes educator, to provide more structured support and behavior modification strategies.",
+      "Considerations for Documentation Improvement": "Explicitly document the patient\u2019s lifestyle choices, dietary patterns, and the educational interventions provided. Detail the discussion regarding the benefits of lifestyle modifications on glycemic control and overall health.",
+      "Considerations for Cost Effective Care Improvement": "Utilize community resources, free or low-cost nutritional counseling, and group education sessions instead of more expensive individualized programs when possible."
+    },
+    "Problem 4": {
+      "Problem Name": "Diabetic Retinopathy Screening",
+      "Status": "Active \u2013 No prior eye exam documented.",
+      "Decision Making and Diagnositic Plan": "Screening for diabetic retinopathy is warranted given the patient's duration of diabetes and uncontrolled hyperglycemia. An ophthalmology referral has been placed to perform a baseline exam.",
+      "Treatment/Medication Plan": "Follow up on ophthalmology referral to ensure the patient is evaluated for diabetic retinopathy. Educate the patient on the importance of regular eye exams in preventing vision loss.",
+      "Contingency Planning": "If the patient does not follow through with the referral, then arrange for a reminder call and consider scheduling an in-house screening if available.",
+      "Considerations for Documentation Improvement": "Record the date of the referral and any scheduled appointment details. Ensure follow-up notes confirm that the screening was completed.",
+      "Considerations for Cost Effective Care Improvement": "Use referral networks that accept insurance and have low copayment requirements. Consider community health programs offering low-cost eye screening."
+    },
+    "Problem 5": {
+      "Problem Name": "Dyslipidemia/CV Risk Management",
+      "Status": "Active \u2013 LDL cholesterol is mildly elevated at 137 mg/dL.",
+      "Decision Making and Diagnositic Plan": "The lipid panel indicates an elevated LDL level, contributing to cardiovascular risk in the setting of diabetes. Although immediate pharmacotherapy may not be required, re-evaluation and risk stratification are needed.",
+      "Treatment/Medication Plan": "Reinforce lifestyle modifications for lipid management. If future evaluations show persistent dyslipidemia, consider initiating a statin therapy in accordance with guidelines for diabetic patients.",
+      "Contingency Planning": "If LDL remains elevated on repeat labs, then consider starting a low-dose statin and discuss long-term cardiovascular risk reduction strategies with the patient.",
+      "Considerations for Documentation Improvement": "Document the lipid values, patient counseling provided, and the plan to reassess lipid levels at the next visit.",
+      "Considerations for Cost Effective Care Improvement": "Prioritize lifestyle modification counseling before initiating pharmacotherapy to reduce medication costs. Use generic statins when indicated."
+    },
+    "Problem 6": {
+      "Problem Name": "Not available",
+      "Status": "Not available",
+      "Decision Making and Diagnositic Plan": "Not available",
+      "Treatment/Medication Plan": "Not available",
+      "Contingency Planning": "Not available",
+      "Considerations for Documentation Improvement": "Not available",
+      "Considerations for Cost Effective Care Improvement": "Not available"
+    }
+  },
+  "Anticipatory Preventative Care": {
+    "Item 1": "Diabetic retinopathy screening referral has been placed. Evidence suggests annual eye exams are critical for early detection of vision-threatening complications.",
+    "Item 2": "Foot exam: Recommend scheduling regular diabetic foot exams to monitor for neuropathy and potential ulcers, even though the current exam was normal.",
+    "Item 3": "Immunizations: Due to no immunization history on record, recommend updating vaccines such as influenza (annual), pneumococcal, and tetanus-diphtheria-pertussis as per age-appropriate guidelines.",
+    "Item 4": "Nutritional counseling: Recommend a consultation with a dietitian to address poor dietary habits and obesity, integral in the management of diabetes.",
+    "Item 5": "Weight management: Initiate counseling and possibly referral to a weight management program given the patient\u2019s BMI of 38.",
+    "Item 6": "Blood pressure monitoring: Although current blood pressure is acceptable, advise regular monitoring to prevent cardiovascular complications in diabetic patients.",
+    "Considerations for Documentation Improvement": "Include detailed notes on patient education provided for each preventive measure, document informed consent for referrals, and note specific timelines for follow-up evaluations."
+  },
+  "Follow Up Care": {
+    "Item 1": "Schedule a follow-up visit in 3 months for repeat HbA1c testing and review of glycemic control.",
+    "Item 2": "Ensure follow-up on laboratory results, especially renal function tests and urine albumin/creatinine ratio, to assess for diabetic kidney disease progression.",
+    "Item 3": "Confirm that the ophthalmology appointment for diabetic retinopathy screening has been completed and document the findings.",
+    "Item 4": "Arrange for a repeat lipid panel in 6 months to evaluate the need for potential statin therapy.",
+    "Item 5": "Monitor blood pressure at each visit to ensure no hypertensive changes develop as part of diabetic cardiovascular risk management.",
+    "Item 6": "Set up a referral follow-up with nutritional counseling and/or a weight management program to monitor lifestyle modification progress.",
+    "Considerations for Documentation Improvement": "Clearly document the timeline and specific parameters for follow-up. Include any changes in medication doses, lab results trends, and patient adherence to lifestyle modifications during subsequent visits."
+  }
+}

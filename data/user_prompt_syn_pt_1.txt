@@ -1,4 +1,4 @@
-# Patient Vignette
+# Patient Electronic Medical Record
 Sol Lopez
 71 year old female
 

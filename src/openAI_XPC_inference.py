@@ -3,6 +3,7 @@ import time
 import os
 import json
 import pandas as pd
+import glob, os
 
 def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inputs_dir, json_schema, output_dir, overwrite_outputs=False):
     stats_list = []
@@ -12,7 +13,8 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
     stats_subdir = os.path.join(output_dir, model_name_str, "usage")
     os.makedirs(stats_subdir, exist_ok=True)
 
-    for filename in os.listdir(user_prompt_inputs_dir):
+    for path in glob.glob(os.path.join(user_prompt_inputs_dir, "*.txt")):
+        filename = os.path.basename(path)
         base_filename = filename.replace(".txt", "")
         output_filename = f"{base_filename}_{json_schema['name']}.json"
         output_filepath = os.path.join(output_subdir, output_filename)
@@ -22,14 +24,17 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
         with open(os.path.join(user_prompt_inputs_dir, filename), 'r') as file:
             user_prompt = file.read()
         if json_schema["name"] == "cr_feedback":
+            print(f"JSON schema name: {json_schema['name']}")
             # Using the base filename, search for the generated chart review JSON file
+            output_subdir_cr = output_subdir.replace("/cr_feedback", "")
             chart_review_filename = f"{base_filename}_chart_review.json"
-            chart_review_filepath = os.path.join(output_subdir, "chart_review", chart_review_filename)
+            chart_review_filepath = os.path.join(output_subdir_cr, "chart_review", chart_review_filename)
             if os.path.exists(chart_review_filepath):
                 with open(chart_review_filepath, 'r') as file:
                     chart_review_json = json.load(file)
                 # Add the chart review JSON to the user prompt
                 user_prompt = f"{user_prompt}\n# Chart Review for Feedback\n{json.dumps(chart_review_json)}"
+                print(f"Using chart review JSON for {filename} from {chart_review_filename}")
         timer_start = time.time()
         print(f"Generating text via OpenAI for {filename} using the {model_name_str} model with {json_schema['name']} JSON structured output...")
         response = client.responses.create(
@@ -47,8 +52,8 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
             text={
                 "format": json_schema
             },
-            temperature=0.1,
-            max_output_tokens= 8000
+            #temperature=0.1,
+            max_output_tokens= 16384
             )
         timer_stop = time.time()
         timer_duration = timer_stop - timer_start

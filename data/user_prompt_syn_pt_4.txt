@@ -1,0 +1,236 @@
+# Patient Electronic Medical Record
+Bill Moore
+75 year old male
+
+## Date of Visit:
+2/14/25 
+
+## Reason For Visit:
+Lab follow-up
+
+## History of Present Illness
+Patient is here to review labs picked up his metformin prescription and tolerating medications without side effects. No new symptoms since last visit. He's scheduled to get seen by ophthalmologist on Feb 20.
+
+## Objective
+### Vitals
+Vitals
+Height: 62 in
+Weight: 201 lbs 0 oz
+Waist Circumference: cm
+Temperature: °F
+Blood Pressure: 132 / 84
+Pulse Rate: 77 bpm
+Pulse Rhythm: Regular
+Respiration Rate: 18 bpm
+Position and Site: Sitting, Right Upper Extremity
+
+### Physical Exam: Brief Exam
+
+    Constitutional: Alert, no acute distress.
+
+    Pulmonary: Clear to auscultation bilaterally.
+
+    Cardiovascular: Regular rate and rhythm, no murmurs.
+
+### Labs
+Metabolic Panel Results
+
+Ordered by: Paulius Mui, MD
+Date Collected: 2/8/2025
+Analyte	Result	Units
+Glucose	88	mg/dL
+BUN (Blood Urea Nitrogen)	14	mg/dL
+Creatinine	1.6	mg/dL
+eGFR (if Non-African American)	55	mL/min/1.73 m²
+BUN/Creatinine Ratio	8.75	-
+Sodium	140	mmol/L
+Potassium	4.1	mmol/L
+Chloride	102	mmol/L
+Carbon Dioxide (Bicarbonate)	27	mmol/L
+Calcium	9.5	mg/dL
+Total Protein	7.1	g/dL
+Albumin	4.7	g/dL
+Globulin, Total	2.4	g/dL
+A/G Ratio	2.0	-
+Bilirubin, Total	0.7	mg/dL
+Alkaline Phosphatase	67	IU/L
+
+BC with Differential – Collected 2/8/2025
+
+Ordered by: Paulius Mui, MD
+Collected on: Saturday, 2/8/25
+Component	Result	Units
+WBC (White Blood Cell Count)	4.9	x10³/uL
+RBC (Red Blood Cell Count)	5.03	x10⁶/uL
+Hemoglobin	15.7	g/dL
+Hematocrit	45.8	%
+MCV (Mean Corpuscular Volume)	91	fL
+MCH (Mean Corpuscular Hemoglobin)	31.2	pg
+MCHC	34.3	g/dL
+RDW	12.5	%
+Platelets	157	x10³/uL
+Differential - Percentages
+Component	Result	Units
+Neutrophils	52	%
+Lymphocytes	35	%
+Monocytes	9	%
+Eosinophils	2	%
+Basophils	1	%
+Immature Cells	None	-
+Differential - Absolute Counts
+Component	Result	Units
+Neutrophils (Absolute)	2.5	x10³/uL
+Lymphocytes (Absolute)	1.7	x10³/uL
+Monocytes (Absolute)	0.4	x10³/uL
+Eosinophils (Absolute)	0.1	x10³/uL
+Basophils (Absolute)	0.1	x10³/uL
+Immature Granulocytes	0	%
+Immature Granulocytes (Abs)	0	x10³/uL
+NRBC (Nucleated RBCs)	0	%
+
+Lipid Panel
+
+Ordered by: Paulius Mui, MD
+Collected on: 2/8/2025
+Component	Result	Units
+Cholesterol, Total	218	mg/dL
+Triglycerides	84	mg/dL
+HDL Cholesterol	66	mg/dL
+VLDL Cholesterol (Calc)	15	mg/dL
+LDL Cholesterol (Calc)	137	mg/dL
+
+Hemoglobin A1C
+
+Ordered by: Paulius Mui, MD
+Collected on: 2/8/2025
+Component	Result	Units
+Hemoglobin A1C	9.8	%
+
+Albumin/Creatinine Ratio – Random Urine
+
+Ordered by: Paulius Mui, MD
+Collected on: Saturday, 2/8/2025
+Component	Result	Units
+Creatinine, Urine	80	mg/dL
+Albumin, Urine	40	µg/mL
+Alb/Creat Ratio	50	mg/g creatinine
+
+## Assesment:
+
+Type 2 diabetes mellitus without complications (E11.9)
+
+    Background: on metformin, A1c 9.8%
+
+    Today’s Assessment: given poor renal function, will add semaglutide (no contraindications/risk factors). repeat lab 3 mo.
+
+## Plan
+Prescribe:
+
+semaglutide 0.25 mg or 0.5 mg (2 mg/3 mL) subcutaneous pen injector
+
+    SIG: 0.25 mg once weekly for 4 weeks
+
+    Days Supply: 30
+
+    Quantity to Dispense: 1 × 3 mL syringe
+
+    Substitutions Allowed: Allowed
+
+    Refills: 0
+
+    Prescriber: Paulius Mui
+
+## Date of Visit:
+2/14/25 
+
+## Reason For Visit
+Refill for metformin
+
+## History Of Present Illness
+
+Patient comes in to establish care because he needs a refill for metformin for diabetes. He’s been out of the medication for more than 6 months and was tolerating the maximum dose. Diabetes was diagnosed 2 years ago. He admits that taking care of his health has not been a priority as he’s going through a divorce. He does not check his blood sugar at home. He’s never had an eye exam or foot exam done and doesn’t remember his last set of labs. He reports no history of cardiovascular or kidney disease.
+He reports no vision changes, frequent urination, increased thirst, fatigue, abnormal sensation in extremities, foot ulcers or sores.
+His diet is not balanced. He eats a lot of junk food, including candy bars and drinks 3 soft drinks per day as a way to cope with stress at home.
+He does not exercise.
+He takes no other medications. He doesn’t remember immunization history.
+
+## Objective
+### Vitals
+
+    Height: 62 in
+
+    Weight: 200 lbs 0 oz
+
+    Waist Circumference: 40 cm
+
+    Temperature: 98 °F
+
+    Blood Pressure: 130/79
+
+    Pulse Rate: 82 bpm
+
+    Respiration Rate: 20 bpm
+
+    Site: Temporal
+
+    Position and Site: Sitting, Right Upper Extremity
+
+    Pulse Rhythm: Regular
+
+    Oxygen Saturation: 99%
+
+### Physical Exam: Brief Exam
+
+    Constitutional: Alert, no acute distress.
+
+    Pulmonary: Clear to auscultation bilaterally.
+
+    Cardiovascular: Regular rate and rhythm, no murmurs.
+
+    Extremities: No lower extremity edema, ulcers, or deformities bilaterally. Microfilament test normal in great toes and metatarsal heads bilaterally. DP and PT pulses 2+ bilaterally.
+
+### Diagnosis:
+
+Type 2 diabetes mellitus without complications (E11.9)
+
+    Background: on metformin
+
+    Approximate Date of Onset: 2023
+
+    Today’s Assessment: need baseline labs, refill metformin (titrate gradually to max dose), obtain prior records for immunizations, will discuss adding statin on f/u visit, diabetic retinopathy screening, foot exam, blood
+
+## Plan
+Tests Ordered:
+
+    CBC (Includes Diff/Plt) (REFL)
+
+    Comprehensive Metabolic Panel (REFL)
+
+    Hemoglobin A1c
+
+    Lipid Panel (REFL)
+
+    Albumin, Random Urine w/Creatinine
+
+Ordering Provider: Paulius Mui, MD
+Indications: Type 2 diabetes mellitus without complications
+
+
+Follow-up in 1 week to review labs, check prescription adherence.
+Prescribe: Metformin ER 500 mg tablet, extended release 24 hr
+
+Indications: Type 2 diabetes mellitus without complications (E11.9)
+SIG: Take 2 tablets twice a day
+Days Supply: 30
+Quantity to Dispense: 120 tablets
+Refills: 2
+Substitutions Allowed: Allowed
+Prescriber: Paulius Mui
+Refer to: Federico Mattioli Ophthalmology
+
+Indications: Type 2 diabetes mellitus without complications (E11.9)
+Clinical Question: Specialized intervention
+Priority: Routine
+Notes to Specialist: Diabetic retinopathy screen
+Include Visit Note:
+Allergy: NKDA (No Known Drug Allergies)

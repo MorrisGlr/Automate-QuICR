@@ -1,0 +1,5 @@
+input_filename,output_filename,model_name,json_schema,input_tokens,cached_input_tokens,output_tokens,total_tokens,time_to_generate
+user_prompt_syn_pt_3.txt,user_prompt_syn_pt_3_chart_review.json,o3-mini-2025-01-31,chart_review,3317,0,3502,6819,29.644
+user_prompt_syn_pt_2.txt,user_prompt_syn_pt_2_chart_review.json,o3-mini-2025-01-31,chart_review,4093,0,5057,9150,42.975
+user_prompt_syn_pt_1.txt,user_prompt_syn_pt_1_chart_review.json,o3-mini-2025-01-31,chart_review,2819,0,3597,6416,30.106
+user_prompt_syn_pt_4.txt,user_prompt_syn_pt_4_chart_review.json,o3-mini-2025-01-31,chart_review,4352,0,4189,8541,30.197

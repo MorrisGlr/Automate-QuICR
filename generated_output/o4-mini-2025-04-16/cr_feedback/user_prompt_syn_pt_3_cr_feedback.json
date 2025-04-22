@@ -1,0 +1,54 @@
+{
+  "Feedback Summary": "The chart review provides a thorough multi\u2013problem plan grounded in evidence\u2011based guidelines, with clear diagnostic and treatment strategies for hypertension, tobacco dependence, mental health, cancer screening, and immunizations. The Assessment succinctly captures the key concerns and differential diagnoses. However, the report would benefit from more complete baseline data (vital signs, labs), deeper exploration of the patient\u2019s history and readiness for interventions (including needle phobia), and tighter timelines and patient\u2011focused details for each plan item.",
+  "Feedback Details": {
+    "Assessment Section": {
+      "Strengths": "\u2022 Accurately summarizes patient presentation, risk factors (hypertension history, tobacco use, loneliness) and unremarkable exam.  \n\u2022 Clearly lists a concise differential (primary hypertension, tension headaches, adjustment disorder).  \n\u2022 Identifies major preventive health gaps (cancer screening, immunizations).",
+      "Areas for Improvement": "\u2022 No baseline vital signs or laboratory values documented to confirm or stratify hypertension or metabolic risk\u2014these are critical first steps.  \n\u2022 Sparse social, family, and prior medical history; more probing on family cardiovascular or cancer history, social support, and immunization records is needed.  \n\u2022 The Assessment could explicitly note the patient\u2019s needle phobia as a barrier to diagnostics and vaccines.  \n\u2022 Consider adding a brief summary of patient\u2019s psychosocial context to frame mental health interventions."
+    },
+    "Problem 1": {
+      "Problem Name": "Suspected hypertension",
+      "Strengths": "\u2022 Diagnostic plan calls for multiple BP measurements (seated/standing, home monitoring) and relevant labs (CBC, CMP, lipids, glucose).  \n\u2022 Lifestyle modifications are evidence\u2011based (DASH diet, exercise) with thresholds for medication initiation.  \n\u2022 Contingency plan addresses therapy escalation and management of adverse effects.",
+      "Areas for Improvement": "\u2022 No explicit timeline specified for obtaining today\u2019s BP readings or lab draws, especially given needle phobia\u2014consider scheduling interventions in the same visit with comfort measures.  \n\u2022 Missing target BP goal (e.g., <130/80 mmHg) to guide therapy adjustments.  \n\u2022 Documentation considerations mention prior readings but don\u2019t provide a template for recording home logs.  \n\u2022 Could strengthen patient engagement by outlining how to overcome needle fear (e.g., topical anesthetic before lab draw).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 2": {
+      "Problem Name": "Tobacco dependence",
+      "Strengths": "\u2022 Plan uses the 5 A\u2019s framework and assesses dependence via Fagerstr\u00f6m test.  \n\u2022 Recommends both long\u2011 and short\u2011acting NRT, alternative pharmacotherapy, and quitline referral.  \n\u2022 Includes contingency for patients not ready to quit.",
+      "Areas for Improvement": "\u2022 No documentation of patient\u2019s current readiness stage or past quit attempts.  \n\u2022 Lacks a specific timeline for follow\u2011up on cessation progress (e.g., at 2 weeks post\u2013NRT start).  \n\u2022 Could address coping strategies for stress\u2011related cravings (lawyer job stress).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 3": {
+      "Problem Name": "Adjustment disorder/depressive symptoms",
+      "Strengths": "\u2022 Appropriately plans validated screening (PHQ\u20119, GAD\u20117) and referral for counseling.  \n\u2022 Sets SSRI initiation threshold and outlines when to adjust therapy.",
+      "Areas for Improvement": "\u2022 Does not specify when screening will occur (e.g., during today\u2019s visit) or how results will be documented.  \n\u2022 Lacks immediate safety planning language (e.g., suicidal ideation screening questions).  \n\u2022 No timeline for follow\u2011up of symptoms after therapy starts (e.g., 4 weeks specified but could be more directive).",
+      "Skill Assessment": "Needs Improvement"
+    },
+    "Problem 4": {
+      "Problem Name": "Breast cancer screening overdue",
+      "Strengths": "\u2022 Plan correctly recommends mammography with tomosynthesis and outlines management of abnormal BI\u2011RADS results.  \n\u2022 Includes patient education on breast self\u2011awareness.",
+      "Areas for Improvement": "\u2022 No specific date or referral process detailed\u2014add an order date or scheduler contact.  \n\u2022 Does not address patient fears or logistical barriers (transportation, language).  \n\u2022 Could link scheduling mammogram with addressing needle phobia by coordinating with imaging center.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 5": {
+      "Problem Name": "Colorectal cancer screening overdue",
+      "Strengths": "\u2022 Offers FIT as a patient\u2011friendly option given needle/invasive phobia and outlines follow\u2011up colonoscopy if positive.  \n\u2022 Includes reminder strategy for unreturned kits.",
+      "Areas for Improvement": "\u2022 Timeline for FIT kit return (\u201cwithin 4 weeks\u201d) is stated but could tie to a specific date.  \n\u2022 No mention of patient education on sample collection or potential barriers.  \n\u2022 Could discuss alternative screening tests (e.g., stool DNA) if FIT is declined.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 6": {
+      "Problem Name": "Immunization catch\u2011up and needle phobia",
+      "Strengths": "\u2022 Comprehensive immunization plan by vaccine type and sequence, reflecting CDC schedules.  \n\u2022 Proposes phobia management techniques (topical anesthetic, intranasal flu vaccine, behavioral therapy referral).",
+      "Areas for Improvement": "\u2022 Lacks a clear sequence and timing (e.g., give Tdap first visit, Shingrix doses at 0 and 2 months).  \n\u2022 No plan to verify prior immunizations (e.g., patient recall, records from UK).  \n\u2022 Could consider alternative delivery settings or vaccine champions to improve uptake.",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Anticipatory Preventative Care Section Feedback": {
+      "Strengths": "\u2022 Items align with USPSTF and CDC recommendations for cancer screening, diabetes/lipid screening, immunizations, and bone health.  \n\u2022 Provides evidence\u2011based intervals and specific dosing for supplements and vaccines.",
+      "Areas for Improvement": "\u2022 Falls risk assessment and osteoporosis risk tools (e.g., FRAX) could be added.  \n\u2022 Missing formal depression/anxiety screening under preventive care.  \n\u2022 Documentation suggestions mention templates but could recommend EMR health\u2011maintenance modules."
+    },
+    "Follow Up Care Feedback": {
+      "Strengths": "\u2022 Follow\u2011up items are problem\u2011specific with recommended intervals (4\u20136 weeks for BP, mental health, labs).  \n\u2022 Tracks completion of imaging and FIT kit return.",
+      "Areas for Improvement": "\u2022 Could consolidate follow\u2011up into a single timeline table for clarity.  \n\u2022 No identified responsible team member for each follow\u2011up task (nurse, care coordinator).  \n\u2022 Lacks contingency if patient misses follow\u2011up (e.g., outreach calls)."
+    },
+    "Overall Recommendations": "1. Integrate baseline vital signs and lab orders into the same visit, using needle\u2011phobia strategies to minimize barriers.  \n2. Add explicit timelines, responsible parties, and SMART goals to every plan item to enhance accountability.  \n3. Expand psychosocial documentation: quantify depression/anxiety scores, capture social/support network, and create a safety plan.  \n4. Leverage EMR health maintenance modules or templates for preventive care to auto\u2011track due dates.  \n5. Enhance patient engagement by documenting discussions of barriers, preferences, and consent for each intervention."
+  }
+}

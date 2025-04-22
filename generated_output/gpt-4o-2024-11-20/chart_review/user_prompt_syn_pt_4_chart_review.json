@@ -1,0 +1,35 @@
+{
+  "Patient Name": "Bill Moore",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Ensure consistent follow-up on lab results and medication adherence.- Address lifestyle modifications with specific, achievable goals.- Monitor renal function closely due to elevated creatinine levels.",
+  "Chief Concern": "Lab follow-up and diabetes management.",
+  "Assessment": "Mr. Bill Moore, a 75-year-old male with a history of type 2 diabetes mellitus, presents for lab follow-up. His recent labs indicate suboptimal glycemic control (HbA1c 9.8%) and reduced renal function (eGFR 55 mL/min/1.73 m\u00b2). He reports no acute symptoms but acknowledges challenges in managing his health due to personal stressors. The patient is currently on metformin and has been prescribed semaglutide to improve glycemic control.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus",
+      "Status": "Suboptimally controlled, with recent HbA1c of 9.8%.",
+      "Decision Making and Diagnositic Plan": "Monitor HbA1c and renal function every three months.",
+      "Treatment/Medication Plan": "Continue metformin and initiate semaglutide as prescribed.",
+      "Contingency Planning": "If HbA1c does not improve, consider additional pharmacologic options.",
+      "Considerations for Documentation Improvement": "Document patient education on medication use and lifestyle changes.",
+      "Considerations for Cost Effective Care Improvement": "Evaluate generic medication options to reduce costs."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Diabetic retinopathy screening scheduled.",
+      "Item 2": "Encourage routine foot exams.",
+      "Item 3": "Discuss dietary modifications to improve glycemic control.",
+      "Item 4": "Promote regular physical activity.",
+      "Item 5": "Ensure vaccinations are up-to-date.",
+      "Item 6": "Monitor for signs of diabetic complications.",
+      "Considerations for Documentation Improvement": "Include detailed notes on patient education and preventative care discussions."
+    },
+    "Follow Up Care": {
+      "Item 1": "Review adherence to semaglutide and metformin.",
+      "Item 2": "Reassess HbA1c and renal function.",
+      "Item 3": "Evaluate for any side effects of new medication.",
+      "Item 4": "Discuss progress on lifestyle modifications.",
+      "Item 5": "Ensure completion of ophthalmology referral.",
+      "Item 6": "Update immunization records.",
+      "Considerations for Documentation Improvement": "Ensure follow-up care plans are clearly outlined and communicated to the patient."
+    }
+  }
+}

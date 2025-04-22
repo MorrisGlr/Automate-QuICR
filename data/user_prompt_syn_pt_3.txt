@@ -1,4 +1,4 @@
-# Patient vignette
+# Patient Electronic Medical Record
 Samantha Baker
 female, 54 years old
 Date of Birth: 9/8/1970

@@ -1,0 +1,80 @@
+{
+  "Patient Name": "Bill Moore",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": [
+    "Explicitly list and address all identified problems including Type 2 Diabetes Mellitus, Chronic Kidney Disease Stage 3a, Microalbuminuria, Hyperlipidemia, Obesity, and Hypertension/Elevated Blood Pressure.",
+    "Clarify the current and target dose of Metformin, ensuring it's appropriate for the patient's eGFR of 55.",
+    "Document the rationale for choosing Semaglutide more thoroughly, highlighting its benefits for A1c reduction, potential weight loss, and cardiorenal protection in the context of CKD.",
+    "Initiate statin therapy for hyperlipidemia as previously planned, documenting the choice of agent, dose, rationale (ASCVD risk reduction in diabetes), and patient counseling.",
+    "Establish and document a clear blood pressure goal (e.g., <130/80) given diabetes and CKD, and outline the plan for initiation of antihypertensive therapy (e.g., ACEi/ARB) if lifestyle modifications are insufficient.",
+    "Incorporate specific, measurable lifestyle counseling for diet, exercise, and weight management, addressing the patient's reported stress-related eating habits.",
+    "Systematically review and document the status of all age-appropriate preventative care, including immunizations (obtaining records or initiating vaccination series), cancer screenings (Colorectal, Lung/AAA if applicable based on history), and depression screening.",
+    "Structure follow-up plans with specific intervals and clear goals for the next visit, including monitoring medication tolerance/efficacy (Semaglutide, Metformin, Statin), lab parameters (A1c, CMP, Lipids), BP control, and status of referrals."
+  ],
+  "Chief Concern": "Initial visit: Establish care and refill Metformin for Type 2 Diabetes Mellitus. Follow-up visit: Review lab results.",
+  "Assessment": "Mr. Bill Moore is a 75-year-old male establishing care, initially presenting for Metformin refill after a >6-month lapse in medication, reporting poor lifestyle habits related to stress. Subsequent lab results revealed uncontrolled Type 2 Diabetes Mellitus (A1c 9.8%), newly identified Chronic Kidney Disease Stage 3a (eGFR 55, Cr 1.6) with Microalbuminuria (UACR 50 mg/g), Hyperlipidemia (LDL 137 mg/dL), and Obesity (BMI ~36.7 kg/m\u00b2). Blood pressure readings are borderline elevated (130/79, 132/84). The patient was restarted on Metformin (dose needs clarification) and Semaglutide 0.25mg weekly was added at the follow-up visit due to poor glycemic control and CKD. A referral for diabetic retinopathy screening was placed, and a foot exam was performed and documented as normal. Key management priorities include aggressive glycemic control, addressing cardiovascular risk factors (lipids, blood pressure, weight), managing CKD, and implementing preventative care.",
+  "Plan": {
+    "Problem 1": {
+      "Problem Name": "Type 2 Diabetes Mellitus, Uncontrolled",
+      "Status": "Active, Uncontrolled (A1c 9.8%). Recently restarted Metformin (dose unclear), initiated Semaglutide.",
+      "Decision Making and Diagnositic Plan": "Diagnosis confirmed by history and elevated A1c (9.8%). Uncontrolled status necessitates intensification of therapy beyond Metformin monotherapy, especially given the >6 month lapse. Labs ordered at the initial visit (A1c, CMP, Urine Alb/Cr ratio) confirmed poor control and identified complications (CKD, microalbuminuria). Semaglutide was chosen as the second agent due to its high efficacy in A1c reduction, potential weight loss benefits, and demonstrated cardiorenal benefits, which are particularly relevant given the patient's CKD. Foot exam performed during the initial visit showed no neuropathy or PVD. Ophthalmology referral placed for retinopathy screening.",
+      "Treatment/Medication Plan": "1. Metformin ER: Dose prescribed initially was 1000mg BID (2 tablets BID of 500mg ER). The follow-up note states he 'picked up his metformin prescription'. Confirm current dose and adherence. Ensure dose is appropriate for eGFR 55 (max 2000mg/day generally acceptable, monitor renal function). 2. Semaglutide subcutaneous pen injector: Initiated at 0.25mg once weekly for 4 weeks, prescribed 1 x 3mL pen (contains 2mg/3mL). Plan likely involves titration to 0.5mg weekly after 4 weeks if tolerated, aiming for improved glycemic control. 3. Lifestyle Counseling: Needs reinforcement regarding diet (reduce junk food/soda) and initiating exercise, addressing stress coping mechanisms.",
+      "Contingency Planning": "If A1c goal (e.g., <8.0% given age/comorbidities, or <7.0% if achievable safely) is not met after 3 months on Semaglutide 0.5mg (or titrated dose), consider further titration of Semaglutide or addition of another agent (e.g., SGLT2 inhibitor if eGFR remains >30, DPP-4 inhibitor). If patient experiences significant side effects from Semaglutide, consider alternative GLP-1 agonist or switch to a different class. Monitor for hypoglycemia, especially if intensifying therapy.",
+      "Considerations for Documentation Improvement": "Document the specific A1c target. Clarify the exact Metformin dose the patient is currently taking and the titration plan, if any. Document specific dietary and exercise recommendations provided. Explicitly link microalbuminuria and CKD as complications in the problem list assessment for diabetes.",
+      "Considerations for Cost Effective Care Improvement": "Metformin is tier 1/low cost. Discuss Semaglutide cost and patient's insurance coverage; explore patient assistance programs if needed. Ensure proper patient education on pen injection technique to minimize waste."
+    },
+    "Problem 2": {
+      "Problem Name": "Chronic Kidney Disease, Stage 3a, with Microalbuminuria",
+      "Status": "Active, newly diagnosed.",
+      "Decision Making and Diagnositic Plan": "Diagnosed based on laboratory findings: Creatinine 1.6 mg/dL and calculated eGFR 55 mL/min/1.73 m\u00b2 (consistent with Stage 3a CKD). Urine Albumin/Creatinine ratio of 50 mg/g confirms microalbuminuria, indicating diabetic kidney disease. These findings necessitate monitoring renal function, aggressive management of contributing factors (diabetes, hypertension), and adjusting medications as needed.",
+      "Treatment/Medication Plan": "1. Monitor renal function: Repeat CMP (including Creatinine/eGFR) in 3 months. 2. Optimize Diabetes Control: Per Problem 1 plan. 3. Optimize Blood Pressure Control: Per Problem 5 plan (target <130/80, consider ACEi/ARB). 4. Medication review: Ensure Metformin dose is appropriate for eGFR. Semaglutide is renally safe. Avoid nephrotoxins, specifically counsel patient to avoid NSAIDs.",
+      "Contingency Planning": "If eGFR declines significantly (<45 or <30 mL/min/1.73 m\u00b2), adjust Metformin dose accordingly or discontinue if necessary. If proteinuria worsens or eGFR decline accelerates, consider referral to Nephrology.",
+      "Considerations for Documentation Improvement": "Add 'CKD Stage 3a (A-Etiology Diabetes, G-GFR G3a, A-Albuminuria A2)' and 'Microalbuminuria' explicitly to the problem list. Document discussion regarding NSAID avoidance. Document plan for BP management in context of CKD (ACEi/ARB consideration).",
+      "Considerations for Cost Effective Care Improvement": "Monitoring labs (CMP, UACR) are necessary but can be spaced appropriately (e.g., q3-6 months once stable). Using generic ACEi/ARB if indicated is cost-effective."
+    },
+    "Problem 3": {
+      "Problem Name": "Hyperlipidemia",
+      "Status": "Active, untreated.",
+      "Decision Making and Diagnositic Plan": "Diagnosed based on lipid panel results: Total Cholesterol 218 mg/dL, LDL Cholesterol 137 mg/dL. LDL is significantly above goal for a patient with diabetes (ADA guidelines recommend <70 mg/dL for patients with diabetes and other ASCVD risk factors, or at least <100 mg/dL). The initial plan mentioned discussing statin initiation at follow-up, but this was not explicitly addressed in the follow-up plan.",
+      "Treatment/Medication Plan": "1. Initiate moderate-to-high intensity statin therapy: Given age and diabetes, patient is at high risk for ASCVD. Recommend starting Atorvastatin 40mg daily or Rosuvastatin 20mg daily. 2. Lifestyle Modification: Reinforce dietary changes (low saturated fat).",
+      "Contingency Planning": "Recheck lipid panel 4-12 weeks after initiating statin therapy. If LDL goal not met, consider titrating statin dose or adding Ezetimibe. If patient reports myalgias, evaluate CK, potentially hold statin, rechallenge with same or different statin at lower dose, or consider alternatives.",
+      "Considerations for Documentation Improvement": "Add 'Hyperlipidemia' explicitly to the problem list. Document the calculated ASCVD risk score or risk category. Document the chosen statin, dose, rationale, counseling provided (including side effects like myalgia), and the follow-up plan for lipid monitoring.",
+      "Considerations for Cost Effective Care Improvement": "Prescribe generic statins (Atorvastatin, Rosuvastatin, Simvastatin) which are highly effective and inexpensive."
+    },
+    "Problem 4": {
+      "Problem Name": "Obesity",
+      "Status": "Active.",
+      "Decision Making and Diagnositic Plan": "Calculated BMI based on height (62 in) and weight (200-201 lbs) is approximately 36.7 kg/m\u00b2, consistent with Class II Obesity. This is a significant contributor to his diabetes, hypertension risk, and hyperlipidemia. Patient reports poor diet and lack of exercise, linked to stress.",
+      "Treatment/Medication Plan": "1. Lifestyle Counseling: Provide specific, achievable goals for dietary modification (e.g., reduce soda intake, limit processed foods) and physical activity (e.g., start with 10-15 minutes walking daily, gradually increase). Address stress coping strategies. 2. Medication: Semaglutide initiation may promote weight loss as a secondary benefit.",
+      "Contingency Planning": "Set realistic weight loss goals (e.g., 5-10% of body weight). If lifestyle changes and Semaglutide do not lead to meaningful weight loss after 3-6 months, consider referral to a registered dietitian or a structured weight management program.",
+      "Considerations for Documentation Improvement": "Add 'Obesity, Class II' explicitly to the problem list. Document current BMI. Document specific lifestyle recommendations and patient-centered goals discussed. Track weight at subsequent visits.",
+      "Considerations for Cost Effective Care Improvement": "Focus on sustainable, low-cost lifestyle changes. Utilize available community resources for nutrition or exercise if available. Semaglutide's cost is primarily justified for diabetes control."
+    },
+    "Problem 5": {
+      "Problem Name": "Hypertension / Elevated Blood Pressure",
+      "Status": "Active, untreated.",
+      "Decision Making and Diagnositic Plan": "BP readings on two separate occasions (130/79 mmHg and 132/84 mmHg) indicate Stage 1 Hypertension or consistently elevated blood pressure. Given the patient's diabetes and CKD with microalbuminuria, the target BP is <130/80 mmHg.",
+      "Treatment/Medication Plan": "1. Lifestyle Modifications: Emphasize DASH diet principles (low sodium, high potassium, fruits, vegetables), regular exercise, and weight loss. 2. Pharmacologic Therapy: Strongly consider initiating an Angiotensin-Converting Enzyme inhibitor (ACEi, e.g., Lisinopril 5-10mg daily) or Angiotensin II Receptor Blocker (ARB, e.g., Losartan 25-50mg daily) due to compelling indications (diabetes, CKD, microalbuminuria), even with current borderline readings, to achieve goal BP <130/80 and provide renal protection. 3. Monitoring: Encourage home BP monitoring if feasible.",
+      "Contingency Planning": "If target BP <130/80 mmHg is not achieved with lifestyle changes and initial ACEi/ARB therapy after 1 month, titrate dose upwards. If still not at goal, consider adding a second agent, such as Amlodipine or Hydrochlorothiazide (use with caution given eGFR 55).",
+      "Considerations for Documentation Improvement": "Add 'Hypertension' or 'Elevated Blood Pressure' to the problem list. Document the target BP goal (<130/80 mmHg). Document the plan for initiating medication (e.g., start ACEi/ARB at next visit if BP remains elevated or start now given comorbidities). Document counseling on lifestyle modifications specific to BP.",
+      "Considerations for Cost Effective Care Improvement": "Generic ACE inhibitors and ARBs are inexpensive and widely available. Home BP cuffs can be a cost-effective tool for long-term management."
+    },
+    "Anticipatory Preventative Care": {
+      "Item 1": "Immunizations: Patient is 75, history unknown. Needs assessment and administration of age-appropriate vaccines: Influenza (annually), Pneumococcal (PCV20 or PCV15 followed by PPSV23), Shingrix (2 doses), Tdap/Td booster (if >10 years since last Td), COVID-19 vaccine/boosters per current guidelines.",
+      "Item 2": "Colorectal Cancer Screening: Patient is 75. Verify date and type of last screening. If not up-to-date or never screened, recommend screening (options: colonoscopy, annual FIT, Cologuard every 3 years). Shared decision-making recommended for screening beyond age 75.",
+      "Item 3": "Diabetic Retinopathy Screening: Referral placed to Ophthalmology. Ensure patient completes appointment.",
+      "Item 4": "Diabetic Foot Care: Comprehensive foot exam performed at initial visit was normal. Continue annual foot exams and patient education on self-foot checks.",
+      "Item 5": "Smoking Cessation: Smoking status not documented. Assess tobacco use history. If smoker, provide counseling and offer cessation aids. If history of smoking, assess eligibility for AAA screening (one-time ultrasound for men 65-75 who ever smoked) and Lung Cancer Screening (if meets criteria).",
+      "Item 6": "Depression Screening: Patient mentioned significant stress due to divorce impacting self-care. Recommend screening for depression using a validated tool (e.g., PHQ-2/PHQ-9).",
+      "Considerations for Documentation Improvement": "Create a dedicated 'Health Maintenance' section in the chart. Document the status (date of last screening/vaccine, result) and plan for each relevant preventative service. Explicitly document smoking history (pack-years if applicable). Document depression screening results and follow-up plan if positive."
+    },
+    "Follow Up Care": {
+      "Item 1": "Timeline: Schedule follow-up visit in 3 months to reassess glycemic control, renal function, and lipid levels after medication adjustments.",
+      "Item 2": "Medication Review: Assess tolerance and adherence to Metformin (confirm dose) and Semaglutide. Discuss potential need for Semaglutide dose titration.",
+      "Item 3": "Lab Review: Review repeat Hemoglobin A1c, Comprehensive Metabolic Panel (for eGFR, electrolytes), and potentially Lipid Panel (if statin initiated).",
+      "Item 4": "Blood Pressure: Recheck BP, assess impact of lifestyle changes, and confirm plan/initiation/titration of antihypertensive medication (e.g., ACEi/ARB) to meet goal <130/80 mmHg.",
+      "Item 5": "Referral Status: Confirm if Ophthalmology appointment was completed and obtain report.",
+      "Item 6": "Lifestyle/Weight: Reassess diet, exercise, stress coping, and monitor weight.",
+      "Considerations for Documentation Improvement": "Clearly state the specific interval for follow-up (e.g., 'RTC 3 months'). Outline specific parameters to be reassessed at the next visit (e.g., 'Check A1c response to Semaglutide', 'Monitor eGFR', 'Assess BP control on Lisinopril', 'Initiate statin therapy discussion')."
+    }
+  }
+}

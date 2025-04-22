@@ -1,30 +1,38 @@
 {
-  "Feedback Summary": "The chart review output demonstrates a thorough and organized approach to addressing the patient's condition, with room for refinement in certain areas.",
+  "Feedback Summary": "The chart review provides a comprehensive overview of the patient's condition and history, with clear documentation of subjective and objective findings.",
   "Feedback Details": {
     "Assessment Section": {
-      "Strengths": "The assessment section effectively identifies atrial fibrillation as the primary concern and provides relevant clinical context.",
-      "Areas for Improvement": "Consider including a brief discussion of the patient's risk factors and potential underlying causes of atrial fibrillation to enhance the assessment."
+      "Strengths": "The assessment effectively identifies atrial fibrillation as the primary concern, supported by the patient's history and physical exam findings.",
+      "Areas for Improvement": "Consider including a differential diagnosis to explore other potential causes of the irregular rhythm and hypertension."
     },
     "Problem 1": {
-      "Strengths": "The plan for managing atrial fibrillation is well-structured, addressing anticoagulation and rate/rhythm control.",
-      "Areas for Improvement": "Provide more detail on the rationale for selecting specific medications or interventions, considering the patient's preferences and clinical profile."
+      "Problem Name": "Atrial Fibrillation",
+      "Strengths": "The plan outlines the need for anticoagulation therapy and rate control, which are standard care approaches.",
+      "Areas for Improvement": "Provide specific medication options, dosing considerations, and monitoring plans for anticoagulation and rate control."
     },
     "Problem 2": {
-      "Strengths": "The plan addresses hypertension as a secondary concern, which is appropriate given its relevance to atrial fibrillation.",
-      "Areas for Improvement": "Include specific recommendations for blood pressure management, such as lifestyle modifications or pharmacologic options."
+      "Problem Name": "Hypertension",
+      "Strengths": "The plan acknowledges the elevated blood pressure and its relevance to the patient's condition.",
+      "Areas for Improvement": "Include a detailed plan for hypertension management, such as lifestyle modifications and potential pharmacological interventions."
     },
     "Problem 3": {
-      "Strengths": "The plan includes a recommendation for further diagnostic workup, which is essential for comprehensive care.",
-      "Areas for Improvement": "Clarify the specific tests or evaluations recommended and their intended purpose."
+      "Problem Name": "Preventative Care",
+      "Strengths": "The plan mentions the importance of addressing preventative care measures.",
+      "Areas for Improvement": "Expand on specific preventative care recommendations, such as vaccinations and cancer screenings, tailored to the patient's age and risk factors."
     },
     "Problem 4": {
-      "Strengths": "Preventative care considerations are acknowledged, which is important for holistic patient management.",
-      "Areas for Improvement": "Expand on preventative care measures, such as vaccinations or screenings, tailored to the patient's age and medical history."
+      "Problem Name": "Follow-Up",
+      "Strengths": "The plan suggests follow-up care to monitor the patient's response to treatment.",
+      "Areas for Improvement": "Specify the timeline and objectives for follow-up visits, including any tests or evaluations to be performed."
     },
     "Anticipatory Preventative Care Section Feedback": {
-      "Strengths": "The section highlights the importance of addressing preventative care in the patient's management.",
-      "Areas for Improvement": "Provide a more detailed plan for preventative care, including timelines and follow-up recommendations."
+      "Strengths": "The inclusion of preventative care considerations demonstrates a holistic approach to patient management.",
+      "Areas for Improvement": "Detail specific preventative measures, such as dietary advice, exercise recommendations, and routine health screenings."
     },
-    "Overall Recommendations": "To enhance the chart review, ensure all sections are comprehensive and provide clear, actionable recommendations tailored to the patient's unique clinical scenario."
+    "Follow Up Care Feedback": {
+      "Strengths": "The plan emphasizes the importance of follow-up care.",
+      "Areas for Improvement": "Provide a structured follow-up schedule and outline the goals for each visit."
+    },
+    "Overall Recommendations": "To enhance the chart review, include more detailed plans for each identified problem, ensuring clarity and comprehensiveness in the management approach."
   }
 }

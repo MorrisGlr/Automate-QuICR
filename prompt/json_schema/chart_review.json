@@ -2,191 +2,455 @@
     "type": "json_schema",
     "name": "chart_review",
     "schema": {
-      "type": "object",
-      "properties": {
-        "Patient Name": {
-          "type": "string",
-          "description": "The name of the patient."
-        },
-        "Key Highlights for Medical Decision-Making (MDM) Improvement": {
-          "type": "string",
-          "description": "A bulleted list of the main areas for improvement in the medical decision-making process."
-        },
-        "Assessment": {
-          "type": "string",
-          "description": "The assessment statement constructed from the patient chart goes here."
-        },
-        "Plan": {
-          "type": "object",
-          "description": "The treatment plan along with various problems and preventative care items.",
-          "properties": {
-            "Problem 1": {
-              "type": "object",
-              "properties": {
-                "Problem Name": {
-                  "type": "string",
-                  "description": "State the name of the problem."
-                },
-                "Status": {
-                  "type": "string",
-                  "description": "State the status and clinical response of the problem."
-                },
-                "Decision Making and Diagnositic Plan": {
-                  "type": "string",
-                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
-                },
-                "Treatment Plan": {
-                  "type": "string",
-                  "description": "Treatment plan constructed from the patient chart goes here."
-                },
-                "Contingency Planning": {
-                  "type": "string",
-                  "description": "Contingency plan constructed from the patient chart goes here."
-                }
-              },
-              "required": [
-                "Status",
-                "Decision Making and Diagnositic Plan",
-                "Treatment Plan",
-                "Contingency Planning"
-              ],
-              "additionalProperties": false
+        "type": "object",
+        "properties": {
+            "Patient": {
+                "type": "string",
+                "description": "The name, age, and sex of the patient."
             },
-            "Problem 2": {
-              "type": "object",
-              "properties": {
-                "Problem Name": {
-                  "type": "string",
-                  "description": "State the name of the problem."
-                },
-                "Status": {
-                  "type": "string",
-                  "description": "State the status and clinical response of the problem."
-                },
-                "Decision Making and Diagnositic Plan": {
-                  "type": "string",
-                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
-                },
-                "Treatment Plan": {
-                  "type": "string",
-                  "description": "Treatment plan constructed from the patient chart goes here."
-                },
-                "Contingency Planning": {
-                  "type": "string",
-                  "description": "Contingency plan constructed from the patient chart goes here."
-                }
-              },
-              "required": [
-                "Status",
-                "Decision Making and Diagnositic Plan",
-                "Treatment Plan",
-                "Contingency Planning"
-              ],
-              "additionalProperties": false
+            "Key Highlights for Medical Decision-Making (MDM) Improvement": {
+                "type": "string",
+                "description": "A detailed, bulleted list that outlines the key points and areas for improvement in the medical decision-making process, including each plan item, medication recommendations (with alternatives), anticipatory preventative care, and follow up care."
             },
-            "Problem 3": {
-              "type": "object",
-              "properties": {
-                "Problem Name": {
-                  "type": "string",
-                  "description": "State the name of the problem."
-                },
-                "Status": {
-                  "type": "string",
-                  "description": "State the status and clinical response of the problem."
-                },
-                "Decision Making and Diagnositic Plan": {
-                  "type": "string",
-                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
-                },
-                "Treatment Plan": {
-                  "type": "string",
-                  "description": "Treatment plan constructed from the patient chart goes here."
-                },
-                "Contingency Planning": {
-                  "type": "string",
-                  "description": "Contingency plan constructed from the patient chart goes here."
-                }
-              },
-              "required": [
-                "Status",
-                "Decision Making and Diagnositic Plan",
-                "Treatment Plan",
-                "Contingency Planning"
-              ],
-              "additionalProperties": false
+            "Chief Concern": {
+                "type": "string",
+                "description": "The chief concern of the patient."
             },
-            "Problem 4": {
-              "type": "object",
-              "properties": {
-                "Problem Name": {
-                  "type": "string",
-                  "description": "State the name of the problem."
-                },
-                "Status": {
-                  "type": "string",
-                  "description": "State the status and clinical response of the Nth problem."
-                },
-                "Decision Making and Diagnositic Plan": {
-                  "type": "string",
-                  "description": "Decision and diagnostic plan constructed from the patient's chart goes here."
-                },
-                "Treatment Plan": {
-                  "type": "string",
-                  "description": "Treatment plan constructed from the patient chart goes here."
-                },
-                "Contingency Planning": {
-                  "type": "string",
-                  "description": "Contingency plan constructed from the patient chart goes here."
-                }
-              },
-              "required": [
-                "Status",
-                "Decision Making and Diagnositic Plan",
-                "Treatment Plan",
-                "Contingency Planning"
-              ],
-              "additionalProperties": false
+            "Assessment": {
+                "type": "string",
+                "description": "A detailed assessment statement constructed from the patient chart, including rationales and evidence-based suggestions."
             },
-            "Anticipatory Preventative Care": {
-              "type": "object",
-              "properties": {
-                "Item 1": {
-                  "type": "string",
-                  "description": "Preventative Care Item 1 constructed from the patient chart goes here."
+            "Plan": {
+                "type": "object",
+                "description": "The treatment plan along with various problems and preventative care items.",
+                "properties": {
+                    "Problem 1": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "Considerations and specific suggestions, with rationale, for documentation improvement for problem 1 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": "Considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 1 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 2": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "Considerations and specific suggestions, with rationale, for documentation improvement for problem 2 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": " considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 2 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 3": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": " considerations and specific suggestions, with rationale, for documentation improvement for problem 3 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": " considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 3 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 4": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": " considerations and specific suggestions, with rationale, for documentation improvement for problem 4 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": " considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 4 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 5": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": " considerations and specific suggestions, with rationale, for documentation improvement for problem 5 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": " considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 5 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem ": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "Considerations and specific suggestions, with rationale, for documentation improvement for problem 6 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": "Considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 6 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 6": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "Considerations and specific suggestions, with rationale, for documentation improvement for problem 6 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": "Considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 6 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Problem 7": {
+                        "type": "object",
+                        "properties": {
+                            "Problem Name": {
+                                "type": "string",
+                                "description": "State the name of the problem."
+                            },
+                            "Status": {
+                                "type": "string",
+                                "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                            },
+                            "Decision Making and Diagnositic Plan": {
+                                "type": "string",
+                                "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                            },
+                            "Treatment/Medication Plan": {
+                                "type": "string",
+                                "description": "A comprehensive  treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                            },
+                            "Contingency Planning": {
+                                "type": "string",
+                                "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "Considerations and specific suggestions, with rationale, for documentation improvement for problem 6 goes here."
+                            },
+                            "Considerations for Cost Effective Care Improvement": {
+                                "type": "string",
+                                "description": "Considerations and detailed suggestions, with supporting rationale, for cost effective care improvement problem 7 goes here."
+                            }
+                        },
+                        "required": [
+                            "Status",
+                            "Decision Making and Diagnositic Plan",
+                            "Treatment Plan",
+                            "Contingency Planning",
+                            "Considerations for Documentation Improvement",
+                            "Considerations for Cost Effective Care Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Anticipatory Preventative Care": {
+                        "type": "object",
+                        "properties": {
+                            "Item 1": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 1 with evidence-based rationale."
+                            },
+                            "Item 2": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 2 with evidence-based rationale."
+                            },
+                            "Item 3": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 3 with evidence-based rationale."
+                            },
+                            "Item 4": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 4 with evidence-based rationale."
+                            },
+                            "Item 5": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 5 with evidence-based rationale."
+                            },
+                            "Item 6": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Preventative Care Item 6 with evidence-based rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "A  discussion of how documentation for anticipatory preventative care could be improved."
+                            }
+                        },
+                        "required": [
+                            "Item 1",
+                            "Considerations for Documentation Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Follow Up Care": {
+                        "type": "object",
+                        "properties": {
+                            "Item 1": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 1 with supporting rationale."
+                            },
+                            "Item 2": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 2 with supporting rationale."
+                            },
+                            "Item 3": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 3 with supporting rationale."
+                            },
+                            "Item 4": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 4 with supporting rationale."
+                            },
+                            "Item 5": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 5 with supporting rationale."
+                            },
+                            "Item 6": {
+                                "type": "string",
+                                "description": "A detailed,  recommendation for Follow Up Care Item 6 with supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "A  analysis of how follow up care documentation could be enhanced with specific examples."
+                            }
+                        },
+                        "required": [
+                            "Item 1",
+                            "Considerations for Documentation Improvement"
+                        ],
+                        "additionalProperties": false
+                    }
                 },
-                "Item 2": {
-                  "type": "string",
-                  "description": "Preventative Care Item 2 constructed from the patient chart goes here."
-                },
-                "Item 3": {
-                  "type": "string",
-                  "description": "Preventative Care Item 3 constructed from the patient chart goes here."
-                },
-                "Item 4": {
-                  "type": "string",
-                  "description": "Preventative Care Item 4 constructed from the patient chart goes here."
-                }
-              },
-              "required": [
-                "Item 1"
-              ],
-              "additionalProperties": false
+                "additionalProperties": false,
+                "required": [
+                    "Problem 1",
+                    "Anticipatory Preventative Care",
+                    "Follow Up Care"
+                ]
             }
-          },
-          "additionalProperties": false,
-          "required": [
-            "Problem 1",
-            "Anticipatory Preventative Care"
-          ]
-        }
-      },
-      "required": [
-        "Key Highlights for Medical Decision-Making (MDM) Improvement",
-        "Assessment",
-        "Plan"
-      ],
-      "additionalProperties": false
+        },
+        "required": [
+            "Key Highlights for Medical Decision-Making (MDM) Improvement",
+            "Assessment",
+            "Plan"
+        ],
+        "additionalProperties": false
     },
     "strict": false
-  }
+}

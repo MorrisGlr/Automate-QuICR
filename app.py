@@ -4,10 +4,17 @@ import json
 from openai import OpenAI
 from google import genai
 from dotenv import load_dotenv
+import spacy
+import scispacy
+from spacy.tokens import Span
+from scispacy.abbreviation import AbbreviationDetector
+from scispacy.umls_linking import UmlsEntityLinker
 from src.openAI_XPC_inference import openAI_XPC_inference
 from src.gemini_XPC_inference import gemini_XPC_inference
 from src.chart_review_json_to_pdf import chart_review_json_to_pdf
 from src.cr_feedback_json_to_pdf import cr_feedback_json_to_pdf
+from src.drug_pricing import extract_medications
+from src.drug_pricing import load_medication_pipeline
 
 # set working directory
 wk_dir = "/Users/morris/github_projects/XPC_chart_review"
@@ -51,9 +58,15 @@ gemini_model_str = "gemini-2.5-pro-exp-03-25"
 # Run Gemini_XPC_inference for Chart Review
 #gemini_XPC_inference(client, gemini_model_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
 
+# Run drug pricing
+# Load the medication pipeline
+pricing_df1 = pd.read_csv("drug_pricing/walmart_drug_pricing.csv", usecols=["source","generic_drug_name","30_day_cost"])
+pricing_df2 = pd.read_csv("drug_pricing/costplus_drug_pricing.csv", usecols=["source","generic_drug_name","30_day_cost"])
+extract_medications(model_name_str, output_dir, pricing_dfs=[pricing_df1, pricing_df2], model="en_core_sci_md", umls_api_key=umls_api_key)
+
 # Convert the chart review JSON files to a formatted PDF.
-chart_review_json_to_pdf(model_name_str, output_dir)
-chart_review_json_to_pdf(gemini_model_str, output_dir)
+#chart_review_json_to_pdf(model_name_str, output_dir)
+#chart_review_json_to_pdf(gemini_model_str, output_dir)
 
 # Convert the feedback JSON files to a formatted PDF.
 # cr_feedback_json_to_pdf(model_name_str, output_dir)

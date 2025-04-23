@@ -1,0 +1,81 @@
+{
+    "Patient": "Bill Moore, 75-year-old male",
+    "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Incomplete assessment of medication adherence and social factors at first visit; deeper HPI in second visit revealed non\u2010adherence due to divorce stress.  Suggest standardized adherence screens and psychosocial assessment templates.\n- Documentation inconsistently captures immunization history, waist circumference, and home SMBG practices.  Recommend structured fields for vaccines, diet/exercise, and self\u2010monitoring.\n- Lab interpretation is accurate (A1c\u00a09.8%, eGFR\u00a055) but lacks linkage to CKD staging and metformin dosing thresholds.  Document CKD stage and metformin adjustments if eGFR\u00a0<45 mL/min/1.73\u00a0m\u00b2.\n- Intensification of diabetes therapy with semaglutide is appropriate given poor control and preserved renal function.  Consider upfront statin initiation for primary prevention in diabetes with LDL\u00a0137\u00a0mg/dL; document ASCVD risk calculation.\n- Preventive care referrals (retinopathy screening) are ordered, but timing and tracking of results are not documented.  Use a referral\u2013results tracking tool.\n- Cost-effective glycemic control alternatives (e.g., dulaglutide patient assistance programs, generic metformin titration) should be documented as part of shared decision-making.\n- Contingency planning for GLP\u20111 agonist side effects, hypoglycemia management, and non\u2010response is not explicitly documented.  Incorporate \u201cif\u2013then\u201d treatment adjustment pathways.",
+    "Chief Concern": "Lab follow-up and metformin refill",
+    "Assessment": "Bill Moore is a 75-year-old man with a two-year history of type\u00a02 diabetes mellitus, poorly controlled (A1c\u00a09.8%), stage\u00a03a CKD (eGFR\u00a055\u00a0mL/min/1.73\u00a0m\u00b2), obesity (BMI\u00a036.7\u00a0kg/m\u00b2), and newly recognized hyperlipidemia (LDL\u00a0137\u00a0mg/dL).  He has significant psychosocial stressors (divorce) leading to medication non\u2010adherence and unhealthy diet/exercise behaviors.  No evidence of microvascular complications on exam; scheduled ophthalmology appointment pending.  Differential diagnosis: 1) uncontrolled type\u00a02 DM due to non\u2010adherence and suboptimal regimen, 2) secondary poor glycemic control from psychosocial stress, 3) early diabetic kidney involvement without overt albuminuria (UACR\u00a050\u00a0mg/g).",
+    "Plan": {
+        "Problem\u00a01": {
+            "Problem Name": "Type\u00a02 diabetes mellitus, uncontrolled",
+            "Status": "Not at goal (A1c\u00a09.8%); medication non\u2010adherence",
+            "Decision Making and Diagnositic Plan": "Labs on 2/8: A1c\u00a09.8%, glucose\u00a088\u00a0mg/dL, eGFR\u00a055.  No contraindications to GLP\u20111 agonist.  No SMBG data\u2014provide glucose meter and logs.",
+            "Treatment/Medication Plan": "- Metformin ER 500\u00a0mg BID (continue generic; currently on max IR but was off for 6\u00a0months; titrate ER to improve tolerability)\n- Semaglutide 0.25\u00a0mg subcutaneously weekly \u00d74\u00a0weeks, then increase to 0.5\u00a0mg weekly; titrate per tolerance up to 1\u00a0mg weekly.  Purpose: A1c reduction and weight loss.\n- Alternatives: dulaglutide weekly if semaglutide cost-prohibitive or poorly tolerated; SGLT2 inhibitor (e.g., empagliflozin) if CV/renal benefit desired.",
+            "Contingency Planning": "- If GI side effects \u2192 hold semaglutide for 1\u00a0week and resume at same dose.\n- If A1c >8% at 3\u00a0months \u2192 increase semaglutide to 1\u00a0mg weekly or add SGLT2 inhibitor.\n- If eGFR falls <45\u00a0mL/min/1.73\u00a0m\u00b2 \u2192 reduce metformin dose; if <30\u00a0\u2192 discontinue metformin.",
+            "Considerations for Documentation Improvement": "Specify patient\u2019s home glucose monitoring plan, adherence barriers, dose\u2010by\u2010dose medication reconciliation, injection technique instruction.",
+            "Considerations for Cost Effective Care Improvement": "Use generic metformin ER; assess insurance coverage and copay for semaglutide; consider patient assistance programs for GLP\u20111 agonist."
+        },
+        "Problem\u00a02": {
+            "Problem Name": "Chronic kidney disease, stage\u00a03a",
+            "Status": "Stable (eGFR\u00a055\u00a0mL/min/1.73\u00a0m\u00b2)",
+            "Decision Making and Diagnositic Plan": "Serum creatinine\u00a01.6, BUN\u00a014, BUN/Cr\u00a08.75.  No albuminuria requiring ACE inhibitor.  Monitor renal function in 6\u00a0months.",
+            "Treatment/Medication Plan": "- Avoid NSAIDs and other nephrotoxins.\n- Continue metformin at adjusted dose per eGFR threshold.",
+            "Contingency Planning": "- If eGFR\u00a0<45 \u2192 reduce or hold metformin per guidelines.\n- If eGFR\u00a0<30 \u2192 discontinue metformin.\n- If UACR increases >30\u00a0mg/g \u2192 consider ACE inhibitor.",
+            "Considerations for Documentation Improvement": "Document CKD stage and rationale for metformin dose adjustments.",
+            "Considerations for Cost Effective Care Improvement": "Leverage generic agents; avoid expensive imaging unless clinically indicated."
+        },
+        "Problem\u00a03": {
+            "Problem Name": "Hyperlipidemia",
+            "Status": "Not at goal (LDL\u00a0137\u00a0mg/dL)",
+            "Decision Making and Diagnositic Plan": "Primary prevention in diabetic patient age\u00a075 with LDL\u00a0>70\u00a0mg/dL.  Calculate 10\u2011year ASCVD risk (likely >20%).",
+            "Treatment/Medication Plan": "- Start atorvastatin 40\u00a0mg PO nightly; titrate to 80\u00a0mg if LDL remains >70\u00a0mg/dL.\n- Lifestyle: dietitian referral, low\u2010saturated\u2010fat diet.",
+            "Contingency Planning": "- Recheck lipid panel in 6\u201312\u00a0weeks; if LDL >70\u00a0\u2192 increase to atorvastatin 80\u00a0mg.\n- If statin\u2010intolerant \u2192 switch to pravastatin or add ezetimibe.",
+            "Considerations for Documentation Improvement": "Include ASCVD risk score and justification for high\u2010intensity statin.",
+            "Considerations for Cost Effective Care Improvement": "Use generic atorvastatin; avoid PCSK9 inhibitors unless refractory."
+        },
+        "Problem\u00a04": {
+            "Problem Name": "Obesity",
+            "Status": "Not at goal (BMI 36.7\u00a0kg/m\u00b2)",
+            "Decision Making and Diagnositic Plan": "Weight trend: 200\u00a0lb at 62\u00a0in \u2192 BMI\u00a036.7.  No current exercise regimen.",
+            "Treatment/Medication Plan": "- Medical nutrition therapy referral.\n- Prescribe 150\u00a0min/week moderate exercise gradually.\n- Semaglutide therapy doubles as weight\u2010loss adjunct.",
+            "Contingency Planning": "- If <5% weight loss in 3\u00a0months \u2192 consider referral to bariatric surgeon or intensive lifestyle program.",
+            "Considerations for Documentation Improvement": "Record baseline BMI, waist circumference, and weight trend.",
+            "Considerations for Cost Effective Care Improvement": "Use community-based exercise programs and group classes; telehealth dietitian services."
+        },
+        "Problem\u00a05": {
+            "Problem Name": "Preventive care gaps",
+            "Status": "Incomplete",
+            "Decision Making and Diagnositic Plan": "No immunization history, no prior eye/foot exam.  Foot exam now normal.",
+            "Treatment/Medication Plan": "- Ophthalmology referral for diabetic retinopathy (scheduled 2/20).\n- Administer: influenza vaccine (if in season), pneumococcal PCV13\u00a0\u2192 PPSV23, zoster recombinant vaccine, COVID-19 booster if indicated.\n- Document prior colon cancer screening; refer for colonoscopy if due.",
+            "Contingency Planning": "- If patient misses referral \u2192 follow-up call in 1\u00a0week.\n- If vaccine refusal \u2192 document reason and revisit next visit.",
+            "Considerations for Documentation Improvement": "Use structured immunization modules and preventive care checklists.",
+            "Considerations for Cost Effective Care Improvement": "Bundle vaccines in one visit; use standing orders for immunizations."
+        },
+        "Problem\u00a06": {
+            "Problem Name": "Psychosocial stress",
+            "Status": "Not at goal (divorce-related stress affecting self-care)",
+            "Decision Making and Diagnositic Plan": "HPI reveals divorce, low priority on health.  Risk of depression.",
+            "Treatment/Medication Plan": "- Screen with PHQ\u20119 at next visit.\n- Refer to social work/behavioral health support and community resources (divorce support group).",
+            "Contingency Planning": "- If PHQ\u20119 >10 \u2192 initiate counseling or consider SSRI.\n- If non-attendance \u2192 telehealth behavioral health consult.",
+            "Considerations for Documentation Improvement": "Include psychosocial stressors and functional assessment in note.",
+            "Considerations for Cost Effective Care Improvement": "Utilize free community and telephonic counseling services."
+        },
+        "Generic Drug Pricing": "[{\"mention\":\"hydrochlorothiazide\",\"cui\":\"C0020261\",\"generic_name\":\"hydrochlorothiazide\",\"link_score\":0.9853211045,\"generic_lower\":\"hydrochlorothiazide\",\"source\":\"Walmart\",\"generic_drug_name\":\"Hydrochlorothiazide\",\"30_day_cost\":4,\"generic_drug_name_lower\":\"hydrochlorothiazide\"},{\"mention\":\"hydrochlorothiazide\",\"cui\":\"C0020261\",\"generic_name\":\"hydrochlorothiazide\",\"link_score\":0.9853211045,\"generic_lower\":\"hydrochlorothiazide\",\"source\":\"Walmart\",\"generic_drug_name\":\"Hydrochlorothiazide\",\"30_day_cost\":4,\"generic_drug_name_lower\":\"hydrochlorothiazide\"},{\"mention\":\"lisinopril\",\"cui\":\"C0065374\",\"generic_name\":\"lisinopril\",\"link_score\":0.9932959676,\"generic_lower\":\"lisinopril\",\"source\":\"Walmart\",\"generic_drug_name\":\"Lisinopril\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"lisinopril\"},{\"mention\":\"sertraline\",\"cui\":\"C0074393\",\"generic_name\":\"sertraline\",\"link_score\":0.9715208411,\"generic_lower\":\"sertraline\",\"source\":\"Walmart\",\"generic_drug_name\":\"Sertraline\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"sertraline\"},{\"mention\":\"metformin\",\"cui\":\"C0025598\",\"generic_name\":\"metformin\",\"link_score\":0.9361871481,\"generic_lower\":\"metformin\",\"source\":\"Walmart\",\"generic_drug_name\":\"Metformin\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"metformin\"},{\"mention\":\"diltiazem\",\"cui\":\"C0012373\",\"generic_name\":\"diltiazem\",\"link_score\":0.9788799882,\"generic_lower\":\"diltiazem\",\"source\":\"Walmart\",\"generic_drug_name\":\"Diltiazem\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"diltiazem\"}]"
+    },
+    "Anticipatory Preventative Care": {
+        "Item\u00a01": "Annual influenza vaccination for patients \u226565 to reduce pneumonia risk.",
+        "Item\u00a02": "Pneumococcal vaccination: PCV13 followed by PPSV23 \u22651\u00a0year later per ACIP.",
+        "Item\u00a03": "Recombinant zoster vaccine (RZV) two\u2010dose series for adults \u226550.",
+        "Item\u00a04": "COVID\u201019 booster per current CDC guidance.",
+        "Item\u00a05": "Colorectal cancer screening: colonoscopy q10\u00a0years if last negative; if unknown, schedule.",
+        "Item\u00a06": "DEXA scan for osteoporosis screening in men \u226570 or earlier if risk factors.",
+        "Considerations for Documentation Improvement": "Implement a health maintenance flow sheet to capture vaccine dates, screening intervals, and pending referrals."
+    },
+    "Follow Up Care": {
+        "Item\u00a01": "Laboratory follow-up in 3\u00a0months: A1c, CMP, lipid panel, UACR to assess therapy response.",
+        "Item\u00a02": "Ophthalmology visit 2/20\u2014obtain and document results of retinopathy screen.",
+        "Item\u00a03": "Primary care follow-up in 4\u00a0weeks to assess semaglutide tolerance and side effects.",
+        "Item\u00a04": "Annual foot exam at next visit; record monofilament testing results.",
+        "Item\u00a05": "Medication adherence review at each visit\u2014bring all medications and SMBG logs.",
+        "Item\u00a06": "PHQ\u20119 depression screening in 1\u00a0month; document score and plan.",
+        "Considerations for Documentation Improvement": "Include explicit follow-up dates, tasks, and responsibilities in plan section; use tickler systems for pending results and referrals."
+    }
+}

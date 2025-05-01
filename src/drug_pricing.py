@@ -167,10 +167,23 @@ def extract_medications(
                 logger.warning(f"No pricing info for: {missing.tolist()}")
             # drop rows with no pricing info
             result = result.dropna(subset=["source"])
+            # drop duplicate rows
+            result = result.drop_duplicates(subset=["generic_name", "source"])
+            # Drop the extra columns
+            result = result.drop(columns=["generic_lower", "generic_drug_name_lower", "link_score", "cui","generic_drug_name"])
+            # Rename columns names such that each word is capitalized and separated by a space instead of an underscore
+            result.columns = [col.replace("_", " ").title() for col in result.columns]
             json_data = result.to_json(orient='records')
 
-            # Append json_data into `data`, a JSON object within the `Plan` key and the json_data would be named "Generic Drug Pricing".
-            data["Plan"]["Generic Drug Pricing"] = json_data
+            # Ensure 'Generic Drug Pricing' appears at the end of the Plan dict
+            # Remove any existing key to preserve insertion order
+            existing_pricing = data["Plan"].pop("Generic Drug Pricing", None)
+            if existing_pricing is None:
+                existing_pricing = []
+            # Extend the list with new pricing entries
+            existing_pricing.extend(json.loads(json_data))
+            # Reinsert the key at the end
+            data["Plan"]["Generic Drug Pricing"] = existing_pricing
 
             # Save the updated JSON file
             filename_base = json_file.replace(".json", "")

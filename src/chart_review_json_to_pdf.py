@@ -83,6 +83,20 @@ h3.consideration {
   align-items: start;
   margin-bottom: 0.5em;
 }
+/* Generic drug pricing table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.3em 0.5em;
+  text-align: left;
+}
+thead {
+  background-color: #f0f0f0;
+}
 /* Body text paragraphs */
 p {
   font-family: "SF Pro Text", sans-serif;
@@ -94,92 +108,99 @@ p {
 # ——————————————————————————————————————————————————————————————
 # Jinja2 template: map JSON keys → H1, H2, H3, highlight box
 template_string = """
+{% macro render_highlights(key, value) %}
+  <div class="highlight-box no-grid">
+    <h2>{{ key }}</h2>
+    {% for line in value.split('\n') %}
+      <p>{{ line }}</p>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro render_string(key, value) %}
+  <h1>{{ key }}</h1>
+  <div class="no-grid">
+    {% for line in value.split('\n') %}
+      <p>{{ line }}</p>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro render_plan(plan) %}
+  <h1>Plan</h1>
+  {% for subkey, content in plan.items() %}
+    {% if subkey.startswith("Problem") %}
+      <h2>{{ content["Problem Name"] }}</h2>
+      {% for field, txt in content.items() if field != "Problem Name" %}
+        <div class="row">
+          <h3 {% if "Considerations" in field %}class="consideration"{% endif %}>{{ field }}</h3>
+          <p>{{ txt.replace('\n','<br/>') }}</p>
+        </div>
+      {% endfor %}
+    {% elif subkey in ["Anticipatory Preventative Care", "Follow Up Care"] %}
+      <h2>{{ subkey }}</h2>
+      <div class="row">
+        {% for item_key, item_val in content.items() %}
+          <h3>{{ item_key }}</h3>
+          <p>{{ item_val }}</p>
+        {% endfor %}
+      </div>
+    {% elif subkey == "Generic Drug Pricing" %}
+      {{ render_pricing(content) }}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro render_mapping_list(key, mapping) %}
+  <h2>{{ key }}</h2>
+  <div class="no-grid">
+    {% for subkey, subval in mapping.items() %}
+      <h3>{{ subkey }}</h3>
+      <p>{{ subval }}</p>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro render_pricing(rows) %}
+  <h2>Generic Drug Pricing</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Mention</th>
+        <th>Generic Name</th>
+        <th>Source</th>
+        <th>30 Day Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for drug in rows %}
+        <tr>
+          <td>{{ drug["Mention"] }}</td>
+          <td>{{ drug["Generic Name"] }}</td>
+          <td>{{ drug["Source"] }}</td>
+          <td>{{ drug["30 Day Cost"] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endmacro %}
+
 <!DOCTYPE html>
 <html>
   <body>
   {% for key, value in data.items() %}
-
-    {# — Key Highlights — #}
     {% if key.startswith("Key Highlights for Medical Decision-Making") %}
-      <div class="highlight-box no-grid">
-        <h2>{{ key }}</h2>
-        {% if value is string %}
-          {% for line in value.split('\\n') %}
-            <p>{{ line }}</p>
-          {% endfor %}
-        {% elif value is iterable %}
-          {% for item in value %}
-            <p>{{ item }}</p>
-          {% endfor %}
-        {% endif %}
-      </div>
-
-    {# — Top‑level strings (always catch strings first!) — #}
-    {% elif value is string %}
-      <h1>{{ key }}</h1>
-      <div class="no-grid">
-        {% for line in value.split('\n') %}
-          <p>{{ line }}</p>
-        {% endfor %}
-      </div>
-
-    {# — Any actual lists (now only real lists, not strings) — #}
-    {% elif value is iterable and not value is string and not value is mapping %}
-      <h1>{{ key }}</h1>
-      <div class="no-grid">
-        {% for item in value %}
-          <p>{{ item }}</p>
-        {% endfor %}
-      </div>
-
-    {# — Plan: render each problem explicitly — #}
+      {{ render_highlights(key, value) }}
     {% elif key == "Plan" %}
-      <h1>{{ key }}</h1>
-     {% for prob in value.values() %}
-       <h2>{{ prob["Problem Name"] }}</h2>
-       {% for field, txt in prob.items() if field!="Problem Name" %}
-         <div class="row">
-           <h3 {% if "Considerations" in field %}class="consideration"{% endif %}>
-             {{ field }}
-           </h3>
-           {# Only call replace on real strings #}
-           {% if txt is string %}
-             <p>{{ txt.replace('\\n','<br/>') }}</p>
-           {% elif txt is mapping %}
-             {# If somehow nested deeper, loop its items too #}
-             {% for subk, subv in txt.items() %}
-               <h3>{{ subk }}</h3>
-               <p>{{ subv }}</p>
-             {% endfor %}
-           {% endif %}
-         </div>
-       {% endfor %}
-     {% endfor %}
-
-    {# — All other mappings (Anticipatory… / Follow Up… ) — #}
+      {{ render_plan(value) }}
+    {% elif value is string %}
+      {{ render_string(key, value) }}
+    {% elif value is sequence %}
+      {{ render_string(key, value | join('\n')) }}
     {% elif value is mapping %}
-      <h1>{{ key }}</h1>
-      {% for subkey, subval in value.items() %}
-        <h2>{{ subkey }}</h2>
-        <div class="no-grid">
-          {% if subval is string %}
-            {% for line in subval.split('\\n') %}
-              <p>{{ line }}</p>
-            {% endfor %}
-          {% elif subval is mapping %}
-            {% for inner_k, inner_v in subval.items() %}
-              <div class="row">
-                <h3>{{ inner_k }}</h3>
-                {% if inner_v is string %}
-                  <p>{{ inner_v }}</p>
-                {% endif %}
-              </div>
-            {% endfor %}
-          {% endif %}
-        </div>
-      {% endfor %}
+      {# Fallback to mapping list for any other dict #}
+      {{ render_mapping_list(key, value) }}
     {% endif %}
-
   {% endfor %}
   </body>
 </html>
@@ -189,7 +210,7 @@ template_string = """
 def chart_review_json_to_pdf(model_name: str, output_dir: SyntaxWarning):
     pdf_dir = os.path.join(output_dir, model_name, "chart_review/pdf")
     os.makedirs(pdf_dir, exist_ok=True)
-    json_dir = os.path.join(output_dir, model_name, "chart_review")
+    json_dir = os.path.join(output_dir, model_name, "chart_review/drug_pricing")
     for json_file in os.listdir(json_dir):
         if json_file.endswith(".json"):
             json_path = os.path.join(json_dir, json_file)

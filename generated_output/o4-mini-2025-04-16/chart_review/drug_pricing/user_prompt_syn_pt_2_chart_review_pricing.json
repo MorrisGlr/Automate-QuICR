@@ -1,72 +1,136 @@
 {
-    "Patient": "Phil Wiser, 62\u2011year\u2011old male",
-    "Key Highlights for Medical Decision\u2011Making (MDM) Improvement": "\u2022 Incomplete medication reconciliation: no documentation of over\u2011the\u2011counter or herbal supplements, adherence assessment, or home glucose logs.  \n\u2022 Lack of standardized depression screening despite self\u2011reported stress and lifestyle barriers.  \n\u2022 Absence of comprehensive immunization review and health maintenance planning.  \n\u2022 Limited risk stratification for ASCVD and CKD progression\u2014no formal calculation of 10\u2011year risk or staging discussion beyond eGFR.  \n\u2022 Opportunity to optimize glycemic control by adding evidence\u2011based agents (SGLT\u20112i/GLP\u20111 RA) given CKD and high A1c.  \n\u2022 Underaddressed lifestyle interventions: no structured referral to dietician or exercise program.  \n\u2022 Preventive screenings (retinopathy, foot exam, colon cancer) not documented as scheduled or completed.  \n\u2022 Missing follow\u2011up intervals and contingency triggers (e.g., if A1c >8% after 3\u00a0months).  \n\u2022 Cost\u2011containment: no discussion of generic statin selection, low\u2011cost behavioral supports, or prior authorization needs for newer antidiabetic agents.",
-    "Chief Concern": "Refill of metformin for type\u00a02 diabetes mellitus management.",
-    "Assessment": "62\u2011year\u2011old male with established type\u00a02 diabetes mellitus diagnosed 2\u00a0years ago, presenting for refill of metformin ER 500\u00a0mg BID.  Despite maximal tolerated metformin dose, A1c is 9.8% and he admits to poor adherence (out of meds 6\u00a0months), no home glucose monitoring, unbalanced diet, no exercise, and significant psychosocial stress from divorce.  Vital signs notable for BMI 38\u00a0kg/m2, BP 130/79. Exam unremarkable; feet exam and monofilament testing normal.  Labs: eGFR 55\u00a0mL/min (CKD 3a), urine ACR 50\u00a0mg/g (moderately increased albuminuria), LDL\u00a0137\u00a0mg/dL.  Differential: 1) uncontrolled type\u00a02 DM; 2) obesity\u2011related insulin resistance; 3) early diabetic kidney disease with albuminuria.",
+    "Patient": "Phil Wiser, 62-year-old male",
+    "Key Highlights for Medical Decision-Making (MDM) Improvement": "- Clearly document baseline and interval lab values and dates to track trends (e.g., prior A1c, lipids, renal function).\n- Include patient\u2019s last eye and foot exam dates (or note \u201cnever\u201d and reason) to justify referrals.\n- Expand HPI to capture psychosocial factors in structured form (e.g., PHQ-9 for depression, stress assessment).\n- Specify fasting status for lipid panel and A1c orders to avoid confusion.\n- Document medication reconciliation: prior metformin regimen, adherence issues, and rationale for re-titration schedule.\n- Note eGFR staging and link to metformin dosing decisions.\n- Include risk stratification (ASCVD risk calculator) to guide lipid management.",
+    "Chief Concern": "Prescription refill for metformin",
+    "Assessment": "62-year-old man with established type 2 diabetes mellitus diagnosed 2 years ago, presenting for medication refill and diabetes management. He has been off metformin for >6 months due to personal stressors, and has not performed home glucose monitoring or attended routine diabetic screenings. Objective data show a BMI of 37.9 (obesity), HbA1c 9.8% (poor glycemic control), LDL 137 mg/dL (elevated), eGFR 55 mL/min/1.73m2 (CKD stage 3a), and microalbuminuria (ACR 50 mg/g). He denies polyuria, polydipsia, neuropathy symptoms, and has normal foot exam. He reports an unhealthy diet, sedentary lifestyle, and no immunizations on record. Differential: 1) Uncontrolled type 2 diabetes mellitus; 2) Obesity-related insulin resistance; 3) Early diabetic kidney disease.",
     "Plan": {
-        "Problem\u00a01": {
-            "Problem Name": "Type\u00a02 diabetes mellitus, poorly controlled",
-            "Status": "Not at goal (A1c 9.8%) despite metformin ER 2000\u00a0mg daily",
-            "Decision Making and Diagnositic Plan": "Reviewed A1c, eGFR, albuminuria; referred for retinopathy screening.  Will obtain baseline and 3\u2011month follow\u2011up labs (A1c, CMP, lipids, urine ACR).  Assess for hypoglycemia and GI tolerance.",
-            "Treatment/Medication Plan": "\u2022 Continue metformin ER 500\u00a0mg BID (generic)  \n\u2022 Initiate empagliflozin 10\u00a0mg daily (renal protection, cardioprotection) given eGFR 55  \n\u2022 Advise structured SMBG twice daily initially, then PRN.  \n\u2022 Lifestyle: referral to dietician, prescribe 150\u00a0min/week moderate exercise.",
-            "Contingency Planning": "If A1c remains >8% at 3\u00a0months, consider adding dulaglutide 0.75\u00a0mg weekly.  If eGFR falls <45, discontinue empagliflozin.  If GI side effects, reduce metformin to 500\u00a0mg BID and retitrate.",
-            "Considerations for Documentation Improvement": "Document patient\u2019s adherence history, home glucose values, SMBG teaching and logs, tolerance of metformin, and shared decision\u2011making regarding new agents.",
-            "Considerations for Cost Effective Care Improvement": "Use generic metformin, empagliflozin available as generic soon\u2014check formulary.  Utilize manufacturer savings cards for SGLT\u20112i.  Leverage free diabetes education programs."
+        "Problem 1": {
+            "Problem Name": "Type 2 diabetes mellitus \u2013 uncontrolled",
+            "Status": "Not at goal (HbA1c 9.8%, target <7%)",
+            "Decision Making and Diagnositic Plan": "Re-established baseline labs today (CMP, CBC, A1c, lipids, urine ACR) to characterize glycemic control, renal function, dyslipidemia. Referred for annual diabetic retinopathy screening. Foot exam performed today; normal. Plan home SMBG: fasting and post-prandial checks 2x/day.",
+            "Treatment/Medication Plan": "Restart metformin ER 500 mg twice daily (total 1000 mg daily), increase in 500 mg increments weekly to 2000 mg daily as tolerated. Counsel on GI side effects and advise taking with evening meal. Discussed long-term add-on therapy if A1c remains >8.0% at 3 months (e.g., GLP-1 RA or SGLT2i based on CKD).",
+            "Contingency Planning": "If GI intolerance occurs \u2192 reduce to 500 mg daily for 1 week then reattempt titration. If A1c remains >8.5% at 3-month follow-up \u2192 add empagliflozin 10 mg daily (renal benefit). If eGFR falls <45 \u2192 hold metformin per guidelines and adjust regimen.",
+            "Considerations for Documentation Improvement": "Include pre-visit home glucose logs and ensure explicit mention of prior regimen/dosing. Document rationale for titration schedule and metformin safety in CKD.",
+            "Considerations for Cost Effective Care Improvement": "Metformin is first-line, generic, cost-effective. Delay expensive add-ons until confirming adherence and titration. Use in-house diabetes educator resources rather than outpatient nutritionist referral when possible."
         },
-        "Problem\u00a02": {
-            "Problem Name": "Obesity (BMI\u00a038\u00a0kg/m2)",
-            "Status": "Not at goal; contributing to insulin resistance",
-            "Decision Making and Diagnositic Plan": "Measured BMI and waist circumference; assessed readiness to change.  Screened for secondary causes (normal TSH on last CMP panel).",
-            "Treatment/Medication Plan": "\u2022 Referral to outpatient weight management program and dietician.  \n\u2022 Prescribe home walking program, target 10\u00a0000 steps/day gradually.  \n\u2022 Consider orlistat if <5% weight loss in 3\u00a0months and no contraindications.",
-            "Contingency Planning": "If no weight loss \u22655% at 3\u00a0months, discuss pharmacotherapy (orlistat) or weight loss referral.  If bariatric surgery criteria met and lifestyle fails, refer to surgery evaluation.",
-            "Considerations for Documentation Improvement": "Include detailed nutritional assessment, weekly exercise logs, and weight change trajectory.",
-            "Considerations for Cost Effective Care Improvement": "Promote free community exercise classes, online healthy eating resources; avoid expensive weight loss drugs unless criteria met."
+        "Problem 2": {
+            "Problem Name": "Obesity (BMI 37.9)",
+            "Status": "Not at goal",
+            "Decision Making and Diagnositic Plan": "Recognize obesity as major contributor to insulin resistance. Screen for obstructive sleep apnea (STOP-BANG) at next visit. Assess readiness to change diet and activity.",
+            "Treatment/Medication Plan": "Refer to intensive lifestyle program: 500 kcal/day deficit, dietitian consult (in-clinic group class). Encourage 150 min/week moderate exercise. Discuss potential pharmacotherapy (e.g., orlistat) if no weight loss in 3 months.",
+            "Contingency Planning": "If <5% weight loss at 3 months \u2192 consider GLP-1 RA (liraglutide) for weight and glycemic control. If patient declines formal program \u2192 prescribe low-intensity walking plan and phone counseling.",
+            "Considerations for Documentation Improvement": "Quantify diet recall (calories, macronutrients) and exercise history. Document patient\u2019s goals and barriers.",
+            "Considerations for Cost Effective Care Improvement": "Utilize covered group visits or community resources (e.g., YMCA programs) rather than expensive one-on-one dietitian visits initially."
         },
-        "Problem\u00a03": {
-            "Problem Name": "Dyslipidemia",
-            "Status": "Not at goal; LDL\u00a0137\u00a0mg/dL (goal <100\u00a0mg/dL)",
-            "Decision Making and Diagnositic Plan": "Confirmed fasting lipid panel; calculated ASCVD 10\u2011year risk >20%.  No contraindications to statin.",
-            "Treatment/Medication Plan": "Initiate atorvastatin 40\u00a0mg PO nightly (high\u2011intensity statin).  Counsel on diet (reduce saturated fat).",
-            "Contingency Planning": "Check LFTs at 6\u00a0weeks; if transaminases >3\u00d7 ULN or myalgias, reduce to 20\u00a0mg or switch to rosuvastatin 10\u00a0mg.",
-            "Considerations for Documentation Improvement": "Document discussion of ASCVD risk, statin benefits/risks, and patient preference.",
-            "Considerations for Cost Effective Care Improvement": "Use generic atorvastatin; coordinate prescription with metformin refill to reduce co\u2011pays."
+        "Problem 3": {
+            "Problem Name": "Dyslipidemia \u2013 elevated LDL",
+            "Status": "Not at goal",
+            "Decision Making and Diagnositic Plan": "Calculate 10-year ASCVD risk using Pooled Cohort Equation. Given diabetes and LDL 137, high-intensity statin indicated.",
+            "Treatment/Medication Plan": "Initiate atorvastatin 40 mg nightly. Reinforce lifestyle modifications. Recheck lipid panel in 6 weeks.",
+            "Contingency Planning": "If LDL reduction <50% at 6 weeks \u2192 increase atorvastatin to 80 mg or add ezetimibe 10 mg daily.",
+            "Considerations for Documentation Improvement": "Record ASCVD risk score and rationale for statin intensity. Document hepatic baseline and plan for monitoring.",
+            "Considerations for Cost Effective Care Improvement": "Atorvastatin is generic, cost-effective. Delay PCSK9 inhibitors until statin \u00b1 ezetimibe trial."
         },
-        "Problem\u00a04": {
-            "Problem Name": "Chronic kidney disease stage\u00a03a with microalbuminuria",
-            "Status": "Stage\u00a03a (eGFR\u00a055), ACR\u00a050\u00a0mg/g indicates moderate albuminuria",
-            "Decision Making and Diagnositic Plan": "Monitored CMP, eGFR, ACR.  No referral to nephrology at this stage; will monitor progression.",
-            "Treatment/Medication Plan": "Start lisinopril 10\u00a0mg PO daily to reduce albuminuria (even with BP 130/79).  Monitor creatinine and K in 2\u00a0weeks.",
-            "Contingency Planning": "If serum creatinine rises >30% or potassium >5.5\u00a0mmol/L, reduce or hold lisinopril.  If progression (eGFR declines >5\u00a0mL/min/year), refer nephrology.",
-            "Considerations for Documentation Improvement": "Record albuminuria staging, rationale for ACEi initiation despite normotension, and monitoring plan.",
-            "Considerations for Cost Effective Care Improvement": "Generic lisinopril; combine refill pick\u2011up to lower patient visits."
+        "Problem 4": {
+            "Problem Name": "Chronic kidney disease stage 3a",
+            "Status": "Not at goal",
+            "Decision Making and Diagnositic Plan": "eGFR 55, ACR 50 mg/g. Stage CKD 3a with microalbuminuria. Monitor renal function every 6 months.",
+            "Treatment/Medication Plan": "ACE inhibitor initiation: lisinopril 5 mg daily, titrate to 20 mg daily as tolerated to reduce albuminuria. Monitor potassium and creatinine in 2 weeks.",
+            "Contingency Planning": "If creatinine rises >30% or K+ >5.5 \u2192 reduce dose or discontinue. If albuminuria persists despite ACEi \u2192 consider adding SGLT2i.",
+            "Considerations for Documentation Improvement": "Document precise CKD staging and albuminuria category (A2). Note indication for ACE inhibitor.",
+            "Considerations for Cost Effective Care Improvement": "Generic lisinopril is low cost. Use spot urine ACR rather than 24-hour collection."
         },
-        "Problem\u00a05": {
-            "Problem Name": "Psychosocial stressors and potential depression",
-            "Status": "Not formally assessed; patient endorses low priority of health due to divorce",
-            "Decision Making and Diagnositic Plan": "Administer PHQ\u20119 today; assess social supports and coping.  Screen for anxiety with GAD\u20117 if indicated.",
-            "Treatment/Medication Plan": "\u2022 If PHQ\u20119 \u226510, initiate sertraline 50\u00a0mg daily.  \n\u2022 Refer to behavioral health/counseling support.  \n\u2022 Provide stress management resources (support group).",
-            "Contingency Planning": "If no improvement in mood or PHQ\u20119 score remains \u226510 in 4\u00a0weeks, consider therapy intensification or switch to another SSRI.",
-            "Considerations for Documentation Improvement": "Document PHQ\u20119 score, social history details, patient resources provided, and follow\u2011up plan.",
-            "Considerations for Cost Effective Care Improvement": "Use free or sliding\u2011scale community mental health services; generic sertraline if indicated."
+        "Problem 5": {
+            "Problem Name": "Lifestyle modification and adherence issues",
+            "Status": "Not at goal",
+            "Decision Making and Diagnositic Plan": "Assess psychosocial stressors contributing to non-adherence. Screen for depression/anxiety. Provide educational materials.",
+            "Treatment/Medication Plan": "Refer to social work for divorce stress support. Enroll in diabetes self-management education (DSME) program. Provide pillbox and dosing calendar.",
+            "Contingency Planning": "If non-adherence continues at 1 month \u2192 consider telehealth check-ins or mobile app reminders. If depression screening positive \u2192 initiate SSRI therapy or behavioral health referral.",
+            "Considerations for Documentation Improvement": "Document patient\u2019s barriers, support systems, and education provided. Track adherence metrics.",
+            "Considerations for Cost Effective Care Improvement": "Leverage free community resources and group DSME to minimize costs."
+        },
+        "Problem 6": {
+            "Problem Name": "Preventative care gaps",
+            "Status": "Not addressed",
+            "Decision Making and Diagnositic Plan": "Review immunization history. Identify missing vaccines. Plan for cancer screenings per age.",
+            "Treatment/Medication Plan": "Order immunizations: annual influenza, pneumococcal PCV13 then PPSV23, Tdap once, hepatitis B if risk. Schedule colonoscopy if not done.",
+            "Contingency Planning": "If patient declines vaccines today \u2192 document refusal and revisit at next visit. If colonoscopy declined \u2192 offer FIT annually.",
+            "Considerations for Documentation Improvement": "Include immunization table with dates or documented patient recall. Use checklist for age-appropriate screenings.",
+            "Considerations for Cost Effective Care Improvement": "Use bundled vaccines through in-clinic programs covered by Medicare. Offer FIT as lower-cost colorectal screen alternative."
         },
         "Anticipatory Preventative Care": {
-            "Item\u00a01": "Annual diabetic eye exam referral (ophthalmology) \u2014 evidence shows early retinopathy detection reduces vision loss.",
-            "Item\u00a02": "Foot exam at every visit; patient education on daily foot self\u2011inspection to prevent ulcers.",
-            "Item\u00a03": "Immunizations: influenza annually; pneumococcal PCV13 followed by PPSV23; zoster vaccine recombinant (Shingrix); update COVID\u201119 boosters per CDC.",
-            "Item\u00a04": "Colon cancer screening\u2014colonoscopy if none in past 10\u00a0years (age 62).",
-            "Item\u00a05": "Lifestyle counseling for tobacco/alcohol (patient is a non\u2011smoker, counsel on moderate alcohol).",
-            "Item\u00a06": "Bone health: screen for osteoporosis if additional risk factors emerge (not indicated now).",
-            "Considerations for Documentation Improvement": "Create a health maintenance table in the chart with documentation of due/completed items and dates; prompt immunization history intake."
+            "Item 1": "Annual diabetic retinopathy exam referral \u2013 evidence shows early detection reduces vision loss.",
+            "Item 2": "Annual foot exam \u2013 structured exam to prevent ulcers and amputations.",
+            "Item 3": "Immunizations: influenza yearly, pneumococcal per guidelines, Tdap once, hepatitis B \u2013 per CDC adult schedule.",
+            "Item 4": "Colon cancer screening: colonoscopy at age 62 if never done, or FIT annually.",
+            "Item 5": "Depression screening \u2013 PHQ-9 annually given psychosocial stressors.",
+            "Item 6": "Lifestyle counseling for diet, exercise \u2013 aligns with USPSTF grade B recommendations.",
+            "Considerations for Documentation Improvement": "Incorporate a standardized preventive care template in the EMR to ensure all age-appropriate items are captured."
         },
         "Follow Up Care": {
-            "Item\u00a01": "Recheck HbA1c in 3\u00a0months to assess glycemic control and medication efficacy.",
-            "Item\u00a02": "Monitor BMP (including eGFR, electrolytes) and urine ACR in 6\u00a0months to track CKD progression.",
-            "Item\u00a03": "Lipid panel in 3\u00a0months to evaluate statin response and adjust dose.",
-            "Item\u00a04": "Blood pressure checks at home weekly; review at next visit; assess lisinopril tolerance.",
-            "Item\u00a05": "Weight and BMI at each visit; goal \u22655% weight loss by 3\u00a0months.",
-            "Item\u00a06": "PHQ\u20119 in 4\u00a0weeks to monitor mood and treatment response.",
-            "Considerations for Documentation Improvement": "Standardize follow\u2011up template with pending orders, target dates, and owner for each item; incorporate patient self\u2011monitoring logs and telehealth check\u2011ins."
+            "Item 1": "Recheck HbA1c in 3 months to assess metformin effectiveness and guide therapy adjustment.",
+            "Item 2": "Check renal function (creatinine, eGFR, ACR) in 6 weeks after ACE inhibitor initiation, then every 6 months.",
+            "Item 3": "Lipid panel in 6 weeks post-statin initiation to assess LDL reduction.",
+            "Item 4": "BP and weight check at each visit to monitor obesity and hypertension risk.",
+            "Item 5": "Review home glucose logs in 1 month to evaluate SMBG adherence.",
+            "Item 6": "Confirm completion of retinopathy and foot exams at next annual diabetes visit.",
+            "Considerations for Documentation Improvement": "Use EMR reminders and templated follow-up orders to track pending labs, referrals, and patient-reported data."
         },
-        "Generic Drug Pricing": "[{\"mention\":\"hydrochlorothiazide\",\"cui\":\"C0020261\",\"generic_name\":\"hydrochlorothiazide\",\"link_score\":0.9853211045,\"generic_lower\":\"hydrochlorothiazide\",\"source\":\"Walmart\",\"generic_drug_name\":\"Hydrochlorothiazide\",\"30_day_cost\":4,\"generic_drug_name_lower\":\"hydrochlorothiazide\"},{\"mention\":\"hydrochlorothiazide\",\"cui\":\"C0020261\",\"generic_name\":\"hydrochlorothiazide\",\"link_score\":0.9853211045,\"generic_lower\":\"hydrochlorothiazide\",\"source\":\"Walmart\",\"generic_drug_name\":\"Hydrochlorothiazide\",\"30_day_cost\":4,\"generic_drug_name_lower\":\"hydrochlorothiazide\"},{\"mention\":\"lisinopril\",\"cui\":\"C0065374\",\"generic_name\":\"lisinopril\",\"link_score\":0.9932959676,\"generic_lower\":\"lisinopril\",\"source\":\"Walmart\",\"generic_drug_name\":\"Lisinopril\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"lisinopril\"},{\"mention\":\"sertraline\",\"cui\":\"C0074393\",\"generic_name\":\"sertraline\",\"link_score\":0.9715208411,\"generic_lower\":\"sertraline\",\"source\":\"Walmart\",\"generic_drug_name\":\"Sertraline\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"sertraline\"},{\"mention\":\"metformin\",\"cui\":\"C0025598\",\"generic_name\":\"metformin\",\"link_score\":0.9361871481,\"generic_lower\":\"metformin\",\"source\":\"Walmart\",\"generic_drug_name\":\"Metformin\",\"30_day_cost\":9,\"generic_drug_name_lower\":\"metformin\"}]"
+        "Generic Drug Pricing": [
+            {
+                "Mention": "lisinopril",
+                "Generic Name": "lisinopril",
+                "Source": "Walmart",
+                "30 Day Cost": "$9 "
+            },
+            {
+                "Mention": "lisinopril",
+                "Generic Name": "lisinopril",
+                "Source": "CostPlusDrugs",
+                "30 Day Cost": "$5.59 "
+            },
+            {
+                "Mention": "hydrochlorothiazide",
+                "Generic Name": "hydrochlorothiazide",
+                "Source": "Walmart",
+                "30 Day Cost": "$4 "
+            },
+            {
+                "Mention": "bupropion",
+                "Generic Name": "bupropion",
+                "Source": "Walmart",
+                "30 Day Cost": "$15 "
+            },
+            {
+                "Mention": "sertraline",
+                "Generic Name": "sertraline",
+                "Source": "Walmart",
+                "30 Day Cost": "$9 "
+            },
+            {
+                "Mention": "sertraline",
+                "Generic Name": "sertraline",
+                "Source": "CostPlusDrugs",
+                "30 Day Cost": "$6.04 "
+            },
+            {
+                "Mention": "Restart metformin",
+                "Generic Name": "metformin",
+                "Source": "Walmart",
+                "30 Day Cost": "$9 "
+            },
+            {
+                "Mention": "Restart metformin",
+                "Generic Name": "metformin",
+                "Source": "CostPlusDrugs",
+                "30 Day Cost": "$5.57 "
+            },
+            {
+                "Mention": "atorvastatin",
+                "Generic Name": "atorvastatin",
+                "Source": "CostPlusDrugs",
+                "30 Day Cost": "$5.34 "
+            }
+        ]
     }
 }

@@ -1,93 +1,93 @@
-source,generic_drug_name,dosage_list,dosage_form,30_day_quantity,90_day_quantity,30_day_cost,90_day_cost
-Walmart,Glimepiride,"['1MG', '2MG', '4MG']",Tablet,30,90,9,24
-Walmart,Glipizide,"['5MG', '10MG']",Tablet,60,180,9,24
-Walmart,Glipizide ER,"['2.5MG', '5MG', '10MG']",Tablet,30,90,9,24
-Walmart,Glyburide/Metformin,"['2.5/500MG', '5/500MG']",Tablet,60,180,9,24
-Walmart,Metformin,"['500MG', '850MG', '1000MG']",Tablet,60,180,9,24
-Walmart,Metformin ER,['500MG'],Tablet,120,360,9,24
-Walmart,Metformin ER,['750MG'],Tablet,60,180,9,24
-Walmart,Fenofibrate,['145MG'],Tablet,30,90,9,24
-Walmart,Gemfibrozil,['600MG'],Tablet,60,180,9,24
-Walmart,Simvastatin,"['10MG', '20MG', '40MG']",Tablet,30,90,9,24
-Walmart,Atenolol,"['25MG', '50MG', '100MG']",Tablet,30,90,4,10
-Walmart,Clonidine,"['0.1MG', '0.2MG', '0.3MG']",Tablet,60,180,4,10
-Walmart,Furosemide,"['20MG', '40MG', '80MG']",Tablet,30,90,4,10
-Walmart,Hydralazine,"['10MG', '25MG', '50MG']",Tablet,90,270,4,10
-Walmart,Hydrochlorothiazide,"['12.5MG', '25MG', '50MG']",Tablet,30,90,4,10
-Walmart,Hydrochlorothiazide,['12.5MG'],Capsule,30,90,4,10
-Walmart,Indapamide,"['1.25MG', '2.5MG']",Tablet,30,90,4,10
-Walmart,Lisinopril/HCTZ,['20/25MG'],Tablet,30,90,4,10
-Walmart,Losartan/HCTZ,['50/12.5MG'],Tablet,30,90,4,10
-Walmart,Ramipril,"['2.5MG', '5MG', '10MG']",Tablet,30,90,4,10
-Walmart,Amiodarone,['200MG'],Tablet,30,90,9,24
-Walmart,Amlodipine,"['2.5MG', '5MG', '10MG']",Tablet,30,90,9,24
-Walmart,Benazepril,"['20MG', '40MG']",Tablet,30,90,9,24
-Walmart,Bisoprolol,['5MG'],Tablet,30,90,9,24
-Walmart,Cilostazol,"['50MG', '100MG']",Tablet,60,180,9,24
-Walmart,Digoxin,"['0.125MG', '0.25MG']",Tablet,30,90,9,24
-Walmart,Diltiazem ER,['120MG'],Capsule,30,90,9,24
-Walmart,Diltiazem,"['30MG', '60MG', '120MG']",Tablet,60,180,9,24
-Walmart,Doxazosin,"['1MG', '2MG', '4MG', '8MG']",Tablet,30,90,9,24
-Walmart,Enalapril,"['2.5MG', '10MG', '20MG']",Tablet,30,90,9,24
-Walmart,Irbesartan,"['150MG', '300MG']",Tablet,30,90,9,24
-Walmart,Isosorbide Mononitrate ER,"['30MG', '60MG']",Tablet,30,90,9,24
-Walmart,Lisinopril,"['2.5MG', '5MG', '10MG', '20MG', '30MG']",Tablet,30,90,9,24
-Walmart,Losartan,"['25MG', '50MG', '100MG']",Tablet,30,90,9,24
-Walmart,Metoprolol ER,"['25MG', '50MG', '100MG']",Tablet,30,90,9,24
-Walmart,Metoprolol Tartrate,"['25MG', '50MG', '100MG']",Tablet,60,180,9,24
-Walmart,Minoxidil,['10MG'],Tablet,30,90,9,24
-Walmart,Torsemide,"['20MG', '100MG']",Tablet,30,90,9,24
-Walmart,Triamterene/HCTZ,['37.5/25MG'],Capsule,30,90,9,24
-Walmart,Valsartan/HCTZ,"['160/12.5MG', '160/25MG']",Tablet,30,90,9,24
-Walmart,Verapamil ER,"['120MG', '180MG', '240MG']",Tablet,30,90,9,24
-Walmart,Spironolactone,"['50MG', '100MG']",Tablet,30,90,9,24
-Walmart,Chlorthalidone,"['25MG', '50MG']",Tablet,30,90,9,24
-Walmart,Nitroglycerin,['0.4MG'],Tablet,25,75,9,24
-Walmart,Amitriptyline,"['10MG', '25MG', '50MG', '75MG']",Tablet,30,90,4,10
-Walmart,Lithium Carbonate,['300MG'],Capsule,60,180,4,10
-Walmart,Nortriptyline,"['10MG', '25MG', '50MG']",Tablet,30,90,4,10
-Walmart,Paroxetine,"['20MG', '30MG']",Tablet,30,90,4,10
-Walmart,Trihexyphenidyl,['2MG'],Tablet,60,180,4,10
-Walmart,Amantadine,['100MG'],Tablet,60,180,9,24
-Walmart,Buspirone,"['5MG', '10MG']",Tablet,60,180,9,24
-Walmart,Carbidopa/Levodopa,"['10/100MG', '25/100MG']",Tablet,90,270,9,24
-Walmart,Citalopram,"['10MG', '20MG', '40MG']",Tablet,30,90,9,24
-Walmart,Divalproex DR,['250MG'],Tablet,60,180,9,24
-Walmart,Donepezil,"['5MG', '10MG']",Tablet,30,90,9,24
-Walmart,Fluoxetine,['10MG'],Tablet,30,90,9,24
-Walmart,Fluoxetine,"['20MG', '40MG']",Capsule,30,90,9,24
-Walmart,Lamotrigine,"['100MG', '200MG']",Tablet,30,90,9,24
-Walmart,Lamotrigine,"['25MG', '150MG']",Tablet,60,180,9,24
-Walmart,Levetiracetam,['500MG'],Tablet,60,180,9,24
-Walmart,Lithium Carbonate ER,"['300MG', '450MG']",Tablet,30,90,9,24
-Walmart,Mirtazapine,"['15MG', '30MG', '45MG']",Tablet,30,90,9,24
-Walmart,Oxcarbazepine,['300MG'],Tablet,30,90,9,24
-Walmart,Paroxetine,['40MG'],Tablet,30,90,9,24
-Walmart,Pramipexole,"['0.125MG', '0.25MG', '0.5MG', '1MG', '1.5MG']",Tablet,30,90,9,24
-Walmart,Primidone,['250MG'],Tablet,60,180,9,24
-Walmart,Primidone,['50MG'],Tablet,30,90,9,24
-Walmart,Quetiapine,"['25MG', '50MG', '100MG', '200MG', '300MG']",Tablet,30,90,9,24
-Walmart,Risperidone,"['0.25MG', '0.5MG', '1MG', '2MG', '3MG', '4MG']",Tablet,30,90,9,24
-Walmart,Ropinirole,"['0.25MG', '0.5MG', '1MG', '2MG', '3MG', '4MG']",Tablet,30,90,9,24
-Walmart,Sertraline,"['25MG', '100MG']",Tablet,30,90,9,24
-Walmart,Trazodone,"['50MG', '100MG', '150MG']",Tablet,30,90,9,24
-Walmart,Topiramate,"['25MG', '50MG', '100MG', '200MG']",Tablet,60,180,9,24
-Walmart,Trihexyphenidyl,['5MG'],Tablet,60,180,9,24
-Walmart,Zonisamide,['50MG'],Capsule,30,90,9,24
-Walmart,Bupropion,"['75MG', '100MG']",Tablet,60,180,15,38
-Walmart,Bupropion ER/SR,"['100MG', '150MG', '200MG']",Tablet,60,180,15,38
-Walmart,Bupropion XL,['150MG'],Tablet,30,90,15,38
-Walmart,Venlafaxine,"['37.5MG', '75MG', '100MG']",Tablet,60,180,15,38
-Walmart,Metoclopramide,"['5MG', '10MG']",Tablet,90,270,4,10
-Walmart,Meclizine,"['12.5MG', '25MG']",Tablet,30,90,9,24
-Walmart,Promethazine,"['12.5MG', '25MG']",Tablet,30,90,9,24
-Walmart,Tizanidine,"['2MG', '4MG']",Tablet,30,90,9,24
-Walmart,Methocarbamol,['750MG'],Tablet,30,90,15,38
-Walmart,Lidocaine,['2% VISC SOL'],ML,100,300,15,38
-Walmart,Levothyroxine,"['25MCG', '50MCG', '75MCG', '88MCG', '100MCG', '112MCG', '125MCG', '137MCG', '150MCG', '175MCG', '200MCG']",Tablet,30,90,4,10
-Walmart,Folic Acid,['1MG'],Tablet,30,90,4,10
-Walmart,Folbee Tab,['1TAB'],Tablet,30,90,9,24
-Walmart,Norethindrone,['0.35MG'],Tablet,28,84,9,24
-Walmart,Sprintec 28,['28-DAY'],Tablet,28,84,9,24
-Walmart,Tri-Sprintec,['28-DAY'],Tablet,28,84,9,24
-Walmart,Albuterol HFA,['HFA'],Inhaler,1,,24,
+source,generic_drug_name,dosage_list,dosage_form,30_day_quantity,90_day_quantity,30_day_cost,90_day_cost,
+Walmart,Glimepiride,"['1MG', '2MG', '4MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Glipizide,"['5MG', '10MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Glipizide ER,"['2.5MG', '5MG', '10MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Glyburide/Metformin,"['2.5/500MG', '5/500MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Metformin,"['500MG', '850MG', '1000MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Metformin ER,['500MG'],Tablet,120,360,$9 ,$24 ,
+Walmart,Metformin ER,['750MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Fenofibrate,['145MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Gemfibrozil,['600MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Simvastatin,"['10MG', '20MG', '40MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Atenolol,"['25MG', '50MG', '100MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Clonidine,"['0.1MG', '0.2MG', '0.3MG']",Tablet,60,180,$4 ,$10 ,
+Walmart,Furosemide,"['20MG', '40MG', '80MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Hydralazine,"['10MG', '25MG', '50MG']",Tablet,90,270,$4 ,$10 ,
+Walmart,Hydrochlorothiazide,"['12.5MG', '25MG', '50MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Hydrochlorothiazide,['12.5MG'],Capsule,30,90,$4 ,$10 ,
+Walmart,Indapamide,"['1.25MG', '2.5MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Lisinopril/HCTZ,['20/25MG'],Tablet,30,90,$4 ,$10 ,
+Walmart,Losartan/HCTZ,['50/12.5MG'],Tablet,30,90,$4 ,$10 ,
+Walmart,Ramipril,"['2.5MG', '5MG', '10MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Amiodarone,['200MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Amlodipine,"['2.5MG', '5MG', '10MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Benazepril,"['20MG', '40MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Bisoprolol,['5MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Cilostazol,"['50MG', '100MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Digoxin,"['0.125MG', '0.25MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Diltiazem ER,['120MG'],Capsule,30,90,$9 ,$24 ,
+Walmart,Diltiazem,"['30MG', '60MG', '120MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Doxazosin,"['1MG', '2MG', '4MG', '8MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Enalapril,"['2.5MG', '10MG', '20MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Irbesartan,"['150MG', '300MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Isosorbide Mononitrate ER,"['30MG', '60MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Lisinopril,"['2.5MG', '5MG', '10MG', '20MG', '30MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Losartan,"['25MG', '50MG', '100MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Metoprolol ER,"['25MG', '50MG', '100MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Metoprolol Tartrate,"['25MG', '50MG', '100MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Minoxidil,['10MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Torsemide,"['20MG', '100MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Triamterene/HCTZ,['37.5/25MG'],Capsule,30,90,$9 ,$24 ,
+Walmart,Valsartan/HCTZ,"['160/12.5MG', '160/25MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Verapamil ER,"['120MG', '180MG', '240MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Spironolactone,"['50MG', '100MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Chlorthalidone,"['25MG', '50MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Nitroglycerin,['0.4MG'],Tablet,25,75,$9 ,$24 ,
+Walmart,Amitriptyline,"['10MG', '25MG', '50MG', '75MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Lithium Carbonate,['300MG'],Capsule,60,180,$4 ,$10 ,
+Walmart,Nortriptyline,"['10MG', '25MG', '50MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Paroxetine,"['20MG', '30MG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Trihexyphenidyl,['2MG'],Tablet,60,180,$4 ,$10 ,
+Walmart,Amantadine,['100MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Buspirone,"['5MG', '10MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Carbidopa/Levodopa,"['10/100MG', '25/100MG']",Tablet,90,270,$9 ,$24 ,
+Walmart,Citalopram,"['10MG', '20MG', '40MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Divalproex DR,['250MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Donepezil,"['5MG', '10MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Fluoxetine,['10MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Fluoxetine,"['20MG', '40MG']",Capsule,30,90,$9 ,$24 ,
+Walmart,Lamotrigine,"['100MG', '200MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Lamotrigine,"['25MG', '150MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Levetiracetam,['500MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Lithium Carbonate ER,"['300MG', '450MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Mirtazapine,"['15MG', '30MG', '45MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Oxcarbazepine,['300MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Paroxetine,['40MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Pramipexole,"['0.125MG', '0.25MG', '0.5MG', '1MG', '1.5MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Primidone,['250MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Primidone,['50MG'],Tablet,30,90,$9 ,$24 ,
+Walmart,Quetiapine,"['25MG', '50MG', '100MG', '200MG', '300MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Risperidone,"['0.25MG', '0.5MG', '1MG', '2MG', '3MG', '4MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Ropinirole,"['0.25MG', '0.5MG', '1MG', '2MG', '3MG', '4MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Sertraline,"['25MG', '100MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Trazodone,"['50MG', '100MG', '150MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Topiramate,"['25MG', '50MG', '100MG', '200MG']",Tablet,60,180,$9 ,$24 ,
+Walmart,Trihexyphenidyl,['5MG'],Tablet,60,180,$9 ,$24 ,
+Walmart,Zonisamide,['50MG'],Capsule,30,90,$9 ,$24 ,
+Walmart,Bupropion,"['75MG', '100MG']",Tablet,60,180,$15 ,$38 ,
+Walmart,Bupropion ER/SR,"['100MG', '150MG', '200MG']",Tablet,60,180,$15 ,$38 ,
+Walmart,Bupropion XL,['150MG'],Tablet,30,90,$15 ,$38 ,
+Walmart,Venlafaxine,"['37.5MG', '75MG', '100MG']",Tablet,60,180,$15 ,$38 ,
+Walmart,Metoclopramide,"['5MG', '10MG']",Tablet,90,270,$4 ,$10 ,
+Walmart,Meclizine,"['12.5MG', '25MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Promethazine,"['12.5MG', '25MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Tizanidine,"['2MG', '4MG']",Tablet,30,90,$9 ,$24 ,
+Walmart,Methocarbamol,['750MG'],Tablet,30,90,$15 ,$38 ,
+Walmart,Lidocaine,['2% VISC SOL'],ML,100,300,$15 ,$38 ,
+Walmart,Levothyroxine,"['25MCG', '50MCG', '75MCG', '88MCG', '100MCG', '112MCG', '125MCG', '137MCG', '150MCG', '175MCG', '200MCG']",Tablet,30,90,$4 ,$10 ,
+Walmart,Folic Acid,['1MG'],Tablet,30,90,$4 ,$10 ,
+Walmart,Folbee Tab,['1TAB'],Tablet,30,90,$9 ,$24 ,
+Walmart,Norethindrone,['0.35MG'],Tablet,28,84,$9 ,$24 ,
+Walmart,Sprintec 28,['28-DAY'],Tablet,28,84,$9 ,$24 ,
+Walmart,Tri-Sprintec,['28-DAY'],Tablet,28,84,$9 ,$24 ,
+Walmart,Albuterol HFA,['HFA'],Inhaler,1,,$24 ,,

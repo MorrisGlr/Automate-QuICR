@@ -4,6 +4,7 @@ import os
 import json
 import pandas as pd
 import glob, os
+from pathlib import Path
 
 def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inputs_dir, json_schema, output_dir, overwrite_outputs=False):
     stats_list = []
@@ -58,12 +59,23 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
         timer_stop = time.time()
         timer_duration = timer_stop - timer_start
         timer_duration_seconds = "{:.3f}".format(timer_duration)
-        print(f"Text generation complete for {filename} in {timer_duration_seconds} seconds.\n\n")
+        print(f"Text generation complete for {filename} in {timer_duration_seconds} seconds.")
         try:
             response_json = json.loads(response.output_text)
         except Exception as e:
             print(f"Error parsing JSON from response for {filename}: {e}")
             continue
+
+        plan = response_json.setdefault("Plan", {})
+        if not isinstance(plan, dict):
+            raise ValueError("Expected 'Plan' to be an object/dict in your JSON")
+
+        for section in ("Anticipatory Preventative Care", "Follow Up Care"):
+            # If section lives at the top level, move it under Plan
+            if section in response_json:
+                print(f"Conforming generated JSON to intended schema. Moving {section} to Plan")
+                plan[section] = response_json.pop(section)
+
         with open(output_filepath, 'w') as file:
             # Convert dictionary back to JSON string with formatting
             file.write(json.dumps(response_json, indent=2))
@@ -71,7 +83,7 @@ def openAI_XPC_inference(client, model_name_str, system_prompt, user_prompt_inpu
         # Build stats using the assumed structure of response_json usage data
         try:
             usage_data = response.usage
-            print(f"Response dict: {response.usage}")
+            print(f"Usage stats: (input_tokens: {usage_data.input_tokens}, output_tokens: {usage_data.output_tokens}, total_tokens: {usage_data.total_tokens})\n")
             stats = {
                 "input_filename": filename,
                 "output_filename": output_filename,

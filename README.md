@@ -29,20 +29,20 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 
 ## Demonstration of Outputs
 ### Chart Review on Synthetic Patient, Bill Moore (Click to enlarge).
-<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-  <div style="flex: 1; text-align: center; margin: 0 5px;">
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width:740px; margin:0 auto;">
+  <div style="flex: 0 1 32%; text-align: center; margin: 0 5px;">
     <a href="media/morris_aguilar_bill_chart_review_1.png" target="_blank">
       <img src="media/morris_aguilar_bill_chart_review_1.png" style="max-width:32vw; height:auto; cursor: zoom-in;" />
     </a><br/>
     <sub>All chart review reports begin with key highlights to give the reader an overview that is specific for that patient followed by chief concern and assessment.</sub>
   </div>
-  <div style="flex: 1; text-align: center; margin: 0 5px;">
+  <div style="flex: 0 1 32%; text-align: center; margin: 0 5px;">
     <a href="media/morris_aguilar_bill_chart_review_2.png" target="_blank">
       <img src="media/morris_aguilar_bill_chart_review_2.png" style="max-width:32vw; height:auto; cursor: zoom-in;" />
     </a><br/>
     <sub>The plan section for all patients is separated by medical problem. For each problem it is broken down into subsections, status, decision making/diagnostic plan, treatment/medication plan, contingency planning, considerations for documentation improvement, and considerations for cost effective care improvement.</sub>
   </div>
-  <div style="flex: 1; text-align: center; margin: 0 5px;">
+  <div style="flex: 0 1 32%; text-align: center; margin: 0 5px;">
     <a href="media/morris_aguilar_bill_chart_review_3.png" target="_blank">
       <img src="media/morris_aguilar_bill_chart_review_3.png" style="max-width:32vw; height:auto; cursor: zoom-in;" />
     </a><br/>
@@ -50,15 +50,16 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
   </div>
 </div>
 
+
 ### Aggregate Documentation Report (Click to enlarge).
-<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-  <div style="flex: 1; text-align: center; margin: 0 5px;">
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width:740px; margin:0 auto;">
+  <div style="flex: 0 1 32%; text-align: center; margin: 0 5px;">
     <a href="media/morris_aguilar_aggregated_report_1.png" target="_blank">
       <img src="media/morris_aguilar_aggregated_report_1.png" style="max-width:32vw; height:auto; cursor: zoom-in;" />
     </a><br/>
     <sub>The aggregate report compiles the constructive feedback for a given user/learner and gives a rating to indicate which areas of improvement require priority.</sub>
   </div>
-  <div style="flex: 1; text-align: center; margin: 0 5px;">
+  <div style="flex: 0 1 32%; text-align: center; margin: 0 5px;">
     <a href="media/morris_aguilar_aggregated_report_3.png" target="_blank">
       <img src="media/morris_aguilar_aggregated_report_3.png" style="max-width:32vw; height:auto; cursor: zoom-in;" />
     </a><br/>

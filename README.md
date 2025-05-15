@@ -3,16 +3,16 @@
 Retrospective patient chart reviews of electronic medical records is a crucial process for quality improvement efforts that impact clinical care, medical billing (cost effective care), and internal compliance standards. However, the traditional process of using a team of physicians is time-consuming, labor-intensive, and requires training on a shared criteria to avoid inconsistencies. As a Generative AI fellow at [X = Primary Care](https://fellowship.xprimarycare.com/) (XPC) in Spring 2025, for my self-directed project I developed an end-to-end python app, QuICR, that automates chart review for the primary care clinical setting using natural language processing techniques.
 
 ## Value and Benefits
-<b>Efficiency</b>
+### Efficiency
 - 1-2 hours per chart review reduced to < 1 minute.
 - Cost-effective: < $0.01 per chart review.
 - Just hit "Enter" and the app does the rest. No repetitive copy-pasting.
 
-<b>Constructive Feedback For Deliberate Practice</b>
+### Constructive Feedback For Deliberate Practice
 - Supplies suggestions to improve the documentation of the chart for each documentation issue identified.
 - Provides a birds-eye-view of all patient chart reviews to identify trends in a user's documentation practices and ranks the charts based on the severity of the documentation issue.
 
-<b>Standardization and Consistency.</b>
+### Standardization and Consistency
 - Reduces the variability in chart reviews by providing a structured and standardized criteria to identify documentation issues.
 - Finds the generic names of medications and retrieves the price of the medicatons from Walmart's generic drug list and CostPlusDrugs to aid cost effective care.
 - The insights are presented to the user in an organized and easy to read format provided in a web browser (HTML) and as a PDF for easy sharing with others.
@@ -72,7 +72,7 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 </table>
 
 ## Tools and Techniques Used 
-<b>Natural Language Processing (NLP).</b>
+### Natural Language Processing (NLP)
 - Prompt engineering.
   - System prompt path: `prompt/system/system_prompt_chart_review_2.txt`
 - Structured Outputs and JSON Schemas.
@@ -82,16 +82,16 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 - Named-Entity Recognition (NER).
    - Standardization of medications to generic names using [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html) (UMLS) linker via [SciSpaCy](https://github.com/allenai/scispacy).
 
-<b>Dynamic Report Generation (UI/UX).</b>
+### Dynamic Report Generation (UI/UX)
 - The [Jinja2](https://github.com/pallets/jinja/) templates I created define the visual organization (i.e., HTML structure) for the key highlights, problem plans, anticipatory health maintenance, and follow-up plan.
 - [WeasyPrint](https://github.com/Kozea/WeasyPrint) renders the HTML to PDF with the custom CSS styles.
 - Together, they create a professional report that is easy to read and share with others.
 
-<b>Usage and Performance Monitoring.</b>
+### Usage and Performance Monitoring
 - The inference code captures token usage metrics to aid in monitoring cost and processing speed over time. For examples:
    - `generated_output/o4-mini-2025-04-16/usage`
 
-<b>Reproducible Environment.</b>
+### Reproducible Environment
 - The environment is fully reproducible via the provided `myenv.yml` Conda specification, ensuring that all dependencies (Python, SciSpacy, WeasyPrint, etc.) can be installed consistently across Linux, macOS, and Windows.
 
 ## Usage

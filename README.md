@@ -1,4 +1,4 @@
-# Automate QuICR (Quality Improvement Chart Review)
+# Automate QuICR (<u>Qu</u>ality <u>I</u>mprovement <u>C</u>hart <u>R</u>eview)
 
 Retrospective patient chart reviews of electronic medical records is a crucial process for quality improvement efforts that impact clinical care, medical billing (cost effective care), and internal compliance standards. However, the traditional process of using a team of physicians is time-consuming, labor-intensive, and requires training on a shared criteria to avoid inconsistencies. As a Generative AI fellow at [X = Primary Care](https://fellowship.xprimarycare.com/) (XPC) in Spring 2025, for my self-directed project I developed an end-to-end python app, QuICR, that automates chart review for the primary care clinical setting using natural language processing techniques.
 
@@ -15,7 +15,7 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 ### Standardization and Consistency
 - Reduces the variability in chart reviews by providing a structured and standardized criteria to identify documentation issues.
 - Finds the generic names of medications and retrieves the price of the medicatons from Walmart's generic drug list and CostPlusDrugs to aid cost effective care.
-- The insights are presented to the user in an organized and easy to read format provided in a web browser (HTML) and as a PDF for easy sharing with others.
+- The insights are presented to the user in an organized and easy to read format (inspired by Swiss design principles) provided in a web browser (HTML) and as a PDF for easy sharing.
 
 ## End-to-End App Overview
 <table>

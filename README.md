@@ -28,7 +28,7 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 </table>
 
 ## Demonstration of Outputs
-### Chart Review on Synthetic Patient, Bill Moore (Click to enlarge).
+### Chart Review on Synthetic Patient, Bill Moore (Click to enlarge or view [corresponding PDF](generated_output/o4-mini-2025-04-16/chart_review/pdf/user_prompt_syn_pt_4_chart_review_pricing.pdf).)
 <table align="center">
   <tr>
     <td align="center" style="vertical-align: top;">
@@ -53,7 +53,7 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 </table>
 
 
-### Aggregate Documentation Report (Click to enlarge).
+### Aggregate Documentation Report (Click to image enlarge or view [corresponding PDF](generated_output/o4-mini-2025-04-16/cr_feedback/aggregated_feedback.pdf).)
 <table align="center">
   <tr>
     <td align="center" style="vertical-align: top;">

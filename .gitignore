@@ -1,2 +1,32 @@
-docs/ppt
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude
+.claude/
+
+# Secrets
 .env
+.env.*
+
+# docs
+CLAUDE.md
+SPEC.md
+QuICR_Claude_Ecosystem_Guide.md
+docs/
+
+# Proprietary prompts and schemas
+prompt/system/
+prompt/json_schema/
+
+# All generated outputs
+generated_output/
+
+# Third-party pricing data
+drug_pricing/*.csv
+
+# Template test data (reveals schema structure)
+templates/*.json

@@ -1,0 +1,55 @@
+{
+  "Patient": "Sol Lopez, 71-year-old female",
+  "Key Highlights for Medical Decision-Making (MDM) Improvement": "\n- Risk stratification: Calculate CHA\u2082DS\u2082-VASc and HAS-BLED scores to guide anticoagulation and bleeding risk assessment.\n- Diagnostic evaluation: Obtain ECG confirmation of atrial fibrillation, baseline labs (CBC, BMP including renal function, LFTs, TSH), and transthoracic echocardiogram to assess for structural heart disease and exclude valvular AF.\n- Rate vs rhythm control: Discuss rate\u2010control strategy given asymptomatic presentation and narrow options for rhythm control in this age group.\n- Anticoagulation discussion: Review DOAC versus warfarin, dosing adjustments based on renal function, cost, monitoring requirements, and patient preferences.\n- Hypertension management: Confirm elevated readings with ambulatory or home BP monitoring and initiate appropriate pharmacotherapy (thiazide or ACE inhibitor) plus lifestyle modifications.\n- Medication reconciliation: Document over\u2010the\u2010counter NSAID use (naproxen) and counsel on bleeding risk when combined with anticoagulation.\n- Patient education: Ensure documented discussion of risks/benefits of anticoagulation, recognition of bleeding signs, and importance of medication adherence.\n- Follow\u2010up planning: Establish timeline for lab rechecks, blood pressure monitoring, and specialist referrals if indicated.",
+  "Chief Concern": "Newly diagnosed asymptomatic atrial fibrillation; seeking guidance on appropriate medications.",
+  "Assessment": "Sol Lopez is a 71-year-old female with Apple Watch\u2013detected asymptomatic atrial fibrillation and untreated hypertension. Vital signs confirm irregularly irregular rhythm and BP 146/82. She has no history of heart failure, stroke, diabetes, or bleeding. CHA\u2082DS\u2082-VASc score is 3 (age 65\u201374 = 1; female = 1; hypertension = 1), indicating anticoagulation. Differential diagnosis: 1) Nonvalvular atrial fibrillation, 2) Secondary hyperthyroidism (pending TSH), 3) White-coat hypertension or labile BP.",
+  "Plan": {
+    "problems": [
+      {
+        "Problem Name": "Atrial Fibrillation",
+        "Status": "Newly diagnosed, asymptomatic, not yet anticoagulated or rate\u2010controlled",
+        "Decision Making and Diagnostic Plan": "- Obtain 12-lead ECG to confirm AF.\n- Order CBC, BMP (with CrCl), LFTs, TSH to identify reversible causes and guide medication dosing.\n- Schedule transthoracic echocardiogram to assess left atrial size, LV function, and exclude valvular disease.\n- Calculate CHA\u2082DS\u2082-VASc and HAS-BLED scores.",
+        "Treatment/Medication Plan": "- Anticoagulation: Start apixaban 5 mg PO twice daily (adjust to 2.5 mg BID if CrCl <25 mL/min or age \u226580 years plus weight \u226460 kg; monitor renal function at baseline and annually).\n- Rate control: Initiate metoprolol tartrate 25 mg PO twice daily, titrate to resting HR <80 bpm. Alternative: diltiazem 120 mg ER daily if beta\u2010blocker intolerant.\n- Counsel to avoid NSAIDs (naproxen) while on anticoagulation.",
+        "Contingency Planning": "- If resting HR remains >100 bpm after 2 weeks, increase metoprolol to 50 mg BID or switch to diltiazem.\n- If significant bleeding (eg, hematuria, melena), hold apixaban, obtain CBC and fecal occult blood, and reassess anticoagulation strategy.\n- If echo shows LVEF <40%, refer to cardiology for consideration of rhythm control or specialized therapy.",
+        "Considerations for Documentation Improvement": "- Document patient\u2019s understanding of stroke vs bleeding risk, and discussion of DOAC vs warfarin.\n- Record baseline AF burden (episodes, duration) and symptomatic status in detail.\n- Note patient\u2019s preference and social factors affecting adherence.",
+        "Considerations for Cost Effective Care Improvement": "- Consider warfarin if patient has financial barriers to DOAC; ensure INR monitoring capacity.\n- Use generic metoprolol for rate control.\n- Bundle lab orders to avoid repeated phlebotomy visits."
+      },
+      {
+        "Problem Name": "Hypertension",
+        "Status": "Newly diagnosed, BP 146/82 mmHg, untreated",
+        "Decision Making and Diagnostic Plan": "- Recommend home blood pressure monitoring twice daily for 1 week to confirm hypertension.\n- Evaluate lifestyle factors (diet, sodium intake, physical activity).\n- Assess for secondary causes if resistant after 3 months.",
+        "Treatment/Medication Plan": "- Initiate chlorthalidone 12.5 mg PO daily in the morning. Alternative: lisinopril 10 mg PO daily if ACE inhibitor preferred.\n- Advise DASH diet, sodium <2.3 g/day, regular aerobic exercise (30 minutes most days).",
+        "Contingency Planning": "- If BP >140/90 after 4 weeks, increase chlorthalidone to 25 mg daily or add ACE inhibitor.\n- If orthostatic hypotension develops, decrease dose or switch classes.",
+        "Considerations for Documentation Improvement": "- Include multiple BP readings, timing, and measurement technique.\n- Note lifestyle counseling specifics and patient\u2019s willingness to change.",
+        "Considerations for Cost Effective Care Improvement": "- Thiazide diuretics are low\u2010cost generics.\n- Defer ambulatory BP monitoring unless home readings are inconsistent."
+      },
+      {
+        "Problem Name": "Diagnostic Evaluation and Risk Assessment",
+        "Status": "Incomplete\u2014pending labs and imaging",
+        "Decision Making and Diagnostic Plan": "- Order baseline labs (CBC, BMP, LFTs, TSH) and TTE per AF workup guidelines.\n- Perform lipid panel to assess ASCVD risk and guide statin therapy.\n- Review renal function to dose apixaban and antihypertensives.",
+        "Treatment/Medication Plan": "- No direct medications; facilitate timely scheduling of tests.\n- Educate patient on fasting requirements for labs.",
+        "Contingency Planning": "- If TSH abnormal, add referral to endocrinology or start appropriate thyroid therapy.\n- If echo reveals significant valvular disease, adjust AF management (consider warfarin if mechanical valve).",
+        "Considerations for Documentation Improvement": "- Record dates/times of lab orders and patient consent.\n- Track pending results in EMR to ensure follow\u2010up.",
+        "Considerations for Cost Effective Care Improvement": "- Group lab tests to reduce phlebotomy visits.\n- Verify insurance coverage for echocardiogram or consider outpatient lab draws."
+      }
+    ],
+    "Anticipatory Preventative Care": {
+      "Item 1": "Influenza vaccine annually\u2014reduces morbidity and mortality in elderly patients (CDC recommendation).",
+      "Item 2": "Pneumococcal vaccination: PCV13 followed by PPSV23 \u22651 year later (per ACIP for adults \u226565).",
+      "Item 3": "Shingles vaccine (recombinant zoster vaccine, 2 doses)\u2014prevents herpes zoster and complications.",
+      "Item 4": "Colorectal cancer screening: colonoscopy if not done within 10 years; consider FIT annually if declined.",
+      "Item 5": "Bone density screening: DEXA scan to assess osteoporosis risk in women \u226565 years.",
+      "Item 6": "Lipid management: initiate moderate\u2010intensity statin (atorvastatin 10 mg daily) for primary prevention given age and risk factors.",
+      "Considerations for Documentation Improvement": "- Document prior vaccine dates, colonoscopy history, and DEXA results.\n- Use health maintenance templates to ensure no items missed."
+    },
+    "Follow Up Care": {
+      "Item 1": "Recheck BMP, CBC, LFTs, and TSH in 4 weeks post\u2010initiation of anticoagulation and rate control.",
+      "Item 2": "Review home BP logs at 4 weeks to assess hypertension control and adjust therapy.",
+      "Item 3": "Assess heart rate control and symptoms of AF at next visit; consider repeat ECG.",
+      "Item 4": "Monitor for anticoagulation side effects (bleeding, bruising) and adherence.",
+      "Item 5": "Review lipid panel in 6\u201312 weeks to evaluate statin efficacy.",
+      "Item 6": "Confirm scheduling of echocardiogram and vaccination appointments.",
+      "Considerations for Documentation Improvement": "- Set EMR reminders for pending items and follow\u2010up labs.\n- Use checklists to track patient adherence and test completion."
+    }
+  }
+}

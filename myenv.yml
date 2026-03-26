@@ -217,7 +217,6 @@ dependencies:
       - dataclasses-json==0.6.6
       - diskcache==5.6.3
       - docker==7.0.0
-      - en-core-sci-md==0.5.4
       - flaml==2.1.2
       - frozendict==2.4.4
       - frozenlist==1.4.1

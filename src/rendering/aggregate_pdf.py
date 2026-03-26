@@ -3,7 +3,6 @@ import json
 from jinja2 import Environment, BaseLoader
 from weasyprint import HTML, CSS
 
-# --- Page & typography CSS (same as your original) ---
 css = CSS(string="""
 @page {
   size: Letter;
@@ -19,7 +18,6 @@ h2 { font-family: Helvetica, sans-serif; font-size: 16pt; color: #558a86; margin
 h3 { font-weight: bold; font-size: 11pt; margin:0; padding:0; }
 p  { font-size: 10pt; margin: 0.2em 0; }
 
-/* Status bar container + fill */
 .status-bar {
   background: #dddddd;
   border-radius: 4px;
@@ -33,16 +31,15 @@ p  { font-size: 10pt; margin: 0.2em 0; }
 .section { margin-bottom: 1em; }
 """)
 
-# --- Skill-assessment mapping for status bars ---
 ASSESSMENT_RANK = {
     "Critical Gap": 1,
     "Needs Improvement": 2,
     "Meets Expectations": 3,
     "Excellent": 4,
 }
+
 RATINGS = {
-    name: {"percent": (rank * 25), 
-           "color": color}
+    name: {"percent": (rank * 25), "color": color}
     for name, (rank, color) in {
         "Critical Gap":      (1, "#e57373"),
         "Needs Improvement": (2, "#ffd54f"),
@@ -51,7 +48,6 @@ RATINGS = {
     }.items()
 }
 
-# --- Jinja template for the aggregated report ---
 AGGREGATE_TEMPLATE = Environment(loader=BaseLoader()).from_string(r"""
 <!DOCTYPE html>
 <html><body>
@@ -84,12 +80,14 @@ AGGREGATE_TEMPLATE = Environment(loader=BaseLoader()).from_string(r"""
 </body></html>
 """)
 
-def aggregate_feedback(model_name: str, output_dir: str):
-    """
+
+def aggregate_feedback(model_name: str, output_dir: str) -> None:
+    """Aggregate feedback across all patients and render to PDF.
+
     Reads all <output_dir>/<model_name>/cr_feedback/*.json,
     merges per-problem entries by Problem Name, consolidates
     strengths & areas, downgrades skill-assessments as needed,
-    and writes one PDF.
+    and writes one PDF + HTML.
     """
     json_dir = os.path.join(output_dir, model_name, "cr_feedback")
     problems = {}
@@ -100,12 +98,25 @@ def aggregate_feedback(model_name: str, output_dir: str):
             continue
         path = os.path.join(json_dir, fname)
         with open(path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError:
+                print(f"  Skipping {fname}: invalid JSON")
+                continue
 
         details = data.get("Feedback Details", {})
-        for section, content in details.items():
-            if not section.startswith("Problem"):
-                continue
+
+        # v2 format: problems is an array
+        if "problems" in details:
+            problem_list = details["problems"]
+        else:
+            # v1 fallback: collect Problem N keys
+            problem_list = [
+                content for section, content in details.items()
+                if section.startswith("Problem") and isinstance(content, dict)
+            ]
+
+        for content in problem_list:
             pname = content.get("Problem Name")
             if not pname:
                 continue
@@ -116,23 +127,19 @@ def aggregate_feedback(model_name: str, output_dir: str):
                 "Skill Assessment": "Excellent"
             })
 
-            # merge strengths
             s = content.get("Strengths", "").strip()
             if s:
                 entry["Strengths"] += (s if not entry["Strengths"] else "\n" + s)
 
-            # merge areas
             a = content.get("Areas for Improvement", "").strip()
             if a:
                 entry["Areas for Improvement"] += (a if not entry["Areas for Improvement"] else "\n" + a)
 
-            # downgrade assessment if needed
             current = entry["Skill Assessment"]
             new = content.get("Skill Assessment", current)
             if ASSESSMENT_RANK.get(new, 0) < ASSESSMENT_RANK.get(current, 0):
                 entry["Skill Assessment"] = new
 
-    # render HTML + PDF
     print(f"Aggregated {len(problems)} problems.")
     print("Generating PDF...")
     aggregated_data = {"Aggregated Problems": problems}
@@ -141,7 +148,6 @@ def aggregate_feedback(model_name: str, output_dir: str):
     HTML(string=html).write_pdf(out_pdf, stylesheets=[css])
     print(f"Saved aggregated report to: {out_pdf}")
 
-    # Save the rendered HTML for inspection
     out_html = os.path.splitext(out_pdf)[0] + ".html"
     with open(out_html, "w", encoding="utf-8") as f_html:
         f_html.write(html)

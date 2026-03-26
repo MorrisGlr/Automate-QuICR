@@ -1,0 +1,30 @@
+{
+  "Feedback Summary": "Overall, the chart review is thorough and well organized, with a clear Assessment and a detailed Plan that addresses diagnostics, treatment, contingency planning, cost\u2011effective care, preventive care, and follow\u2011up. The student synthesizes key EMR data accurately and proposes evidence\u2011based interventions. Opportunities exist to strengthen formal risk stratification, guideline\u2011driven targets, and documentation of patient values/preferences, and to refine certain contingencies and education components.",
+  "Feedback Details": {
+    "Assessment Section": {
+      "Strengths": "The Assessment succinctly captures the patient\u2019s asymptomatic AF and untreated hypertension, ties her Apple Watch finding to confirmatory exam, and articulates a concise differential for AF. It recognizes stroke risk and need for anticoagulation.",
+      "Areas for Improvement": "Calculate and document exact CHADS\u2011VASc and HAS\u2011BLED scores. Broaden the AF differential (e.g., sleep apnea, alcohol use patterns) and include a structured differential for hypertension. Specify hypertension stage and target BP per ACC/AHA guidelines. Incorporate patient goals and preferences explicitly to support shared decision\u2011making."
+    },
+    "Problem 1": {
+      "Problem Name": "Atrial Fibrillation",
+      "Strengths": "The Plan prioritizes stroke prevention and rate control logically. Diagnostic planning (TSH, CBC, CMP, echo, ECG) is comprehensive. The anticoagulation recommendation (apixaban with dose adjustment, warfarin alternative) and rate control strategy (metoprolol with dose titration, alternative diltiazem) are clearly delineated. Contingency plans for persistent tachycardia and bleeding are appropriate, and cost\u2011effective options are noted.",
+      "Areas for Improvement": "Specify the calculated CHADS\u2011VASc and HAS\u2011BLED scores in the note to justify anticoagulant choice. Address rhythm control considerations or referral criteria for electrophysiology/ablation. Expand patient education: anticoagulant adherence strategies, bleeding symptom recognition, fall risk mitigation. Clarify dose adjustments for renal function (e.g., CrCl thresholds) and monitor parameters (e.g., periodic renal panel).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Problem 2": {
+      "Problem Name": "Hypertension",
+      "Strengths": "The plan to confirm the diagnosis with home and repeat office readings, coupled with targeted labs (electrolytes, renal function, glucose, lipids, urinalysis), aligns with guidelines. Initiation of low\u2011dose thiazide and lifestyle counseling on DASH diet, sodium restriction, weight loss, and exercise is evidence\u2011based. Contingency steps for dose escalation or drug class change and cost considerations are clear.",
+      "Areas for Improvement": "Define a specific BP goal (<130/80\u00a0mmHg) per current guidelines. Provide more detail on home BP monitoring technique and frequency. Consider ACE\u2011inhibitor benefits in older patients (e.g., cardiovascular remodeling) and outline when to switch drug classes. Include monitoring for thiazide adverse effects (electrolytes, uric acid).",
+      "Skill Assessment": "Meets Expectations"
+    },
+    "Anticipatory Preventative Care Section Feedback": {
+      "Strengths": "The preventive plan is comprehensive, covering colorectal, breast, and bone density screenings, immunizations (influenza, pneumococcal, zoster), and metabolic screenings (lipids, diabetes). It aligns well with USPSTF and age\u2011based recommendations.",
+      "Areas for Improvement": "Document the patient\u2019s prior screening and immunization history to individualize recommendations. Clarify timing and sequencing for PCV13 and PPSV23 vaccines. Provide ASCVD risk calculation to support statin discussion. Note any family history data gaps to prompt further history taking."
+    },
+    "Follow Up Care Feedback": {
+      "Strengths": "The follow\u2011up timetable is well structured: BP check, rate control review, anticoagulation monitoring, lab result reassessment, and coordination of preventive service tracking. It reflects awareness of monitoring intervals.",
+      "Areas for Improvement": "Assign responsibilities (e.g., nursing call, patient portal reminder) and define urgent parameters (e.g., SBP >180\u00a0mmHg, HR >120\u00a0bpm, bleeding signs) that trigger earlier outreach. Specify how lab and imaging results will be communicated and acted upon. Include a plan for reviewing home BP logs."
+    },
+    "Overall Recommendations": "1. Incorporate formal risk score calculations and document them to anchor anticoagulation and bleeding risk decisions. 2. Articulate patient values, preferences, and shared\u2011decision discussions in the note. 3. Align BP targets and drug selection with current hypertension guidelines and monitor for specific adverse effects. 4. Strengthen patient education components (anticoagulant adherence, lifestyle modifications, home monitoring techniques). 5. Clarify responsibilities and thresholds in follow\u2011up planning to ensure timely intervention. 6. Reference specific guidelines (e.g., ACC/AHA, USPSTF) to support choices and improve reproducibility."
+  }
+}

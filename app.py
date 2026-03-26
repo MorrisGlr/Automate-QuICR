@@ -1,78 +1,179 @@
-import pandas as pd
-import os
+#!/usr/bin/env python3
+"""QuICR pipeline CLI.
+
+Usage:
+    python app.py --step <step> [--model <model>] [--provider <provider>] [options]
+
+Steps:
+    inference-cr       Run chart review inference
+    inference-fb       Run feedback inference
+    drug-pricing       Run medication NER + drug pricing enrichment
+    pdf-cr             Generate chart review PDFs
+    pdf-fb             Generate feedback PDFs
+    pdf-aggregate      Generate aggregated feedback PDF
+    all                Run full pipeline
+"""
+
+import argparse
 import json
-from openai import OpenAI
-from google import genai
+import os
+from pathlib import Path
+
 from dotenv import load_dotenv
-import spacy
-import scispacy
-from spacy.tokens import Span
-from scispacy.abbreviation import AbbreviationDetector
-from scispacy.umls_linking import UmlsEntityLinker
-from src.openAI_XPC_inference import openAI_XPC_inference
-from src.gemini_XPC_inference import gemini_XPC_inference
-from src.chart_review_json_to_pdf import chart_review_json_to_pdf
-from src.cr_feedback_json_to_pdf import cr_feedback_json_to_pdf
-from src.drug_pricing import extract_medications
-from src.drug_pricing import load_medication_pipeline
-from src.aggregate_feedback_pdf import aggregate_feedback
 
-# set working directory
-wk_dir = "/Users/morris/github_projects/XPC_chart_review"
-os.chdir(wk_dir)
+from src.utils.schema import load_schema, load_system_prompt
 
-# Load environment variables
-load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
-umls_api_key = os.getenv("UMLS_API_KEY")
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+PROJECT_ROOT = Path(__file__).resolve().parent
 
-# Defining paths
-user_prompt_inputs_dir = "data"
-output_dir = os.path.join(wk_dir, "generated_output")
+STEPS = [
+    "inference-cr",
+    "inference-fb",
+    "drug-pricing",
+    "pdf-cr",
+    "pdf-fb",
+    "pdf-aggregate",
+    "all",
+]
 
-# Prompts (Chart Review and Feedback)
-with open("prompt/system/system_prompt_chart_review_2.txt", "r", encoding='utf-8') as f:
-    system_prompt_cr = f.read()
 
-with open("prompt/system/system_prompt_feedback_1_sans_json.txt", "r", encoding='utf-8') as f:
-    system_prompt_fb = f.read()
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="QuICR pipeline")
+    parser.add_argument(
+        "--step", required=True, choices=STEPS,
+        help="Pipeline step to run",
+    )
+    parser.add_argument("--model", default="o4-mini-2025-04-16", help="Model name")
+    parser.add_argument(
+        "--provider", default="openai", choices=["openai", "gemini"],
+        help="Inference provider (default: openai)",
+    )
+    parser.add_argument("--input-dir", default="data", help="Input data directory")
+    parser.add_argument("--output-dir", default="generated_output", help="Output directory")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing outputs")
+    parser.add_argument("--system-prompt", default=None, help="Path to system prompt file")
+    parser.add_argument("--schema", default=None, help="Path to JSON schema file")
+    return parser
 
-# JSON Schemas (Chart Review and Feedback)
-json_schema_cr = json.load(open("prompt/json_schema/chart_review.json", "r", encoding='utf-8'))
-json_schema_fb = json.load(open("prompt/json_schema/cr_feedback.json", "r", encoding='utf-8'))
 
-# Initialize OpenAI client
-client = OpenAI(api_key=openai_api_key)
-model_name_str = "o4-mini-2025-04-16"
+def _create_provider(args):
+    """Lazily create the appropriate inference provider."""
+    if args.provider == "openai":
+        from openai import OpenAI
+        from src.inference.openai_provider import OpenAIProvider
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        return OpenAIProvider(client, args.model)
+    elif args.provider == "gemini":
+        from google import genai
+        from src.inference.gemini_provider import GeminiProvider
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        return GeminiProvider(client, args.model)
+    else:
+        raise ValueError(f"Unknown provider: {args.provider}")
 
-# Initialize the Gemini client
-#client = genai.Client(api_key=gemini_api_key)
-gemini_model_str = "gemini-2.5-pro-exp-03-25"
 
-# Run OpenAI_XPC_inference for Chart Review
-#openAI_XPC_inference(client, model_name_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
+def _load_schema(args, schema_name: str) -> dict:
+    """Load JSON schema from explicit path or auto-detect by name."""
+    if args.schema:
+        with open(args.schema, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return load_schema(schema_name, "v2")
 
-# Run OpenAI_XPC_inference for Feedback
-#openAI_XPC_inference(client, model_name_str, system_prompt_fb, user_prompt_inputs_dir, json_schema_fb, output_dir, overwrite_outputs=True)
 
-# Run Gemini_XPC_inference for Chart Review
-#gemini_XPC_inference(client, gemini_model_str, system_prompt_cr, user_prompt_inputs_dir, json_schema_cr, output_dir, overwrite_outputs=True)
+def _load_prompt(args, step_name: str) -> str:
+    """Load system prompt from explicit path or auto-detect by step."""
+    return load_system_prompt(step_name, path=args.system_prompt)
 
-# Run drug pricing
-# Load the medication pipeline
-'''
-pricing_df1 = pd.read_csv("drug_pricing/walmart_drug_pricing.csv", usecols=["source","generic_drug_name","30_day_cost"])
-pricing_df2 = pd.read_csv("drug_pricing/costplus_drug_pricing_cleaned.csv", usecols=["source","generic_drug_name","30_day_cost"])
-extract_medications(model_name_str, output_dir, pricing_dfs=[pricing_df1, pricing_df2], model="en_core_sci_md", umls_api_key=umls_api_key)
-'''
 
-# Convert the chart review JSON files to a formatted PDF.
-#chart_review_json_to_pdf(model_name_str, output_dir)
-#chart_review_json_to_pdf(gemini_model_str, output_dir)
+def run_step(step: str, args) -> None:
+    """Execute a single pipeline step."""
+    input_dir = str(PROJECT_ROOT / args.input_dir)
+    output_dir = str(PROJECT_ROOT / args.output_dir)
 
-# Convert the feedback JSON files to a formatted PDF.
-# cr_feedback_json_to_pdf(model_name_str, output_dir)
+    if step == "inference-cr":
+        from src.inference.orchestrator import run_pipeline_step
+        provider = _create_provider(args)
+        system_prompt = _load_prompt(args, "chart_review")
+        json_schema = _load_schema(args, "chart_review")
+        run_pipeline_step(
+            provider=provider,
+            model_name=args.model,
+            system_prompt=system_prompt,
+            input_dir=input_dir,
+            json_schema=json_schema,
+            output_dir=output_dir,
+            overwrite=args.overwrite,
+        )
 
-# Convert the aggregated feedback JSON files to a formatted PDF.
-aggregate_feedback(model_name_str, output_dir)
+    elif step == "inference-fb":
+        from src.inference.orchestrator import run_pipeline_step
+        provider = _create_provider(args)
+        system_prompt = _load_prompt(args, "feedback")
+        json_schema = _load_schema(args, "cr_feedback")
+        run_pipeline_step(
+            provider=provider,
+            model_name=args.model,
+            system_prompt=system_prompt,
+            input_dir=input_dir,
+            json_schema=json_schema,
+            output_dir=output_dir,
+            overwrite=args.overwrite,
+        )
+
+    elif step == "drug-pricing":
+        import pandas as pd
+        from src.enrichment.drug_pricing import extract_medications
+
+        umls_api_key = os.getenv("UMLS_API_KEY")
+        pricing_df1 = pd.read_csv(
+            PROJECT_ROOT / "drug_pricing" / "walmart_drug_pricing.csv",
+            usecols=["source", "generic_drug_name", "30_day_cost"],
+        )
+        pricing_df2 = pd.read_csv(
+            PROJECT_ROOT / "drug_pricing" / "costplus_drug_pricing_cleaned.csv",
+            usecols=["source", "generic_drug_name", "30_day_cost"],
+        )
+        extract_medications(
+            args.model, output_dir,
+            pricing_dfs=[pricing_df1, pricing_df2],
+            model="en_core_sci_md",
+            umls_api_key=umls_api_key,
+        )
+
+    elif step == "pdf-cr":
+        from src.rendering.chart_review_pdf import chart_review_json_to_pdf
+        chart_review_json_to_pdf(args.model, output_dir)
+
+    elif step == "pdf-fb":
+        from src.rendering.feedback_pdf import cr_feedback_json_to_pdf
+        cr_feedback_json_to_pdf(args.model, output_dir)
+
+    elif step == "pdf-aggregate":
+        from src.rendering.aggregate_pdf import aggregate_feedback
+        aggregate_feedback(args.model, output_dir)
+
+    else:
+        raise ValueError(f"Unknown step: {step}")
+
+
+def main():
+    parser = build_parser()
+    args = parser.parse_args()
+
+    load_dotenv(PROJECT_ROOT / ".env")
+
+    if args.step == "all":
+        all_steps = [
+            "inference-cr", "inference-fb", "drug-pricing",
+            "pdf-cr", "pdf-fb", "pdf-aggregate",
+        ]
+        for step in all_steps:
+            print(f"\n{'='*60}")
+            print(f"Running step: {step}")
+            print(f"{'='*60}\n")
+            run_step(step, args)
+    else:
+        run_step(args.step, args)
+
+
+if __name__ == "__main__":
+    main()

@@ -115,5 +115,5 @@ I would like to thank Paulius Mui, M.D. (founder of X = Primary Care) for his me
 # Contact
 Morris A. Aguilar, Ph.D.<br>
 XPC Generative AI Fellow, Spring 2025.<br>
-morrisglr@proton.me<br>
+<a href= https://www.linkedin.com/in/morris-a-aguilar/ >LinkedIn</a><br>
 @morrisglr.bsky.social

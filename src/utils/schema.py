@@ -8,8 +8,8 @@ PROMPT_DIR = PROJECT_ROOT / "prompt" / "system"
 
 # Default system prompt files per step
 _DEFAULT_PROMPTS = {
-    "chart_review": "system_prompt_chart_review_2.txt",
-    "feedback": "system_prompt_feedback_1_sans_json.txt",
+    "chart_review": "system_prompt_chart_review_3.txt",
+    "feedback": "system_prompt_feedback_2.txt",
 }
 
 

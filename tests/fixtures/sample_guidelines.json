@@ -1,0 +1,46 @@
+[
+  {
+    "id": "aha-acc-afib-2023",
+    "title": "2023 ACC/AHA/ACCP/HRS Guideline for Diagnosis and Management of Atrial Fibrillation",
+    "source": "AHA/ACC",
+    "year": 2023,
+    "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193",
+    "conditions": ["atrial fibrillation", "AFib", "AF", "anticoagulation"],
+    "summary": "Use CHA2DS2-VASc score to assess stroke risk. DOACs preferred over warfarin.",
+    "grade": "A",
+    "grade_certainty": "High"
+  },
+  {
+    "id": "aha-acc-hypertension-2017",
+    "title": "2017 ACC/AHA Guideline for High Blood Pressure in Adults",
+    "source": "AHA/ACC",
+    "year": 2017,
+    "url": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065",
+    "conditions": ["hypertension", "blood pressure", "high blood pressure"],
+    "summary": "Target BP <130/80 for most adults. First-line: thiazide, ACEi, ARB, CCB.",
+    "grade": "A",
+    "grade_certainty": "High"
+  },
+  {
+    "id": "ada-standards-2024",
+    "title": "Standards of Care in Diabetes - 2024",
+    "source": "ADA",
+    "year": 2024,
+    "url": "https://diabetesjournals.org/care/issue/47/Supplement_1",
+    "conditions": ["diabetes", "type 2 diabetes", "A1c", "hyperglycemia"],
+    "summary": "A1c target <7% for most adults. Metformin first-line.",
+    "grade": "A",
+    "grade_certainty": "High"
+  },
+  {
+    "id": "uspstf-colorectal-2021",
+    "title": "Screening for Colorectal Cancer",
+    "source": "USPSTF",
+    "year": 2021,
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening",
+    "conditions": ["colorectal cancer", "colon cancer", "colonoscopy"],
+    "summary": "Screen adults 45-75. Colonoscopy every 10 years or FIT annually.",
+    "grade": "A",
+    "grade_certainty": "High"
+  }
+]

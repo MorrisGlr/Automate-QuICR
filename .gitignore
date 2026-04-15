@@ -30,3 +30,7 @@ drug_pricing/*.csv
 
 # Template test data (reveals schema structure)
 templates/*.json
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

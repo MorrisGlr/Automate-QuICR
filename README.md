@@ -110,7 +110,7 @@ This is a functional application to demonstrate the value of the technologies an
 Evaluation studies involving thousands of patient charts are needed to fully assess the performance of the app to capture the nuances of patient clinical presentations and the complexity of clinical decision making. Hybrid frameworks that evaluate GenAI outputs with human input and an LLM evaluator with a criteria set such as [EvalGen](https://arxiv.org/pdf/2404.12272) to assess the performance of the app. This approach is suitable because it allows for human judgement to be incorporated for nuanced cases and can aid in aligning the LLM evaluator with human appraisal as it processes a large number of charts faster than humans.
 
 ## Acknowledgements
-I would like to thank Paulius Mui, M.D. (founder of X = Primary Care) for his mentorship and support throughout the fellowship.
+I would like to thank Paulius Mui, M.D. (founder of X = Primary Care) for his mentorship and support throughout the Spring 2025 fellowship.
 
 # Contact
 Morris A. Aguilar, Ph.D.<br>

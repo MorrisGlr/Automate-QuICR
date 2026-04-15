@@ -52,6 +52,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing outputs")
     parser.add_argument("--system-prompt", default=None, help="Path to system prompt file")
     parser.add_argument("--schema", default=None, help="Path to JSON schema file")
+    parser.add_argument("--no-evidence", action="store_true", help="Skip evidence retrieval (PubMed RAG)")
+    parser.add_argument("--no-severity-validation", action="store_true", help="Skip post-hoc severity validation")
     return parser
 
 
@@ -94,6 +96,27 @@ def run_step(step: str, args) -> None:
         provider = _create_provider(args)
         system_prompt = _load_prompt(args, "chart_review")
         json_schema = _load_schema(args, "chart_review")
+
+        evidence_fn = None
+        if not args.no_evidence:
+            from functools import partial
+            from src.evidence.pubmed import build_evidence_context
+            cache_dir = os.path.join(output_dir, args.model, "evidence_cache")
+            evidence_fn = partial(
+                build_evidence_context,
+                api_key=os.getenv("NCBI_API_KEY"),
+                cache_dir=cache_dir,
+            )
+
+        severity_fn = None
+        citation_fn = None
+        if not args.no_severity_validation:
+            from src.severity.rules import apply_severity_validation
+            severity_fn = apply_severity_validation
+        if not args.no_evidence:
+            from src.evidence.grading import enrich_evidence_metadata
+            citation_fn = enrich_evidence_metadata
+
         run_pipeline_step(
             provider=provider,
             model_name=args.model,
@@ -102,6 +125,9 @@ def run_step(step: str, args) -> None:
             json_schema=json_schema,
             output_dir=output_dir,
             overwrite=args.overwrite,
+            evidence_context_fn=evidence_fn,
+            severity_validator=severity_fn,
+            citation_validator=citation_fn,
         )
 
     elif step == "inference-fb":

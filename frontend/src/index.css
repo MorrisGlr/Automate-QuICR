@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SFProText-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SFProText-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@theme {
+  --color-teal: #558a86;
+  --color-teal-light: #6ba3a0;
+  --color-orange: #f77e5e;
+  --color-severity-critical: #e57373;
+  --color-severity-high: #f77e5e;
+  --color-severity-moderate: #ffd54f;
+  --color-skill-critical-gap: #e57373;
+  --color-skill-needs-improvement: #ffd54f;
+  --color-skill-meets-expectations: #81d4fa;
+  --color-skill-excellent: #81c784;
+  --color-surface: #f5f5f5;
+  --font-heading: "Helvetica", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "SF Pro Text", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}

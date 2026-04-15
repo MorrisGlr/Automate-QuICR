@@ -10,13 +10,15 @@
         "Problem Name": "Atrial Fibrillation",
         "Strengths": "The Plan prioritizes stroke prevention and rate control logically. Diagnostic planning (TSH, CBC, CMP, echo, ECG) is comprehensive. The anticoagulation recommendation (apixaban with dose adjustment, warfarin alternative) and rate control strategy (metoprolol with dose titration, alternative diltiazem) are clearly delineated. Contingency plans for persistent tachycardia and bleeding are appropriate, and cost\u2011effective options are noted.",
         "Areas for Improvement": "Specify the calculated CHADS\u2011VASc and HAS\u2011BLED scores in the note to justify anticoagulant choice. Address rhythm control considerations or referral criteria for electrophysiology/ablation. Expand patient education: anticoagulant adherence strategies, bleeding symptom recognition, fall risk mitigation. Clarify dose adjustments for renal function (e.g., CrCl thresholds) and monitor parameters (e.g., periodic renal panel).",
-        "Skill Assessment": "Meets Expectations"
+        "Skill Assessment": "Meets Expectations",
+        "Severity": "High"
       },
       {
         "Problem Name": "Hypertension",
         "Strengths": "The plan to confirm the diagnosis with home and repeat office readings, coupled with targeted labs (electrolytes, renal function, glucose, lipids, urinalysis), aligns with guidelines. Initiation of low\u2011dose thiazide and lifestyle counseling on DASH diet, sodium restriction, weight loss, and exercise is evidence\u2011based. Contingency steps for dose escalation or drug class change and cost considerations are clear.",
         "Areas for Improvement": "Define a specific BP goal (<130/80\u00a0mmHg) per current guidelines. Provide more detail on home BP monitoring technique and frequency. Consider ACE\u2011inhibitor benefits in older patients (e.g., cardiovascular remodeling) and outline when to switch drug classes. Include monitoring for thiazide adverse effects (electrolytes, uric acid).",
-        "Skill Assessment": "Meets Expectations"
+        "Skill Assessment": "Meets Expectations",
+        "Severity": "Moderate"
       }
     ],
     "Anticipatory Preventative Care Section Feedback": {

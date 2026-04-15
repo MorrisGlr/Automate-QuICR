@@ -12,7 +12,26 @@
         "Treatment/Medication Plan": "- Anticoagulation: Start apixaban 5 mg PO twice daily (adjust to 2.5 mg BID if CrCl <25 mL/min or age \u226580 years plus weight \u226460 kg; monitor renal function at baseline and annually).\n- Rate control: Initiate metoprolol tartrate 25 mg PO twice daily, titrate to resting HR <80 bpm. Alternative: diltiazem 120 mg ER daily if beta\u2010blocker intolerant.\n- Counsel to avoid NSAIDs (naproxen) while on anticoagulation.",
         "Contingency Planning": "- If resting HR remains >100 bpm after 2 weeks, increase metoprolol to 50 mg BID or switch to diltiazem.\n- If significant bleeding (eg, hematuria, melena), hold apixaban, obtain CBC and fecal occult blood, and reassess anticoagulation strategy.\n- If echo shows LVEF <40%, refer to cardiology for consideration of rhythm control or specialized therapy.",
         "Considerations for Documentation Improvement": "- Document patient\u2019s understanding of stroke vs bleeding risk, and discussion of DOAC vs warfarin.\n- Record baseline AF burden (episodes, duration) and symptomatic status in detail.\n- Note patient\u2019s preference and social factors affecting adherence.",
-        "Considerations for Cost Effective Care Improvement": "- Consider warfarin if patient has financial barriers to DOAC; ensure INR monitoring capacity.\n- Use generic metoprolol for rate control.\n- Bundle lab orders to avoid repeated phlebotomy visits."
+        "Considerations for Cost Effective Care Improvement": "- Consider warfarin if patient has financial barriers to DOAC; ensure INR monitoring capacity.\n- Use generic metoprolol for rate control.\n- Bundle lab orders to avoid repeated phlebotomy visits.",
+        "Severity": "High",
+        "Evidence Grade": {
+          "certainty": "High",
+          "sources": [
+            {
+              "title": "2023 ACC/AHA/ACCP/HRS Guideline for Diagnosis and Management of Atrial Fibrillation",
+              "source": "AHA/ACC",
+              "year": 2023,
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193"
+            },
+            {
+              "title": "Anticoagulation Decision-Making in Atrial Fibrillation",
+              "source": "AHA/ACC",
+              "year": 2023,
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193"
+            }
+          ],
+          "rationale": "Management aligns with high-certainty ACC/AHA guidelines for stroke prevention in nonvalvular AF with CHA2DS2-VASc >= 2."
+        }
       },
       {
         "Problem Name": "Hypertension",
@@ -21,7 +40,20 @@
         "Treatment/Medication Plan": "- Initiate chlorthalidone 12.5 mg PO daily in the morning. Alternative: lisinopril 10 mg PO daily if ACE inhibitor preferred.\n- Advise DASH diet, sodium <2.3 g/day, regular aerobic exercise (30 minutes most days).",
         "Contingency Planning": "- If BP >140/90 after 4 weeks, increase chlorthalidone to 25 mg daily or add ACE inhibitor.\n- If orthostatic hypotension develops, decrease dose or switch classes.",
         "Considerations for Documentation Improvement": "- Include multiple BP readings, timing, and measurement technique.\n- Note lifestyle counseling specifics and patient\u2019s willingness to change.",
-        "Considerations for Cost Effective Care Improvement": "- Thiazide diuretics are low\u2010cost generics.\n- Defer ambulatory BP monitoring unless home readings are inconsistent."
+        "Considerations for Cost Effective Care Improvement": "- Thiazide diuretics are low\u2010cost generics.\n- Defer ambulatory BP monitoring unless home readings are inconsistent.",
+        "Severity": "Moderate",
+        "Evidence Grade": {
+          "certainty": "High",
+          "sources": [
+            {
+              "title": "2017 ACC/AHA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults",
+              "source": "AHA/ACC",
+              "year": 2017,
+              "url": "https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065"
+            }
+          ],
+          "rationale": "ACC/AHA guideline provides high-certainty evidence for BP targets and first-line antihypertensive therapy."
+        }
       },
       {
         "Problem Name": "Diagnostic Evaluation and Risk Assessment",
@@ -30,7 +62,19 @@
         "Treatment/Medication Plan": "- No direct medications; facilitate timely scheduling of tests.\n- Educate patient on fasting requirements for labs.",
         "Contingency Planning": "- If TSH abnormal, add referral to endocrinology or start appropriate thyroid therapy.\n- If echo reveals significant valvular disease, adjust AF management (consider warfarin if mechanical valve).",
         "Considerations for Documentation Improvement": "- Record dates/times of lab orders and patient consent.\n- Track pending results in EMR to ensure follow\u2010up.",
-        "Considerations for Cost Effective Care Improvement": "- Group lab tests to reduce phlebotomy visits.\n- Verify insurance coverage for echocardiogram or consider outpatient lab draws."
+        "Considerations for Cost Effective Care Improvement": "- Group lab tests to reduce phlebotomy visits.\n- Verify insurance coverage for echocardiogram or consider outpatient lab draws.",
+        "Severity": "Low",
+        "Evidence Grade": {
+          "certainty": "Moderate",
+          "sources": [
+            {
+              "title": "2023 ACC/AHA/ACCP/HRS Guideline for Diagnosis and Management of Atrial Fibrillation",
+              "source": "AHA/ACC",
+              "year": 2023
+            }
+          ],
+          "rationale": "Standard workup per AF guidelines; moderate certainty as specific test ordering varies by clinical context."
+        }
       }
     ],
     "Anticipatory Preventative Care": {

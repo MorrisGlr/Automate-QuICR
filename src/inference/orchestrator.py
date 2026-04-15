@@ -2,6 +2,7 @@ import glob
 import json
 import os
 import time
+from collections.abc import Callable
 
 import pandas as pd
 
@@ -16,6 +17,9 @@ def run_pipeline_step(
     json_schema: dict,
     output_dir: str,
     overwrite: bool = False,
+    evidence_context_fn: Callable[[str], tuple[str, list[dict]]] | None = None,
+    severity_validator: Callable[[dict, dict | None], dict] | None = None,
+    citation_validator: Callable[[dict, list[dict]], dict] | None = None,
 ) -> None:
     """Orchestrate inference across all input files in a directory.
 
@@ -27,6 +31,12 @@ def run_pipeline_step(
         json_schema: JSON schema dict (must have 'name' key).
         output_dir: Base output directory.
         overwrite: If True, regenerate existing outputs.
+        evidence_context_fn: Optional callable that takes EMR text and returns
+            (evidence_text, retrieved_sources) for in-context RAG.
+        severity_validator: Optional callable that takes (chart_review, feedback)
+            and returns chart_review with validated severities.
+        citation_validator: Optional callable that takes (chart_review, retrieved_sources)
+            and returns chart_review with citation flags.
     """
     stats_list = []
     schema_name = json_schema["name"]
@@ -48,6 +58,15 @@ def run_pipeline_step(
 
         with open(path, "r", encoding="utf-8") as f:
             user_prompt = f.read()
+
+        # Evidence retrieval (in-context RAG) for chart review
+        retrieved_sources = []
+        if schema_name == "chart_review" and evidence_context_fn is not None:
+            print(f"Retrieving evidence context for {filename}...")
+            evidence_text, retrieved_sources = evidence_context_fn(user_prompt)
+            if evidence_text:
+                user_prompt = f"{user_prompt}\n{evidence_text}"
+                print(f"Appended evidence context ({len(retrieved_sources)} sources)")
 
         # For feedback schema, append the corresponding chart review JSON
         if schema_name == "cr_feedback":
@@ -88,6 +107,28 @@ def run_pipeline_step(
                     if section in result and section not in plan:
                         print(f"Conforming generated JSON: moving {section} to Plan")
                         plan[section] = result.pop(section)
+
+        # Post-hoc severity validation
+        if severity_validator is not None and schema_name == "chart_review":
+            # Load corresponding feedback if it exists (for skill assessment floors)
+            feedback_data = None
+            fb_subdir = os.path.join(output_dir, model_name, "cr_feedback")
+            fb_filename = f"{base_filename}_cr_feedback.json"
+            fb_filepath = os.path.join(fb_subdir, fb_filename)
+            if os.path.exists(fb_filepath):
+                with open(fb_filepath, "r", encoding="utf-8") as f:
+                    feedback_data = json.load(f)
+            result = severity_validator(result, feedback_data)
+            adj = result.get("_severity_adjustments", [])
+            if adj:
+                print(f"Severity adjustments for {filename}: {len(adj)} problem(s) escalated")
+
+        # Post-hoc citation validation
+        if citation_validator is not None and retrieved_sources and schema_name == "chart_review":
+            result = citation_validator(result, retrieved_sources)
+            flags = result.get("_citation_flags", [])
+            if flags:
+                print(f"Citation flags for {filename}: {sum(len(f['flagged_citations']) for f in flags)} unverified")
 
         # Write output
         with open(output_filepath, "w", encoding="utf-8") as f:

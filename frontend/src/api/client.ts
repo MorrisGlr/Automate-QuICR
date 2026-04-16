@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+// Licensed under the Apache License, Version 2.0.
 const BASE_URL = "/api";
 
 export async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {

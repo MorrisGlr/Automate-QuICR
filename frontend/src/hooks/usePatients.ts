@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+// Licensed under the Apache License, Version 2.0.
 import { useState, useEffect, useCallback } from "react";
 import { getPatients } from "../api/patients";
 import type { PatientSummary } from "../types/patient";

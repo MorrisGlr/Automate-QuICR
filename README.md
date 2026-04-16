@@ -1,5 +1,8 @@
 # Automate QuICR (<u>Qu</u>ality <u>I</u>mprovement <u>C</u>hart <u>R</u>eview)
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+
 Retrospective patient chart reviews of electronic medical records is a crucial process for quality improvement efforts that impact clinical care, medical billing (cost effective care), and internal compliance standards. However, the traditional process of using a team of physicians is time-consuming, labor-intensive, and requires training on a shared criteria to avoid inconsistencies. As a Generative AI fellow at [X = Primary Care](https://fellowship.xprimarycare.com/) (XPC) in Spring 2025, for my self-directed project I developed an end-to-end python app, QuICR, that automates chart review for the primary care clinical setting using natural language processing techniques.
 
 ## Value and Benefits
@@ -18,58 +21,78 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 - The insights are presented to the user in an organized and easy to read format (inspired by Swiss design principles) provided in a web browser (HTML) and as a PDF for easy sharing.
 
 ## End-to-End App Overview
-<table>
-  <tr>
-    <td align="center">
-      <img src="media/morris_aguilar_QuICR_medication_workflow.png" width="850"/><br/>
-      <sub>The end-to-end workflow of QuICR involves the submission of (synthetic) patient data to the OpenAI API, locally run python code to parse the structured JSON based on my custom schema, SciScaCy with the Unified Medical Language System (UMLS) standardizes medication names for drug price look-up, and then generates the professionally organized reports in the HTML and PDF formats.</sub>
-    </td>
-  </tr>
-</table>
+
+QuICR runs a two-pass LLM pipeline: the first pass generates a structured chart review from the EMR; the second pass uses both the EMR and chart review to produce per-problem feedback with skill assessments.
+
+```mermaid
+flowchart LR
+    EMR[EMR Text]
+
+    subgraph Pass1[Pass 1 — Chart Review]
+        RAG[Evidence RAG] --> CR[o4-mini Structured Output] --> SEV[Severity + Citation Validation]
+    end
+
+    subgraph Enrich[Enrichment]
+        NER[SciSpaCy NER + UMLS] --> DRUG[Drug Pricing Lookup]
+    end
+
+    subgraph Pass2[Pass 2 — Feedback]
+        FB[o4-mini Structured Output] --> SEV2[Severity Validation]
+    end
+
+    EMR --> Pass1
+    Pass1 --> Enrich
+    Pass1 --> Pass2
+    Enrich --> PDF1[Chart Review PDF]
+    Pass2 --> PDF2[Feedback PDF]
+    Pass2 --> PDF3[Aggregate PDF]
+```
+
+<div align="center">
+  <img src="media/morris_aguilar_QuICR_medication_workflow.png" width="900" alt="QuICR medication workflow: patient EMR text submitted to OpenAI API, structured JSON parsed by custom schema, SciSpaCy with UMLS standardizes medication names for drug price lookup, professional PDF reports generated"/>
+  <p><sub>The medication enrichment workflow: SciSpaCy with the Unified Medical Language System (UMLS) standardizes medication names for drug price lookup across the Walmart generic drug list and CostPlusDrugs.</sub></p>
+</div>
 
 ## Demonstration of Outputs
-### Chart Review on Synthetic Patient, Bill Moore (Click to image to enlarge or view [corresponding PDF](generated_output/o4-mini-2025-04-16/chart_review/pdf/user_prompt_syn_pt_4_chart_review_pricing.pdf).)
-<table align="center">
-  <tr>
-    <td align="center" style="vertical-align: top;">
-      <a href="media/morris_aguilar_bill_chart_review_1.png">
-        <img src="media/morris_aguilar_bill_chart_review_1.png" width="250"/>
-      </a><br/>
-      <sub>All chart review reports begin with key highlights to give the reader an overview that is specific for that patient followed by chief concern and assessment.</sub>
-    </td>
-    <td align="center" style="vertical-align: top;">
-      <a href="media/morris_aguilar_bill_chart_review_2.png">
-        <img src="media/morris_aguilar_bill_chart_review_2.png" width="250"/>
-      </a><br/>
-      <sub>The plan section for all patients is separated by medical problem. For each problem it is broken down into subsections, status, decision making/diagnostic plan, treatment/medication plan, contingency planning, considerations for documentation improvement, and considerations for cost effective care improvement.</sub>
-    </td>
-    <td align="center" style="vertical-align: top;">
-      <a href="media/morris_aguilar_bill_chart_review_3.png">
-        <img src="media/morris_aguilar_bill_chart_review_3.png" width="250"/>
-      </a><br/>
-      <sub>The remainder of the document contains anticipatory preventative care, follow-up care, and generic drug pricing relevant to the patient.</sub>
-    </td>
-  </tr>
-</table>
+### Chart Review on Synthetic Patient, Bill Moore (Click an image to enlarge or view the [corresponding PDF](generated_output/o4-mini-2025-04-16/chart_review/pdf/user_prompt_syn_pt_4_chart_review_pricing.pdf).)
+
+<div align="center">
+  <a href="media/morris_aguilar_bill_chart_review_1.png">
+    <img src="media/morris_aguilar_bill_chart_review_1.png" width="800" alt="Chart review report header showing key highlights, chief concern, and assessment sections for synthetic patient Bill Moore"/>
+  </a>
+  <p><sub>All chart review reports begin with key highlights to give the reader an overview specific to that patient, followed by chief concern and assessment.</sub></p>
+</div>
+
+<div align="center">
+  <a href="media/morris_aguilar_bill_chart_review_2.png">
+    <img src="media/morris_aguilar_bill_chart_review_2.png" width="800" alt="Chart review plan section showing individual medical problems broken down into decision making, treatment, contingency planning, and documentation improvement subsections"/>
+  </a>
+  <p><sub>The plan section separates each medical problem into subsections: status, decision making and diagnostic plan, treatment and medication plan, contingency planning, and considerations for documentation and cost-effective care improvement.</sub></p>
+</div>
+
+<div align="center">
+  <a href="media/morris_aguilar_bill_chart_review_3.png">
+    <img src="media/morris_aguilar_bill_chart_review_3.png" width="800" alt="Chart review anticipatory preventative care, follow-up care, and generic drug pricing table with Walmart and CostPlusDrugs prices"/>
+  </a>
+  <p><sub>The remainder of the report covers anticipatory preventative care, follow-up care, and a generic drug pricing table with Walmart and CostPlusDrugs prices relevant to the patient's medications.</sub></p>
+</div>
 
 
-### Aggregate Documentation Report (Click to enlarge image or view [corresponding PDF](generated_output/o4-mini-2025-04-16/cr_feedback/aggregated_feedback.pdf).)
-<table align="center">
-  <tr>
-    <td align="center" style="vertical-align: top;">
-      <a href="media/morris_aguilar_aggregated_report_1.png">
-        <img src="media/morris_aguilar_aggregated_report_1.png" width="250"/>
-      </a><br/>
-      <sub>The aggregate report compiles the constructive feedback for a given user/learner and gives a rating to indicate which areas of improvement require priority.</sub>
-    </td>
-    <td align="center" style="vertical-align: top;">
-      <a href="media/morris_aguilar_aggregated_report_3.png">
-        <img src="media/morris_aguilar_aggregated_report_3.png" width="250"/>
-      </a><br/>
-      <sub>In addition to compiling feedback for medical problem documentation, it provides suggestions for preventative health screenings.</sub>
-    </td>
-  </tr>
-</table>
+### Aggregate Documentation Report (Click an image to enlarge or view the [corresponding PDF](generated_output/o4-mini-2025-04-16/cr_feedback/aggregated_feedback.pdf).)
+
+<div align="center">
+  <a href="media/morris_aguilar_aggregated_report_1.png">
+    <img src="media/morris_aguilar_aggregated_report_1.png" width="800" alt="Aggregate report compiling constructive feedback across all patients, with severity ratings indicating which documentation areas require priority attention"/>
+  </a>
+  <p><sub>The aggregate report compiles constructive feedback across all reviewed charts and assigns severity ratings to indicate which documentation areas require the most attention.</sub></p>
+</div>
+
+<div align="center">
+  <a href="media/morris_aguilar_aggregated_report_3.png">
+    <img src="media/morris_aguilar_aggregated_report_3.png" width="800" alt="Aggregate report section showing cross-patient suggestions for preventative health screenings and anticipatory care"/>
+  </a>
+  <p><sub>In addition to compiling problem-level feedback, the aggregate report surfaces cross-patient trends in preventative health screenings and anticipatory care.</sub></p>
+</div>
 
 ## Tools and Techniques Used 
 ### Natural Language Processing (NLP)
@@ -94,10 +117,15 @@ Retrospective patient chart reviews of electronic medical records is a crucial p
 ### Reproducible Environment
 - The environment is fully reproducible via the provided `myenv.yml` Conda specification, ensuring that all dependencies (Python, SciSpacy, WeasyPrint, etc.) can be installed consistently across Linux, macOS, and Windows.
 
-## Usage
-1. After cloning the repository, create a conda environment using the `myenv.yml` file. Activate the environment using the command `conda activate quicr`.
-2. Assign your OpenAI API key to the `OPENAI_API_KEY` environment variable in your `.env` file. Note: this is separate from having a ChatGPT Plus account and one needs to add funds to their [OpenAI Platform](https://platform.openai.com/) account to use the API.
-3. While in the root of the project directory, run the app using the command `python app.py` in your terminal.
+## Quick Start
+
+```bash
+conda env create -f myenv.yml && conda activate quicr
+echo "OPENAI_API_KEY=your_key" > .env
+python app.py --step all --overwrite
+```
+
+> **Note:** An [OpenAI Platform](https://platform.openai.com/) account with API credits is required (separate from ChatGPT Plus).
 
 
 ## Data
@@ -111,6 +139,21 @@ Evaluation studies involving thousands of patient charts are needed to fully ass
 
 ## Acknowledgements
 I would like to thank Paulius Mui, M.D. (founder of X = Primary Care) for his mentorship and support throughout the Spring 2025 fellowship.
+
+## Citation
+
+If you use QuICR in your research, please cite:
+
+```bibtex
+@software{aguilar2025quicr,
+  author    = {Aguilar, Morris A.},
+  title     = {Automate {QuICR} ({Q}uality {I}mprovement {C}hart {R}eview)},
+  year      = {2025},
+  version   = {0.1.0},
+  url       = {https://github.com/MorrisGlr/Automate-QuICR},
+  license   = {Apache-2.0}
+}
+```
 
 # Contact
 Morris A. Aguilar, Ph.D.<br>

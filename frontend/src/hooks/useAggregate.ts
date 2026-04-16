@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+// Licensed under the Apache License, Version 2.0.
 import { useState, useEffect } from "react";
 import { getAggregate } from "../api/aggregate";
 import type { AggregateResponse } from "../types/aggregate";

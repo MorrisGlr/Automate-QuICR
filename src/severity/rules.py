@@ -1,3 +1,5 @@
+# Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0.
 """Post-hoc severity validation rules for chart review findings.
 
 Validates and potentially escalates LLM-assigned severity based on:

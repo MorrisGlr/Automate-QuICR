@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+// Licensed under the Apache License, Version 2.0.
 const SKILL_MAP: Record<string, { percent: number; color: string; textColor: string }> = {
   "Critical Gap": { percent: 25, color: "bg-skill-critical-gap", textColor: "text-white" },
   "Needs Improvement": { percent: 50, color: "bg-skill-needs-improvement", textColor: "text-gray-800" },

@@ -1,3 +1,5 @@
+# Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0.
 """Post-hoc citation validation for LLM-generated evidence grades.
 
 Cross-references LLM-cited sources against actually-retrieved evidence

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the metadata below."
+title: "Automate QuICR (Quality Improvement Chart Review)"
+version: 0.1.0
+date-released: "2025-05-01"
+license: Apache-2.0
+url: "https://github.com/MorrisGlr/Automate-QuICR"
+authors:
+  - family-names: Aguilar
+    given-names: Morris A.
+    orcid: ""
+abstract: >-
+  QuICR is an LLM-driven retrospective chart review tool for primary care
+  quality improvement. It takes EMR text, generates structured QI feedback
+  using OpenAI structured outputs, enriches with medication NER and real-world
+  drug pricing, and produces professional PDF reports. The tool reduces
+  chart review time from 1-2 hours to under 1 minute at less than $0.01 per
+  review, enabling quality improvement at scale.
+keywords:
+  - clinical informatics
+  - quality improvement
+  - large language models
+  - electronic medical records
+  - natural language processing
+  - primary care
+  - chart review

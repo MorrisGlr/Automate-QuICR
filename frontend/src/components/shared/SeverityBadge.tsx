@@ -1,3 +1,5 @@
+// Copyright (c) 2024-2026 Morris A. Aguilar. All Rights Reserved.
+// Licensed under the Apache License, Version 2.0.
 const STYLES: Record<string, string> = {
   Critical: "bg-severity-critical text-white",
   High: "bg-severity-high text-white",

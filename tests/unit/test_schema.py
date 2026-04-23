@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import pytest
+
 from src.utils.schema import load_schema, load_system_prompt
 
 SCHEMA_DIR = Path(__file__).resolve().parent.parent.parent / "prompt" / "json_schema"
@@ -97,3 +99,22 @@ def test_load_system_prompt_chart_review():
 def test_load_system_prompt_feedback():
     prompt = load_system_prompt("feedback")
     assert len(prompt) > 100
+
+
+def test_load_system_prompt_explicit_path():
+    """Covers the explicit path override branch (schema.py line 46)."""
+    import tempfile, os
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+        f.write("custom prompt text")
+        path = f.name
+    try:
+        prompt = load_system_prompt("chart_review", path=path)
+        assert prompt == "custom prompt text"
+    finally:
+        os.unlink(path)
+
+
+def test_load_system_prompt_unknown_step_raises():
+    """Covers the ValueError branch for unknown step (schema.py line 50)."""
+    with pytest.raises(ValueError, match="Unknown step"):
+        load_system_prompt("nonexistent_step")

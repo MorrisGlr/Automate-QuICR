@@ -15,9 +15,9 @@ __pycache__/
 # docs
 CLAUDE.md
 SPEC.md
+CHANGELOG.md
 QuICR_Claude_Ecosystem_Guide.md
 docs/
-CHANGELOG.md
 
 # Proprietary prompts and schemas
 prompt/system/

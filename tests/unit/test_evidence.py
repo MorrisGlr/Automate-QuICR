@@ -2,16 +2,21 @@
 
 import json
 import os
+import tempfile
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
 
 from src.evidence.grading import (
+    _source_matches,
     enrich_evidence_metadata,
     validate_citations,
 )
 from src.evidence.pubmed import (
+    _cache_key,
+    _load_cached,
+    _save_cache,
     build_evidence_context,
     extract_condition_keywords,
     load_guidelines,
@@ -199,3 +204,136 @@ class TestEnrichEvidenceMetadata:
         retrieved = [{"title": "Real Guideline", "source": "AHA", "year": 2023}]
         result = enrich_evidence_metadata(chart_review, retrieved)
         assert "_citation_flags" not in result
+
+    def test_problem_without_evidence_grade_is_skipped(self):
+        chart_review = {
+            "Plan": {
+                "problems": [
+                    {"Problem Name": "Hypertension"},
+                    {
+                        "Problem Name": "AF",
+                        "Evidence Grade": {
+                            "certainty": "High",
+                            "sources": [{"title": "Hallucinated", "source": "Unknown"}],
+                            "rationale": "...",
+                        },
+                    },
+                ]
+            }
+        }
+        result = enrich_evidence_metadata(chart_review, [])
+        # First problem (no Evidence Grade) should not cause errors
+        assert "_citation_flags" in result
+        assert result["_citation_flags"][0]["problem"] == "AF"
+
+
+class TestSourceMatches:
+    def test_empty_cited_title_returns_false(self):
+        cited = {"title": "", "source": "AHA"}
+        retrieved = {"title": "Some Guideline", "source": "AHA"}
+        assert _source_matches(cited, retrieved) is False
+
+    def test_empty_retrieved_title_returns_false(self):
+        cited = {"title": "Some Guideline", "source": "AHA"}
+        retrieved = {"title": "", "source": "AHA"}
+        assert _source_matches(cited, retrieved) is False
+
+    def test_source_and_year_match_when_titles_differ(self):
+        cited = {"title": "ACC Guidelines 2023", "source": "acc", "year": 2023}
+        retrieved = {"title": "American College of Cardiology 2023 Report", "source": "acc", "year": 2023}
+        # titles don't substring-match, but source + year do
+        assert _source_matches(cited, retrieved) is True
+
+
+class TestValidateCitationsEdgeCases:
+    def test_empty_sources_list_returns_empty(self):
+        problem = {
+            "Evidence Grade": {
+                "certainty": "High",
+                "sources": [],
+                "rationale": "...",
+            }
+        }
+        flagged = validate_citations(problem, [])
+        assert flagged == []
+
+
+class TestExtractConditionKeywordsShortTerm:
+    def test_short_condition_matched_with_word_boundary(self):
+        guidelines = [
+            {"id": "hiv-test", "conditions": ["hiv"], "title": "HIV Guidelines",
+             "source": "WHO", "year": 2022, "summary": "...", "grade": "A",
+             "grade_certainty": "High"}
+        ]
+        emr_text = "Patient has HIV and requires antiretroviral therapy."
+        conditions = extract_condition_keywords(emr_text, guidelines)
+        assert "hiv" in conditions
+
+    def test_short_condition_not_matched_as_substring(self):
+        guidelines = [
+            {"id": "hiv-test", "conditions": ["hiv"], "title": "HIV Guidelines",
+             "source": "WHO", "year": 2022, "summary": "...", "grade": "A",
+             "grade_certainty": "High"}
+        ]
+        # "achieve" contains "hiv" but not as a word boundary
+        emr_text = "Patient needs to achieve better glucose control."
+        conditions = extract_condition_keywords(emr_text, guidelines)
+        assert "hiv" not in conditions
+
+
+class TestPubmedCache:
+    def test_cache_key_is_deterministic(self):
+        key1 = _cache_key("hypertension")
+        key2 = _cache_key("hypertension")
+        assert key1 == key2
+
+    def test_cache_key_is_case_insensitive(self):
+        assert _cache_key("Hypertension") == _cache_key("hypertension")
+
+    def test_load_cached_returns_none_on_miss(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            result = _load_cached(tmpdir, "nonexistent condition xyz")
+        assert result is None
+
+    def test_save_and_load_cache_roundtrip(self):
+        data = [{"pmid": "12345", "title": "Test Article", "year": 2023, "source": "PubMed"}]
+        with tempfile.TemporaryDirectory() as tmpdir:
+            _save_cache(tmpdir, "hypertension", data)
+            loaded = _load_cached(tmpdir, "hypertension")
+        assert loaded == data
+
+    @patch("src.evidence.pubmed.match_guidelines")
+    @patch("src.evidence.pubmed.extract_condition_keywords")
+    @patch("src.evidence.pubmed.query_pubmed")
+    def test_build_evidence_queries_pubmed_for_unmatched_and_caches(
+        self, mock_pubmed, mock_extract, mock_match, tmp_path
+    ):
+        """Covers the PubMed query + cache write/read path in build_evidence_context."""
+        pubmed_result = [
+            {"pmid": "99", "title": "Gout Management Guidelines", "abstract": "Summary.",
+             "year": 2023, "url": "https://pubmed.ncbi.nlm.nih.gov/99/", "source": "PubMed"}
+        ]
+        mock_pubmed.return_value = pubmed_result
+        mock_extract.return_value = ["gout"]
+        mock_match.return_value = ([], ["gout"])  # force unmatched condition
+
+        guidelines = [{"id": "afib", "conditions": ["atrial fibrillation"], "title": "AF Guideline",
+                       "source": "AHA", "year": 2023, "summary": "...", "grade": "A",
+                       "grade_certainty": "High"}]
+        guidelines_path = str(tmp_path / "guidelines.json")
+        with open(guidelines_path, "w") as f:
+            import json
+            json.dump(guidelines, f)
+
+        cache_dir = str(tmp_path / "cache")
+        emr_text = "Patient has gout."
+
+        # First call: PubMed queried, result cached
+        text, sources = build_evidence_context(emr_text, guidelines_path, cache_dir=cache_dir)
+        assert mock_pubmed.call_count == 1
+        assert any(s["source"] == "PubMed" for s in sources)
+        assert "PubMed Literature" in text
+
+        # Second call: cache hit, PubMed not called again
+        build_evidence_context(emr_text, guidelines_path, cache_dir=cache_dir)
+        assert mock_pubmed.call_count == 1

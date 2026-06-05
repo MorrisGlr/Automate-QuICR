@@ -1,0 +1,222 @@
+{
+    "type": "json_schema",
+    "name": "chart_review",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "Patient": {
+                "type": "string",
+                "description": "The name, age, and sex of the patient."
+            },
+            "Key Highlights for Medical Decision-Making (MDM) Improvement": {
+                "type": "string",
+                "description": "A detailed, bulleted list that outlines the key points and areas for improvement in the medical decision-making process, including each plan item, medication recommendations (with alternatives), anticipatory preventative care, and follow up care."
+            },
+            "Chief Concern": {
+                "type": "string",
+                "description": "The chief concern of the patient."
+            },
+            "Assessment": {
+                "type": "string",
+                "description": "A detailed assessment statement constructed from the patient chart, including rationales and evidence-based suggestions."
+            },
+            "Plan": {
+                "type": "object",
+                "description": "The treatment plan along with various problems and preventative care items.",
+                "properties": {
+                    "problems": {
+                        "type": "array",
+                        "description": "An array of clinical problems identified in the patient chart, each with detailed decision-making, treatment, and documentation plans.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Problem Name": {
+                                    "type": "string",
+                                    "description": "State the name of the problem."
+                                },
+                                "Status": {
+                                    "type": "string",
+                                    "description": "State the status (e.g., stable, not stable, at goal, not at goal, etc) and clinical response of the problem."
+                                },
+                                "Decision Making and Diagnostic Plan": {
+                                    "type": "string",
+                                    "description": "A detailed explanation of the decision-making and diagnostic plan constructed from the patient chart, with supporting rationales."
+                                },
+                                "Treatment/Medication Plan": {
+                                    "type": "string",
+                                    "description": "A comprehensive treatment/medication plan constructed from the patient chart, including rationale for chosen therapies."
+                                },
+                                "Contingency Planning": {
+                                    "type": "string",
+                                    "description": "A detailed description of the contingency plan, including if-this-then-that scenarios and supporting rationale."
+                                },
+                                "Considerations for Documentation Improvement": {
+                                    "type": "string",
+                                    "description": "Considerations and specific suggestions, with rationale, for documentation improvement for this problem."
+                                },
+                                "Considerations for Cost Effective Care Improvement": {
+                                    "type": "string",
+                                    "description": "Considerations and detailed suggestions, with supporting rationale, for cost effective care improvement for this problem."
+                                },
+                                "Severity": {
+                                    "type": "string",
+                                    "description": "Clinical severity/priority ranking of this finding based on urgency, risk of harm, and time-sensitivity.",
+                                    "enum": ["Critical", "High", "Moderate", "Low"]
+                                },
+                                "Evidence Grade": {
+                                    "type": "object",
+                                    "description": "GRADE framework evidence assessment for this problem, based on retrieved clinical guidelines and literature.",
+                                    "properties": {
+                                        "certainty": {
+                                            "type": "string",
+                                            "description": "GRADE certainty of evidence rating.",
+                                            "enum": ["High", "Moderate", "Low", "Very Low"]
+                                        },
+                                        "sources": {
+                                            "type": "array",
+                                            "description": "Clinical guidelines and literature sources supporting the evidence grade.",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "title": {
+                                                        "type": "string",
+                                                        "description": "Title of the guideline or study."
+                                                    },
+                                                    "source": {
+                                                        "type": "string",
+                                                        "description": "Publishing organization or journal (e.g., USPSTF, AHA/ACC, ADA)."
+                                                    },
+                                                    "year": {
+                                                        "type": "integer",
+                                                        "description": "Publication year."
+                                                    },
+                                                    "url": {
+                                                        "type": "string",
+                                                        "description": "URL to the guideline or study."
+                                                    }
+                                                },
+                                                "required": ["title", "source"],
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "rationale": {
+                                            "type": "string",
+                                            "description": "Brief rationale for the assigned GRADE certainty level."
+                                        }
+                                    },
+                                    "required": ["certainty", "sources", "rationale"],
+                                    "additionalProperties": false
+                                }
+                            },
+                            "required": [
+                                "Problem Name",
+                                "Status",
+                                "Decision Making and Diagnostic Plan",
+                                "Treatment/Medication Plan",
+                                "Contingency Planning",
+                                "Considerations for Documentation Improvement",
+                                "Considerations for Cost Effective Care Improvement",
+                                "Severity",
+                                "Evidence Grade"
+                            ],
+                            "additionalProperties": false
+                        },
+                        "minItems": 1,
+                        "maxItems": 7
+                    },
+                    "Anticipatory Preventative Care": {
+                        "type": "object",
+                        "properties": {
+                            "Item 1": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 1 with evidence-based rationale."
+                            },
+                            "Item 2": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 2 with evidence-based rationale."
+                            },
+                            "Item 3": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 3 with evidence-based rationale."
+                            },
+                            "Item 4": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 4 with evidence-based rationale."
+                            },
+                            "Item 5": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 5 with evidence-based rationale."
+                            },
+                            "Item 6": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Preventative Care Item 6 with evidence-based rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "A discussion of how documentation for anticipatory preventative care could be improved."
+                            }
+                        },
+                        "required": [
+                            "Item 1",
+                            "Considerations for Documentation Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Follow Up Care": {
+                        "type": "object",
+                        "properties": {
+                            "Item 1": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 1 with supporting rationale."
+                            },
+                            "Item 2": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 2 with supporting rationale."
+                            },
+                            "Item 3": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 3 with supporting rationale."
+                            },
+                            "Item 4": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 4 with supporting rationale."
+                            },
+                            "Item 5": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 5 with supporting rationale."
+                            },
+                            "Item 6": {
+                                "type": "string",
+                                "description": "A detailed recommendation for Follow Up Care Item 6 with supporting rationale."
+                            },
+                            "Considerations for Documentation Improvement": {
+                                "type": "string",
+                                "description": "An analysis of how follow up care documentation could be enhanced with specific examples."
+                            }
+                        },
+                        "required": [
+                            "Item 1",
+                            "Considerations for Documentation Improvement"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "problems",
+                    "Anticipatory Preventative Care",
+                    "Follow Up Care"
+                ]
+            }
+        },
+        "required": [
+            "Patient",
+            "Chief Concern",
+            "Key Highlights for Medical Decision-Making (MDM) Improvement",
+            "Assessment",
+            "Plan"
+        ],
+        "additionalProperties": false
+    },
+    "strict": false
+}

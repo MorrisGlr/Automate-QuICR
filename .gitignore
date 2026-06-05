@@ -19,9 +19,8 @@ CHANGELOG.md
 QuICR_Claude_Ecosystem_Guide.md
 docs/
 
-# Proprietary prompts and schemas
+# Proprietary prompts (schemas are committed as API contracts)
 prompt/system/
-prompt/json_schema/
 
 # All generated outputs
 generated_output/

@@ -1,0 +1,135 @@
+{
+    "type": "json_schema",
+    "name": "cr_feedback",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "Feedback Summary": {
+                "type": "string",
+                "description": "A concise summary of the overall evaluation of the chart review output."
+            },
+            "Feedback Details": {
+                "type": "object",
+                "properties": {
+                    "Assessment Section": {
+                        "type": "object",
+                        "properties": {
+                            "Strengths": {
+                                "type": "string",
+                                "description": "Detailed identification of the strengths in the synthesis of clinical issues, and inclusion of differential diagnoses."
+                            },
+                            "Areas for Improvement": {
+                                "type": "string",
+                                "description": "Detailed identification of the areas of improvement in the synthesis of clinical issues, and inclusion of differential diagnoses."
+                            }
+                        },
+                        "required": [
+                            "Strengths",
+                            "Areas for Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "problems": {
+                        "type": "array",
+                        "description": "An array of per-problem feedback entries, each with strengths, areas for improvement, and a skill assessment rating.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Problem Name": {
+                                    "type": "string",
+                                    "description": "State the name of the problem."
+                                },
+                                "Strengths": {
+                                    "type": "string",
+                                    "description": "Detailed identification of the strengths of the plan section for this problem, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                                },
+                                "Areas for Improvement": {
+                                    "type": "string",
+                                    "description": "Detailed improvement suggestions on the plan section for this problem, focusing on the clarity and organization of problem prioritization, explanation of decision making, treatment planning, contingency planning, and preventative care items."
+                                },
+                                "Skill Assessment": {
+                                    "type": "string",
+                                    "description": "A skill assessment rating.",
+                                    "enum": [
+                                        "Critical Gap",
+                                        "Needs Improvement",
+                                        "Meets Expectations",
+                                        "Excellent"
+                                    ]
+                                },
+                                "Severity": {
+                                    "type": "string",
+                                    "description": "Clinical severity/priority ranking of this finding. Carry forward from the chart review; escalate if feedback identifies additional risk factors.",
+                                    "enum": ["Critical", "High", "Moderate", "Low"]
+                                }
+                            },
+                            "required": [
+                                "Problem Name",
+                                "Strengths",
+                                "Areas for Improvement",
+                                "Skill Assessment",
+                                "Severity"
+                            ],
+                            "additionalProperties": false
+                        },
+                        "minItems": 1,
+                        "maxItems": 7
+                    },
+                    "Anticipatory Preventative Care Section Feedback": {
+                        "type": "object",
+                        "properties": {
+                            "Strengths": {
+                                "type": "string",
+                                "description": "Detailed identification of the strengths of the preventative care items."
+                            },
+                            "Areas for Improvement": {
+                                "type": "string",
+                                "description": "Detailed feedback on the preventative care items."
+                            }
+                        },
+                        "required": [
+                            "Strengths",
+                            "Areas for Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Follow Up Care Feedback": {
+                        "type": "object",
+                        "properties": {
+                            "Strengths": {
+                                "type": "string",
+                                "description": "Detailed identification of the strengths of the follow up care items."
+                            },
+                            "Areas for Improvement": {
+                                "type": "string",
+                                "description": "Detailed feedback on the follow up care items."
+                            }
+                        },
+                        "required": [
+                            "Strengths",
+                            "Areas for Improvement"
+                        ],
+                        "additionalProperties": false
+                    },
+                    "Overall Recommendations": {
+                        "type": "string",
+                        "description": "General suggestions and actionable recommendations to improve the quality and clarity of the chart review report."
+                    }
+                },
+                "required": [
+                    "Assessment Section",
+                    "problems",
+                    "Anticipatory Preventative Care Section Feedback",
+                    "Overall Recommendations"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "required": [
+            "Feedback Summary",
+            "Feedback Details"
+        ],
+        "additionalProperties": false
+    },
+    "strict": false
+}

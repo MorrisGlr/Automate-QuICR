@@ -3,9 +3,11 @@ from pathlib import Path
 
 import pytest
 
+import src.utils.schema as schema_module
 from src.utils.schema import load_schema, load_system_prompt
 
 SCHEMA_DIR = Path(__file__).resolve().parent.parent.parent / "prompt" / "json_schema"
+FIXTURES_DIR = Path(__file__).resolve().parent.parent / "fixtures"
 
 
 def test_v2_chart_review_schema_is_valid_json():
@@ -90,13 +92,15 @@ def test_load_schema_v1():
     assert "Problem 1" in plan_props
 
 
-def test_load_system_prompt_chart_review():
+def test_load_system_prompt_chart_review(monkeypatch):
+    monkeypatch.setattr(schema_module, "PROMPT_DIR", FIXTURES_DIR)
     prompt = load_system_prompt("chart_review")
     assert len(prompt) > 100
     assert "chart review" in prompt.lower() or "assessment" in prompt.lower()
 
 
-def test_load_system_prompt_feedback():
+def test_load_system_prompt_feedback(monkeypatch):
+    monkeypatch.setattr(schema_module, "PROMPT_DIR", FIXTURES_DIR)
     prompt = load_system_prompt("feedback")
     assert len(prompt) > 100
 
